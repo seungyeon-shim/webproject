@@ -1,9 +1,6 @@
-
 /*------------------------------  */
 .slider-section1 {
-  background: #fff;
   .sticky-container {
-
     .sticky {
       position: sticky;
       top: 0;
@@ -22,15 +19,27 @@
 
 .slider-section1 {
   .palace1 {
-    background: pink;
+    border: 1px solid red;
+    .palace-h {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 50px;
+    } //palace-h
+    .palace-img {
+      .img-box {
+        width: 500px;
+        height: 500px;
+        box-shadow: 0px 0px 5px 20px #fff;
+      } //figcaption
+    } //palace-img
   } //palace1
   .palace2 {
-    background: purple;
+    border: 1px solid red;
   } //palace2
   .palace3 {
-    background: gold;
+    border: 1px solid red;
   } //palace3
   .palace4 {
-    background: tomato;
+    border: 1px solid red;
   } //palace4
 } //slider-section1

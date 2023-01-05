@@ -1,7 +1,4 @@
 /*------------------------------  */
-.slider-section1 {
-  background: #fff;
-}
 .slider-section1 .sticky-container .sticky {
   position: sticky;
   top: 0;
@@ -17,14 +14,24 @@
 }
 
 .slider-section1 .palace1 {
-  background: pink;
+  border: 1px solid red;
+}
+.slider-section1 .palace1 .palace-h {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+}
+.slider-section1 .palace1 .palace-img .img-box {
+  width: 500px;
+  height: 500px;
+  box-shadow: 0px 0px 5px 20px #fff;
 }
 .slider-section1 .palace2 {
-  background: purple;
+  border: 1px solid red;
 }
 .slider-section1 .palace3 {
-  background: gold;
+  border: 1px solid red;
 }
 .slider-section1 .palace4 {
-  background: tomato;
+  border: 1px solid red;
 }/*# sourceMappingURL=main-section1.css.map */

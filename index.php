@@ -12,7 +12,7 @@
     <?php include "main-section3.php" ?>
     <?php include "main-section4.php" ?>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  </div>
+  </div><!-- wrap 배경설정 -->
 </main><!-- main -->
 
 
