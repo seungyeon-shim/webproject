@@ -1,93 +1,83 @@
+@charset "UTF-8";
 header {
   position: absolute;
+  overflow: hidden; /*별 밖으로 나가는거 처리*/
   top: 0;
   width: 100%;
+  height: 70px;
   border-bottom: 1px solid #fff;
 }
 header.active {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0px;
-}
-@media screen and (min-width: 1100px) {
-  header {
-    height: 100px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  header {
-    height: 80px;
-  }
 }
 header div.inner {
   margin: 0 auto;
   width: 90%;
   height: 100%;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 header div.inner h1 {
-  height: 70%;
-  max-height: 50px;
-}
-header div.inner h1 img {
-  height: 100%;
+  transform: scale(0.7);
+  transform-origin: left;
+  height: 80%;
 }
 header div.inner .right {
   display: flex;
   align-items: center;
 }
 header div.inner .right .gnb-btn {
-  transform: scale(0.8);
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
+  width: 30px;
+  height: 30px;
+  transform: scale(0.7);
 }
 header div.inner .right .gnb-btn .hamburger {
   position: relative;
 }
 header div.inner .right .gnb-btn .hamburger::before {
   content: "";
-  position: absolute;
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  position: absolute; /*넓이 들어가고 영역 위치 잡기*/
+  width: 45px;
+  height: 45px;
   border: 2px solid transparent;
-  top: -17px;
-  left: -5px;
   border-radius: 100%;
-  transition: all 0.3s ease-in-out;
+  top: -15px;
+  left: -9px;
+  transition: color 0.3s ease-in-out;
 }
-header div.inner .right .gnb-btn .hamburger .line {
-  height: 2px;
-  background-color: #fff;
+header div.inner .right .gnb-btn .hamburger span.line {
   display: block;
-  margin: 8px auto;
+  height: 2px;
+  margin: 6px auto;
+  background-color: #FFF;
   transition: all 0.3s ease-in-out;
 }
-header div.inner .right .gnb-btn .hamburger .line:nth-child(1), header div.inner .right .gnb-btn .hamburger .line:nth-child(3) {
-  width: 25px;
+header div.inner .right .gnb-btn .hamburger span.line:nth-child(1), header div.inner .right .gnb-btn .hamburger span.line:nth-child(3) {
+  width: 20px;
 }
 header div.inner .right .gnb-btn .hamburger.active {
-  transform: rotate(45deg);
+  transform: rotate(45deg); /*기울이기*/
 }
 header div.inner .right .gnb-btn .hamburger.active::before {
-  border: 2px solid #fff;
+  border-color: #FFF;
 }
 header div.inner .right .gnb-btn .hamburger.active .line {
   width: 35px;
 }
+header div.inner .right .gnb-btn .hamburger.active .line:nth-child(1), header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
+  width: 25px;
+}
 header div.inner .right .gnb-btn .hamburger.active .line:nth-child(1) {
-  transform: translateY(13px);
+  transform: translateY(10px); /*기울이기*/
 }
 header div.inner .right .gnb-btn .hamburger.active .line:nth-child(2) {
-  opacity: 0;
+  opacity: 0; /*안보이게*/
 }
 header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
-  transform: translateY(-7px) rotate(90deg);
+  transform: translateY(-7px) rotate(90deg); /*기울이기*/
 }
 @media screen and (min-width: 800px) {
   header div.inner .right .gnb-lg ul {
@@ -96,6 +86,9 @@ header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
   }
   header div.inner .right .gnb-lg ul li {
     padding: 0 30px;
+  }
+  header div.inner .right .gnb-lg ul li a {
+    color: #fff;
   }
 }
 @media screen and (max-width: 800px) {
@@ -111,5 +104,5 @@ header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
 }
 
 body {
-  background-color: #EEE;
+  background-color: black !important;
 }/*# sourceMappingURL=header-test.css.map */

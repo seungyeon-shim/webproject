@@ -1,0 +1,36 @@
+
+/*------------------------------  */
+.slider-section1 {
+  background: #fff;
+  .sticky-container {
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      box-sizing: border-box;
+    } //sticky
+    .sticky-inner {
+      display: flex;
+      height: 100%;
+      width: 400%;
+    } //sticky-inner
+    section {
+      flex: 1;
+    } //section
+  } //sticky-container
+} //slider-section1
+
+.slider-section1 {
+  .palace1 {
+    background: pink;
+  } //palace1
+  .palace2 {
+    background: purple;
+  } //palace2
+  .palace3 {
+    background: gold;
+  } //palace3
+  .palace4 {
+    background: tomato;
+  } //palace4
+} //slider-section1

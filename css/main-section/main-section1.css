@@ -1,0 +1,30 @@
+/*------------------------------  */
+.slider-section1 {
+  background: #fff;
+}
+.slider-section1 .sticky-container .sticky {
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+}
+.slider-section1 .sticky-container .sticky-inner {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+.slider-section1 .sticky-container section {
+  flex: 1;
+}
+
+.slider-section1 .palace1 {
+  background: pink;
+}
+.slider-section1 .palace2 {
+  background: purple;
+}
+.slider-section1 .palace3 {
+  background: gold;
+}
+.slider-section1 .palace4 {
+  background: tomato;
+}/*# sourceMappingURL=main-section1.css.map */

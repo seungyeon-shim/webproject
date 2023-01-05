@@ -1,0 +1,69 @@
+main.sub .sub-visual-kbg {
+  position: relative;
+  background-image: url(../../img/visual/kbg/kbg-background.png);
+  background-attachment: fixed;
+}
+main.sub .sub-visual-kbg .kbg-img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+main.sub .sub-visual-kbg .kbg-img img {
+  position: absolute;
+  width: 100%;
+  min-width: 700px;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 500px) {
+  main.sub .sub-visual-kbg .kbg-img img {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+main.sub .sub-visual-kbg .sub-title-wrap {
+  color: #FFF;
+  border: 1px solid skyblue;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+@media screen and (max-width: 900px) {
+  main.sub .sub-visual-kbg .sub-title-wrap {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 300px;
+  }
+}
+main.sub .sub-visual-kbg .sub-title-wrap .sub1-title {
+  text-align: center;
+  font-size: 2em;
+  font-family: "EBS";
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 900px) {
+  main.sub .sub-visual-kbg .sub-title-wrap .sub1-title {
+    font-size: 9vw;
+  }
+}
+main.sub .sub-visual-kbg .sub-title-wrap .sub-title {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid green;
+  text-align: center;
+}
+main.sub .sub-visual-kbg .sub-title-wrap .sub-desc {
+  width: 40%;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  main.sub .sub-visual-kbg .sub-title-wrap .sub-desc {
+    width: 80%;
+    font-size: 3vw;
+  }
+}/*# sourceMappingURL=sub-visual.css.map */

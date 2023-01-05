@@ -1,0 +1,7 @@
+@charset "UTF-8";
+.gnb-map {
+  position: fixed; /*고정*/
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+}/*# sourceMappingURL=gnb-map.css.map */

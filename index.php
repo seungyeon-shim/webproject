@@ -1,3 +1,22 @@
 <?php include "header.php" ?>
-본문
+<link rel="stylesheet" href="./css/main-section/common.css">
+
+
+<main >
+
+  <div class="wrap">
+    <div class="home-section1">
+      <?php include "main-section1.php" ?>
+    </div><!-- home-section1 -->
+    <?php include "main-section2.php" ?>
+    <?php include "main-section3.php" ?>
+    <?php include "main-section4.php" ?>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+</main><!-- main -->
+
+
+
+
+
 <?php include "footer.php" ?>

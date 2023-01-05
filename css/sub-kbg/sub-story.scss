@@ -1,0 +1,34 @@
+main.sub{
+  section.sub-story-kbg{
+    .sub-title-textbox{
+      width: 80%;
+      max-width:700px;
+      margin: 0 auto;
+      margin-top: 150px;
+      text-align: center;
+      @media screen and (max-width:900px){
+        margin-top: 50px;
+      }
+    }//.sub-title-textbox
+    /* background-image: url(../../img/story/sub-story/sub-kbg/bg/1.png); */
+
+      figure.img-box{
+        position:absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        img{
+          position: absolute;
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 100%;
+          left: 0; top: 0;
+        }//img
+
+
+      }//figure
+
+
+  }//section.sub-story-kbg
+}//main.sub

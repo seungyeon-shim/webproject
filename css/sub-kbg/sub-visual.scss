@@ -1,0 +1,64 @@
+main.sub {
+  .sub-visual-kbg {
+    position: relative;
+    background-image: url(../../img/visual/kbg/kbg-background.png) ;
+    background-attachment: fixed; 
+    .kbg-img{
+      img{
+        position: absolute;
+        width: 100%;
+        min-width: 700px;
+        left: 50%;
+        bottom: 0%;
+        transform: translateX(-50%);
+        @media screen and (max-width:500px){
+          width: 100%;
+         min-width: 300px;
+        }
+      }
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+    .sub-title-wrap {
+      @media screen and (max-width:900px){
+        width: 90%;
+        max-width: 400px;
+        margin-top: 300px;
+      }
+      color: #FFF;
+      border: 1px solid skyblue;  
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 140px;
+      .sub1-title{
+        text-align: center;
+        font-size: 2em;
+        font-family: 'EBS';
+        box-sizing: border-box;
+        padding-bottom: 30px;
+        @media screen and (max-width:900px){
+          font-size: 9vw;
+        }
+
+      }
+      .sub-title {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid green;
+        text-align: center;
+      } //sub-title
+      .sub-desc{
+        width: 40%;
+        line-height: 30px;
+        margin: 0 auto;
+        margin-top: 35px;
+        text-align: center;
+        @media screen and (max-width:900px){
+          width: 80%;
+          font-size: 3vw;
+        }
+      }
+    } //sub-title-wrap
+  } //sub-visual-kbg
+}

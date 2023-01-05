@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* ----------텍스트 css---------- */
+.wrap {
+  background-image: url("../../img/visual/kbg/kbg-background.png");
+}
+
+.text-box {
+  text-align: center;
+}
+.text-box .section-title {
+  font-family: "EBS";
+  font-size: 4em;
+}
+.text-box .section-desc {
+  font-size: 1.3em;
+}/*# sourceMappingURL=common.css.map */
