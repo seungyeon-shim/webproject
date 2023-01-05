@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*전체적인 홈페이지 스타일가이드, 무드를 설정*/
+@font-face {
+  font-family: "EBS";
+  src: url("../font/EBSL.woff") format("woff");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "EBS";
+  src: url("../font/EBSR.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "EBS";
+  src: url("../font/EBSB.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "namsan";
+  src: url("../font/SeoulNamsanL.woff") format("woff");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "namsan";
+  src: url("../font/SeoulNamsanM.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "namsan";
+  src: url("../font/SeoulNamsanEB.woff") format("woff");
+  font-weight: bold;
+}
+* {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  font-family: "namsan";
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  background-color: #FFF;
+}
+
+.ebs {
+  font-family: "EBS";
+}
+
+:root {
+  --navy-main:#1a2634;
+  --navy-sub:#203e5f;
+  --yellow-main:#ffcc00;
+  --yellow-sub:#fee5b1;
+  --dark:#333333;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;/*글씨가 단어 단위로 떨어짐...*/
+}
+
+body,html{
+  height: 100%;
+  box-sizing: border-box;/*body에 padding-top이 들어가있어서...header때문에 padding-top 줬었음*/
+}
+
+li{/*불릿기호 삭제*/
+  list-style: none;
+}
+
+img, svg, iframe, video {
+  display: block;
+}
+
+iframe {
+  border: none;
+}
+input, textarea, select { /*크기가 정확히 안들어가서...*/
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;/*버튼 포커스 모양...없애기*/
+}
+
+.hidden{
+  /*웹브라우저 밖으로 날려버리기*/
+    position:fixed;
+    left: -10000px;
+  
+}
