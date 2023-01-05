@@ -25,9 +25,9 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script><!--제이쿼리-->
   <script src="https://kit.fontawesome.com/11c930b057.js" crossorigin="anonymous"></script><!--fontawesome-->
   <!--font-->
-  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <script src="./js/type_effect.js"></script>
   <script src="./js/hoverBox.js"></script>
