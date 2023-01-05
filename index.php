@@ -1,9 +1,9 @@
 <?php include "header.php" ?>
 <link rel="stylesheet" href="./css/main-section/common.css">
+<link rel="stylesheet" href="./css/main-section/index.css">
 
 
-<main >
-
+<main class="home-main">
   <div class="wrap">
     <div class="home-section1">
       <?php include "main-section1.php" ?>
