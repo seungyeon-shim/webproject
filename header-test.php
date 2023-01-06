@@ -83,7 +83,6 @@
 
   <nav class="gnb-map">
     <?php include "menu.php" ?>
-    <p class="point-sans"> 年</p> 1234 sdfsdfsdfsd
   </nav>
 
   <div class="dummy">
