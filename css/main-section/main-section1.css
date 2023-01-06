@@ -1,37 +1,57 @@
-/*------------------------------  */
-.slider-section1 .sticky-container .sticky {
-  position: sticky;
-  top: 0;
-  box-sizing: border-box;
-}
-.slider-section1 .sticky-container .sticky-inner {
-  display: flex;
+.home-section1 {
+  width: 100%;
   height: 100%;
-  width: 400%;
-}
-.slider-section1 .sticky-container section {
-  flex: 1;
 }
 
-.slider-section1 .palace1 {
-  border: 1px solid red;
+.sticky-container {
+  border: 10px solid red;
 }
-.slider-section1 .palace1 .palace-h {
-  font-size: 3em;
+.sticky-container .sticky {
+  border: 2px solid blue;
+  position: sticky;
+  top: 0;
+}
+.sticky-container .sticky .text-box {
+  background-color: pink;
+  margin: 100px auto;
+  max-width: 400px;
   text-align: center;
-  margin-top: 50px;
 }
-.slider-section1 .palace1 .palace-img .img-box {
-  width: 500px;
+.sticky-container .sticky .sticky-inner {
+  width: 400%;
+  border: 5px solid green;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container {
+  display: flex;
+  width: 100%;
+  border: 5px solid yellow;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 500px;
-  box-shadow: 0px 0px 5px 20px #fff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.slider-section1 .palace2 {
-  border: 1px solid red;
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace figure {
+  display: flex;
+  width: 60%;
+  height: 90%;
 }
-.slider-section1 .palace3 {
-  border: 1px solid red;
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all {
+  width: 36%;
+  height: 90%;
 }
-.slider-section1 .palace4 {
-  border: 1px solid red;
+.sticky-container .sticky .sticky-inner .palace1 {
+  /* background-color: darkcyan; */
+}
+.sticky-container .sticky .sticky-inner .palace2 {
+  background-color: rgb(191, 26, 241);
+}
+.sticky-container .sticky .sticky-inner .palace3 {
+  background-color: rgb(50, 238, 106);
+}
+.sticky-container .sticky .sticky-inner .palace4 {
+  background-color: tomato;
 }/*# sourceMappingURL=main-section1.css.map */

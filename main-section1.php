@@ -15,30 +15,61 @@
 
     <div class="sticky-inner">
       <div class="sticky-inner-container">
-        <section class="palace1">
-            <div class="palace-img">
-              <figcaption class="img-box">
-                <img src="" alt="">궁사진
-              </figcaption><!-- 경복궁사진 -->
-              <div class="palacae-text-all">
-              <p class="palace-h ebs">경복궁</p>
-                <p class="palace-name">덕수궁</p>
-                <p class="palace-name2">부제</p>
-                <p class="palacae-text">궁텍스트</p>
-                <a class="palace-zoom" href="#">자세히보기</a>
-              </div><!-- 경복궁텍스트 -->
-            </div><!-- pal경복사진전체 -->
+        <section class="palace palace1">
+          <figure>
+            <img class="cloud" src="./img/main/section1-about/kbg/kbg-cloud.png" alt="">
+            <img class="kbg" src="./img/main/section1-about/kbg/kbg-1.png" alt=""><!-- img -->
+          </figure><!-- figure -->
+          <div class="palacae-text-all">
+            <p class="palace-h ebs">경복궁</p>
+            <p class="palace-name">덕수궁</p>
+            <p class="palace-name2">부제</p>
+            <p class="palacae-text">궁텍스트</p>
+            <a class="palace-zoom" href="#">
+              <p>자세히보기</p>
+            </a><!-- palace-zoom -->
+          </div><!-- 경복궁텍스트 -->
         </section><!-- palace1 경복궁 -->
 
-        <section class="palace2">
-          palace2
+        <section class="palace palace2">
+          <figure>img</figure>
+          <div class="palacae-text-all">
+            <p class="palace-h ebs">경복궁</p>
+            <p class="palace-name">덕수궁</p>
+            <p class="palace-name2">부제</p>
+            <p class="palacae-text">궁텍스트</p>
+            <a class="palace-zoom" href="#">
+              <p>자세히보기</p>
+            </a><!-- palace-zoom -->
+          </div><!-- 경복궁텍스트 -->
         </section><!-- palace2 덕수궁 -->
-        <section class="palace3">
-          palace3
+
+        <section class="palace palace3">
+          <figure>img</figure>
+          <div class="palacae-text-all">
+            <p class="palace-h ebs">경복궁</p>
+            <p class="palace-name">덕수궁</p>
+            <p class="palace-name2">부제</p>
+            <p class="palacae-text">궁텍스트</p>
+            <a class="palace-zoom" href="#">
+              <p>자세히보기</p>
+            </a><!-- palace-zoom -->
+          </div><!-- 경복궁텍스트 -->
         </section><!-- palace3 창경궁 -->
-        <section class="palace4">
-          palace4
+
+        <section class="palace palace4">
+          <figure>img</figure>
+          <div class="palacae-text-all">
+            <p class="palace-h ebs">경복궁</p>
+            <p class="palace-name">덕수궁</p>
+            <p class="palace-name2">부제</p>
+            <p class="palacae-text">궁텍스트</p>
+            <a class="palace-zoom" href="#">
+              <p>자세히보기</p>
+            </a><!-- palace-zoom -->
+          </div><!-- 경복궁텍스트 -->
         </section><!-- palace4 창덕궁 -->
+
       </div><!--sticky-inner-container  -->
     </div><!--sticky-inner  -->
   </div><!--sticky  -->

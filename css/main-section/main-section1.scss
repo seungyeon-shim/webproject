@@ -1,45 +1,63 @@
-/*------------------------------  */
-.slider-section1 {
-  .sticky-container {
-    .sticky {
-      position: sticky;
-      top: 0;
-      box-sizing: border-box;
-    } //sticky
-    .sticky-inner {
-      display: flex;
-      height: 100%;
-      width: 400%;
-    } //sticky-inner
-    section {
-      flex: 1;
-    } //section
-  } //sticky-container
-} //slider-section1
+.home-section1 {
+  width: 100%;
+  height: 100%;
+}
 
-.slider-section1 {
-  .palace1 {
-    border: 1px solid red;
-    .palace-h {
-      font-size: 3em;
+.sticky-container {
+  border: 10px solid red;
+  .sticky {
+    border: 2px solid blue;
+    position: sticky;
+    top: 0;
+    .text-box {
+      background-color: pink;
+      margin: 100px auto;
+      max-width: 400px;
       text-align: center;
-      margin-top: 50px;
-    } //palace-h
-    .palace-img {
-      .img-box {
-        width: 500px;
-        height: 500px;
-        box-shadow: 0px 0px 5px 20px #fff;
-      } //figcaption
-    } //palace-img
-  } //palace1
-  .palace2 {
-    border: 1px solid red;
-  } //palace2
-  .palace3 {
-    border: 1px solid red;
-  } //palace3
-  .palace4 {
-    border: 1px solid red;
-  } //palace4
-} //slider-section1
+    } //text-box
+    .sticky-inner {
+      width: 400%;
+      border: 5px solid green;
+      .sticky-inner-container {
+        display: flex;
+        width: 100%;
+        border: 5px solid yellow;
+        .palace {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 500px;
+          max-width: 1200px;
+          margin: 0 auto;
+          figure {
+            display: flex;
+            width: 60%;
+            height: 90%;
+            .cloud{
+
+            }//구름
+            .kbj{
+
+            }//경복궁
+          } //figure(나중에 이미지로 교체)
+          .palacae-text-all {
+            width: 36%;
+            height: 90%;
+          } //palacae-text-all
+        } //palace1
+      } //sticky-inner-container
+      .palace1 {
+        /* background-color: darkcyan; */
+      }//palace1
+      .palace2 {
+        background-color: rgb(191, 26, 241);
+      }//palace2
+      .palace3 {
+        background-color: rgb(50, 238, 106);
+      }//palace3
+      .palace4 {
+        background-color: tomato;
+      }//palace4
+    } //sticky-inner
+  } //sticky
+} //sticky-container
