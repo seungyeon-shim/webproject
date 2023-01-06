@@ -1,0 +1,53 @@
+main.sub {
+  section.sub-history{
+    .sub-title-wrap{
+      width: 80%;
+      max-width:700px;
+      margin: 0 auto;
+      margin-top: 150px;
+      text-align: center;
+      @media screen and (max-width:900px){
+        margin-top: 50px;
+      }//max900px
+    }//div.sub-title-wrap
+    figure.bg-deco{
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      img{
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+      }//img
+      img.mountain{
+        width: 100%;
+        bottom: -10%;
+        opacity: 0.1;
+        @media screen and (max-width:900px){
+          bottom: -5%;
+        }
+      }//img.mountain
+      img.frame1{
+        top: 0;
+        width: 10%;
+        opacity: 0.8;
+      }//img.frame1
+      img.frame1-left{
+        left: 0;
+      }//img.frame1-left
+      img.frame1-right{
+        right: 0;
+      }//img.frame1-right
+      img.cloud1{
+        width: 30%;
+        top: 100px;
+        left: 15%;
+      }
+      img.cloud2{
+        width: 20%;
+        top: 0;
+      }
+    }//figure.bg-deco
+  }//section.sub-history
+}//main.sub

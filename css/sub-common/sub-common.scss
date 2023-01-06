@@ -4,25 +4,28 @@ main.sub{// 서브페이지 시작
   section{// 페이지 안의 섹션 하나하나
     box-sizing: border-box;
     border:1px solid red;
-    background: #FFF;
-
-      .sub-title{/* 섹션 제목 */
-        display: block;
-        font-family: 'EBS';
-        font-size: 4em;
-        margin: 0 auto;
-        @media screen and (max-width:900px){
-          font-size: 9vw;
-        }
-      }
-      .sub-desc{
-        padding: 20px 0;
-        font-size: 1.3em;
-        @media screen and (max-width:900px){
-          padding: 10px;
-        }
-      }
+    background-color: var(--navy-main);
+    background-image: url(../../img/sub/sub-deco/texture-bg.png);
+    background-blend-mode : multiply;
     
+    .sub-title{/* 섹션 제목 */
+      display: block;
+      font-family: 'EBS';
+      font-size: 4em;
+      margin: 0 auto;
+      color: var(--yellow-sub);
+      @media screen and (max-width:900px){
+        font-size: 9vw;
+      }
+    }
+    .sub-desc{
+      padding: 20px 0;
+      font-size: 1.3em;
+      color: #fff;
+      @media screen and (max-width:900px){
+        padding: 10px;
+      }
+    }
   }
 
   section.sub-visual{
