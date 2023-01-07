@@ -15,14 +15,16 @@ main.sub {
       top: 0; left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
       img{
         position: absolute;
         object-fit: cover;
         object-position: center;
+        opacity: 0.5;
       }//img
       img.mountain{
-        width: 100%;
-        bottom: -10%;
+        width: 105%;
+        bottom: -15%;
         opacity: 0.1;
         @media screen and (max-width:900px){
           bottom: -5%;
@@ -32,6 +34,9 @@ main.sub {
         top: 0;
         width: 10%;
         opacity: 0.8;
+        @media screen and (max-width:900px){
+          width: 20%;
+        }
       }//img.frame1
       img.frame1-left{
         left: 0;
@@ -39,14 +44,41 @@ main.sub {
       img.frame1-right{
         right: 0;
       }//img.frame1-right
-      img.cloud1{
+      img.cloud{
         width: 30%;
-        top: 100px;
-        left: 15%;
+      }
+      img.cloud1{
+        top: 20%;
+        left: 5%;
       }
       img.cloud2{
-        width: 20%;
+        top: 50%;
+        left: -7%;
+      }
+      img.cloud3{
+        bottom: 20%;
+        right: -5%;
+      }
+      img.lantern{
+        width: 25%;
         top: 0;
+        right: 15%;
+        @media screen and (max-width:900px){
+          
+        }
+      }
+      img.flower1{
+        bottom: 18%;
+        left: 10%;
+        width: 7%;
+      }
+      img.flower2{
+        top: 40%;
+        right: 7%;
+        width: 3%;
+        @media screen and (max-width:900px){
+          width: 5%;
+        }
       }
     }//figure.bg-deco
   }//section.sub-history

@@ -11,11 +11,21 @@
     <img class="frame1 frame1-right" src="./img/sub/sub-deco/frame1-right.png" alt="">
     <img class="cloud cloud1" src="./img/sub/sub-deco/cloud4.png" alt="">
     <img class="cloud cloud2" src="./img/sub/sub-deco/cloud1.png" alt="">
-    <img class="lantern" src="../img/sub/sub-deco/lantern1.png" alt="">
-    <img class="flower flower1" src="../img/sub/sub-deco/Flower1.png" alt="">
-    <img class="flower flower2" src="../img/sub/sub-deco/Flower1.png" alt="">
-
+    <img class="cloud cloud3" src="./img/sub/sub-deco/cloud4.png" alt="">
+    <img class="lantern" src="./img/sub/sub-deco/lantern1.png" alt="">
+    <img class="flower flower1" src="./img/sub/sub-deco/Flower1.png" alt="">
+    <img class="flower flower2" src="./img/sub/sub-deco/Flower1.png" alt="">
   </figure>
 
+  <div class="content">
+    <ul class="yearly-tap">
+      <li>1300</li>
+      <li>1400</li>
+      <li>1500</li>
+      <li>1600</li>
+      <li>1700</li>
+      <li>1800</li>
+    </ul>
+  </div>
 
 </section>

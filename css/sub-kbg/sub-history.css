@@ -16,15 +16,17 @@ main.sub section.sub-history figure.bg-deco {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 main.sub section.sub-history figure.bg-deco img {
   position: absolute;
   object-fit: cover;
   object-position: center;
+  opacity: 0.5;
 }
 main.sub section.sub-history figure.bg-deco img.mountain {
-  width: 100%;
-  bottom: -10%;
+  width: 105%;
+  bottom: -15%;
   opacity: 0.1;
 }
 @media screen and (max-width: 900px) {
@@ -37,18 +39,49 @@ main.sub section.sub-history figure.bg-deco img.frame1 {
   width: 10%;
   opacity: 0.8;
 }
+@media screen and (max-width: 900px) {
+  main.sub section.sub-history figure.bg-deco img.frame1 {
+    width: 20%;
+  }
+}
 main.sub section.sub-history figure.bg-deco img.frame1-left {
   left: 0;
 }
 main.sub section.sub-history figure.bg-deco img.frame1-right {
   right: 0;
 }
-main.sub section.sub-history figure.bg-deco img.cloud1 {
+main.sub section.sub-history figure.bg-deco img.cloud {
   width: 30%;
-  top: 100px;
-  left: 15%;
+}
+main.sub section.sub-history figure.bg-deco img.cloud1 {
+  top: 20%;
+  left: 5%;
 }
 main.sub section.sub-history figure.bg-deco img.cloud2 {
-  width: 20%;
+  top: 50%;
+  left: -7%;
+}
+main.sub section.sub-history figure.bg-deco img.cloud3 {
+  bottom: 20%;
+  right: -5%;
+}
+main.sub section.sub-history figure.bg-deco img.lantern {
+  width: 25%;
   top: 0;
+  right: 15%;
+}
+main.sub section.sub-history figure.bg-deco img.flower1 {
+  bottom: 18%;
+  left: 10%;
+  width: 7%;
+}
+main.sub section.sub-history figure.bg-deco img.flower2 {
+  top: 40%;
+  right: 7%;
+  width: 3%;
+}
+@media screen and (max-width: 900px) {
+  main.sub section.sub-history figure.bg-deco img.flower2 {
+    width: 5%;
+  }
 }/*# sourceMappingURL=sub-history.css.map */
