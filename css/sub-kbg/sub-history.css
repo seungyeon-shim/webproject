@@ -1,3 +1,6 @@
+main.sub {
+  color: #fff;
+}
 main.sub section.sub-history .sub-title-wrap {
   width: 80%;
   max-width: 700px;
@@ -83,5 +86,22 @@ main.sub section.sub-history figure.bg-deco img.flower2 {
 @media screen and (max-width: 900px) {
   main.sub section.sub-history figure.bg-deco img.flower2 {
     width: 5%;
+  }
+}
+main.sub section.sub-history div.content {
+  position: relative;
+  margin: 0 auto;
+  height: 60%;
+  width: 80%;
+}
+@media screen and (min-width: 900px) {
+  main.sub section.sub-history div.content {
+    max-width: 1200px;
+    border: 1px solid #fff;
+  }
+}
+@media screen and (max-width: 900px) {
+  main.sub section.sub-history div.content {
+    border: 1px solid #fff;
   }
 }/*# sourceMappingURL=sub-history.css.map */

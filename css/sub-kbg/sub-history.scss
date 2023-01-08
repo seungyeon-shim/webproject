@@ -1,4 +1,5 @@
 main.sub {
+  color: #fff;
   section.sub-history{
     .sub-title-wrap{
       width: 80%;
@@ -81,5 +82,23 @@ main.sub {
         }
       }
     }//figure.bg-deco
+    div.content{
+      position: relative;
+      margin: 0 auto;
+      height: 60%;
+      width: 80%;
+      @media screen and (min-width:900px){
+        max-width: 1200px;
+        border: 1px solid #fff;
+      }
+      @media screen and (max-width:900px){
+        border: 1px solid #fff;
+      }
+      .c1{
+        .c2{
+          
+        }
+      }
+    }//div.content
   }//section.sub-history
 }//main.sub
