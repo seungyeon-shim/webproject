@@ -27,9 +27,9 @@
   <!--제이쿼리-->
   <script src="https://kit.fontawesome.com/11c930b057.js" crossorigin="anonymous"></script>
   <!--fontawesome-->
-  
-<!--font-->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -62,7 +62,7 @@
     <div class="inner">
       <h1><a href="./index.php">
           <?php include "logo.php" ?>
-          
+
         </a></h1>
 
       <div class="right">
@@ -83,6 +83,14 @@
 
   <nav class="gnb-map">
     <?php include "menu.php" ?>
+    <div class="video-wrap">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kSZddHca0ME?autoplay=1&mute=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loop></iframe>
+        <img src="./img/logo&icon/video-img.jpg" alt="" draggable="false"><!--draggable="false"..이미지 드래그 막기-->
+      </div>
+    <div class="hover-bg">
+      <div class="hover-bg-inner"></div>
+    </div>
+
   </nav>
 
   <div class="dummy">
