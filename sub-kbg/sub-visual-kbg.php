@@ -1,8 +1,14 @@
 <link rel="stylesheet" href="./css/sub-kbg/sub-visual.css">
 
 <section class="sub-visual sub-visual-kbg">
+  <video src="./video/tree.mp4" autoplay muted loop></video>
+  <!-- particles.js container -->
+<script src="./js/sub-visual/sub-visual-kbg/particles.js"></script>
+<script src="./js/sub-visual/sub-visual-kbg/app_particle_star.js"></script>
+<div id="particles-js"></div>
+<!-- particles.js container -->
   <figure class="kbg-img">
-    <img src="./img/visual/kbg/kbg-3.png" alt="">
+    <img src="./img/sub/sub-visual/kbg/kbg.png" alt="">
   </figure>
   <div class="sub-title-wrap">
     <h3 class="sub1-title">조선의 으뜸 궁궐</h3>
@@ -14,4 +20,5 @@
       아름다움을 경험하는 특별한 감동을 선사할 것입니다.
     </p>
   </div><!-- sub-title-wrap -->
+
 </section>

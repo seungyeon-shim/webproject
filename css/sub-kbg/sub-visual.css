@@ -1,12 +1,39 @@
 main.sub .sub-visual-kbg {
   position: relative;
-  background-image: url(../../img/visual/kbg/kbg-background.png);
+  width: 100%;
+  background-image: url(../../img/sub/sub-visual/kbg/kbg-background.png) !important;
   background-attachment: fixed;
+}
+main.sub .sub-visual-kbg video {
+  position: absolute;
+  width: 70%;
+  opacity: 0.6;
+  top: 0;
+  right: 0;
+  bottom: 50px;
+  mix-blend-mode: screen;
+}
+@media screen and (max-width: 1200px) {
+  main.sub .sub-visual-kbg video {
+    position: absolute;
+    width: 100%;
+  }
+}
+main.sub .sub-visual-kbg #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 main.sub .sub-visual-kbg .kbg-img {
   position: absolute;
   width: 100%;
   bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  main.sub .sub-visual-kbg .kbg-img {
+    object-fit: contain;
+  }
 }
 main.sub .sub-visual-kbg .kbg-img img {
   position: absolute;
@@ -16,18 +43,19 @@ main.sub .sub-visual-kbg .kbg-img img {
   bottom: 0%;
   transform: translateX(-50%);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   main.sub .sub-visual-kbg .kbg-img img {
     width: 100%;
-    min-width: 300px;
+    max-width: 500px;
+    /*  min-width: 700px; */
   }
 }
 main.sub .sub-visual-kbg .sub-title-wrap {
-  color: #FFF;
+  color: #fff;
   border: 1px solid skyblue;
   width: 70%;
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 900px) {
   main.sub .sub-visual-kbg .sub-title-wrap {
@@ -41,11 +69,11 @@ main.sub .sub-visual-kbg .sub-title-wrap .sub1-title {
   font-size: 2em;
   font-family: "EBS";
   box-sizing: border-box;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 @media screen and (max-width: 900px) {
   main.sub .sub-visual-kbg .sub-title-wrap .sub1-title {
-    font-size: 9vw;
+    /* font-size: 7vw; */
   }
 }
 main.sub .sub-visual-kbg .sub-title-wrap .sub-title {

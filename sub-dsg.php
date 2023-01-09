@@ -6,4 +6,6 @@
 <?php include "sub-dsg/sub-gallery-dsg.php" ?><!-- 갤러리 -->
 <?php include "sub-dsg/sub-location-dsg.php" ?><!-- 찾아오시는길 -->
 
+
+
 <?php include "sub-footer.php" ?>

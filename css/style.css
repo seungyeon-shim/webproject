@@ -40,7 +40,7 @@
 }
 
 body {
-  font-family: "Yantramanav", "namsan";
+  font-family: "Montserrat", "namsan";
   font-size: 16px;
   color: #444;
   font-weight: normal;
@@ -53,8 +53,12 @@ body {
   font-family: "EBS";
 }
 
-.point { /*한자*/
+.point-serif { /*한자-세리프*/
   font-family: "Noto Serif SC", serif;
+}
+
+.point-sans { /*한자-고딕*/
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
