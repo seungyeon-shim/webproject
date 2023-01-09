@@ -30,6 +30,8 @@ header div.inner .right {
   align-items: center;
 }
 header div.inner .right .gnb-btn {
+  position: relative;
+  z-index: 100;
   width: 30px;
   height: 30px;
   transform: scale(0.7);
@@ -89,6 +91,9 @@ header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
   }
   header div.inner .right .gnb-lg ul li a {
     color: #fff;
+  }
+  header div.inner .right .gnb-lg ul li span {
+    display: none;
   }
 }
 @media screen and (max-width: 800px) {

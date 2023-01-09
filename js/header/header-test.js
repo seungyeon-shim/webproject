@@ -22,8 +22,8 @@ $(function(){
 
   /**************************************** */
   function fnYoutubeResize(){
-    var imgW = $('.gnb-map img').innerWidth()
-    var imgH = $('.gnb-map img').innerHeight()
+    var imgW = $('.gnb-map .youtube-img').innerWidth()
+    var imgH = $('.gnb-map .youtube-img').innerHeight()
     $('.gnb-map iframe').width(imgW)//넓이 설정
     $('.gnb-map iframe').height(imgH)//높이 설정
   }
@@ -40,29 +40,19 @@ $(function(){
   /*gnb-btn***************************************** */
   $('.gnb-btn').click(function(){
     $(this).toggleClass('active')
-    $('.gnb-map').stop().fadeToggle().toggleClass('active')
+    $('.gnb-map').toggleClass('active')
     $('.gnb-map>ul>li>a').addClass('ebs') //폰트 변경
   })
 
-  let bgArr = [
-    {
-      num:'1', 
-      imgpath:'./img/logo&icon/test1.jpg'
-    },
-    {
-      num:'2', 
-      imgpath:'./img/logo&icon/test2.jpg'
-    }
-  ]
+
+
   $(`.gnb-map ul li a`).mouseenter(function(){
-    $('.hover-bg').css({'background-image':'url(http://127.0.0.1/%EC%84%9C%EC%95%BC%EA%B6%81/img/logo&icon/test2.png)'})
-    //$(this).find('.hover-bg').css({'background-color':'red'})
-   //$(this).find('.hover-bg').css({'background-image':'url(../../img/logo&icon/test1.jpg)'})
+    var liNum = $(this).parent('li').attr('data-n')
+    console.log(liNum)
+   $(`.hover-bg .gnb-bg-img${liNum}`).addClass('active')
   })
 
   $(`.gnb-map ul li a`).mouseleave(function(){
-    $('.hover-bg').css({'background-image':'none'})
-    //$(this).find('.hover-bg').css({'background-color':'red'})
-   //$(this).find('.hover-bg').css({'background-image':'url(../../img/logo&icon/test1.jpg)'})
+    $(`.hover-bg .gnb-bg`).removeClass('active')
   })
 })//ready end

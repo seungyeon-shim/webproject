@@ -85,13 +85,19 @@
     <?php include "menu.php" ?>
     <div class="video-wrap">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/kSZddHca0ME?autoplay=1&mute=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loop></iframe>
-        <img src="./img/logo&icon/video-img.jpg" alt="" draggable="false"><!--draggable="false"..이미지 드래그 막기-->
+        <img class="youtube-img" src="./img/logo&icon/video-img.jpg" alt="" draggable="false"><!--draggable="false"..이미지 드래그 막기-->
       </div>
-    <div class="hover-bg">
-      <div class="hover-bg-inner"></div>
-    </div>
-
+      <figure class="hover-bg">
+        <img class="gnb-bg gnb-bg-img1" src="./img/logo&icon/test1.jpg" alt="">
+        <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/test2.png" alt="">
+      </figure>
   </nav>
+
+  <script>
+    $('.gnb-map ul li').mouseenter(function(){
+      
+    })
+  </script>
 
   <div class="dummy">
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

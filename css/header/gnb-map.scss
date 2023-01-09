@@ -1,22 +1,32 @@
 .gnb-map {
-  //display: none;/*숨겨놨다가*/
   position: fixed; /*고정*/
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  //transform: translateX(100%); /*옆으로 밀어놓음*/
+  //display: none;
+  transition: all 0.3s;
   &.active{
-   // display: block;/*보여줌*/
-    //transform: translateX(0); /*active 됐을때 보여줌*/
-  }//&.active
+    display: block; 
+    transform: scale(1);
+  }// &.active
   .hover-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    //object-fit: ;
     mix-blend-mode: screen;
-    transition: all 1s;
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0;
+      transition: all 0.5s;
+      &.active{
+        opacity: 1;
+      }//&.active
+    }//img
   }//hover-bg
   
   .video-wrap {
@@ -24,7 +34,8 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    overflow: hidden;
+    //overflow: hidden;
+    border: 5px solid yellow;
     img {
       /*넓이하고 높이가 꽉찬다*/
       position: relative; /*마우스 이벤트를 받게 하지 않기위해서 영상 위로 이미지를 올려줌*/
@@ -41,31 +52,50 @@
       transform: translate(-50%, -50%); /*중앙정렬*/
     }//ifram
   }//video-wrap
+
   ul{
     position: absolute;
-    z-index: 11;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
+    height: 20%;
     max-width: 1100px;
+    z-index: 11;
+    left: 50%; top:40%;
+    transform: translate(-50%, -50%);
+    
     margin: 0 auto;
-    border: 1px solid red;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    //border: 1px solid yellow;
     li{
-      flex:1;
+      width: 25%;
+      height: 100%;
+      position: relative;
       text-align: center;
-      a{
-        font-size: 1.6em;
+      //border: 1px solid red;
+
+      a,span{
+        position: absolute;
         color: #FFF;
         writing-mode: vertical-rl;
+      }//a,span
+      a{
+        font-size: 2.3em;
+        &::before{
+          content: '';
+          position: absolute;
+          top: 0;left: -10px;
+          
+          display: block;
+          width: 3px;
+          height: 100%;
+          background-color: #FFF;
+        }//::before
       }//a
-      :hover{
-        //background-color: antiquewhite;
-        
-      }
+      span{
+        font-size: 4em;
+        opacity: 0.3;  
+      }//span
     }//li
   }//ul
 } //gnb-map

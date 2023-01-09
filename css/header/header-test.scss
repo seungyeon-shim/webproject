@@ -29,14 +29,16 @@ header {
     .right {
       display: flex;
       align-items: center;
+      
       .gnb-btn {
+        position: relative;
+        z-index: 100;
         width: 30px;
         height: 30px;
         transform: scale(0.7);
-        // background-color: aqua;
+       
         .hamburger{
           position: relative;
-          
           //background-color: aqua;
           &::before{
             content: '';
@@ -96,6 +98,9 @@ header {
               padding: 0 30px;
               a{
                 color: #fff;
+              }
+              span{
+                display: none;
               }
             } //li
           } //ul

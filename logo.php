@@ -5,7 +5,7 @@
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
-      <img class="logo-img" src="./img/icon&logo/logo-white.png" alt="">
+      <img class="logo-img" src="./img/logo&icon/logo-white.png" alt="">
     </div><!--logo-text-->
   </div><!--inner-logo-->
 </div>
