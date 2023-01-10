@@ -13,16 +13,14 @@
     <img class="cloud cloud2" src="./img/sub/sub-deco/cloud1.png" alt="">
     <img class="cloud cloud3" src="./img/sub/sub-deco/cloud4.png" alt="">
     <img class="lantern" src="./img/sub/sub-deco/lantern1.png" alt="">
-    <img class="flower flower1" src="./img/sub/sub-deco/Flower1.png" alt="">
-    <img class="flower flower2" src="./img/sub/sub-deco/Flower1.png" alt="">
   </figure>
 
-  <div class="content"><!-- 전체 -->
-    <div class="c1"><!-- 상단바  -->
-      <img src="../img/sub/sub-history/kbg/history-bar.png" alt="">
+  <div class="sub-history-content"><!-- 전체 -->
+    <div class="inner"><!-- 상단바  -->
+      <img src="./img/sub/sub-history/kbg/history-bar.png" alt="">
       <div class="bar-textbox">
         <p>1300 ~ 1399</p>
-        <p>1300 <b class=".point-sans">年</b></p>
+        <h3>1300 <b class=".point-sans">年</b></h3>
       </div>
     </div><!-- 상단 바  -->
     <div class="c2">
@@ -36,18 +34,16 @@
         <img src="" alt="">
       </figure>
     </div>
-    <div><!-- nav -->
-      <div><!-- 윗줄 -->
+    <div class="controls">
+      <div class="indicator">
         <button>1300</button>
         <button>1400</button>
         <button>1500</button>
-      </div><!-- 윗줄 -->
-      <div><!-- 아래줄 -->
         <button>1800</button>
         <button>1900</button>
         <button>2000</button>
-      </div><!-- 아래줄 -->
-    </div><!-- nav -->
+      </div><!-- indicator -->
+    </div><!-- controls -->
   </div><!-- content -->
 
 </section>

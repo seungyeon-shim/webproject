@@ -64,41 +64,40 @@ main.sub {
         width: 25%;
         top: 0;
         right: 15%;
-        @media screen and (max-width:900px){
-          
-        }
-      }
-      img.flower1{
-        bottom: 18%;
-        left: 10%;
-        width: 7%;
-      }
-      img.flower2{
-        top: 40%;
-        right: 7%;
-        width: 3%;
-        @media screen and (max-width:900px){
-          width: 5%;
-        }
       }
     }//figure.bg-deco
-    div.content{
-      position: relative;
+
+    div.sub-history-content{
       margin: 0 auto;
+      margin-top: 20px;
       height: 60%;
       width: 80%;
+      border: 1px solid #fff;
       @media screen and (min-width:900px){
         max-width: 1200px;
-        border: 1px solid #fff;
       }
       @media screen and (max-width:900px){
-        border: 1px solid #fff;
+        max-width: 400px;
       }
-      .c1{
-        .c2{
-          
+      .inner{
+        position: relative;
+        width: 100%;
+        height: 30%;
+        border: 1px solid red;
+        overflow: hidden;
+        img{
+          position: absolute;
+          top: -60%; left: 0;
         }
-      }
+        .bar-textbox{
+          p{
+
+          }
+          h3{
+
+          }
+        }//.bar-textbox
+      }//.inner
     }//div.content
   }//section.sub-history
 }//main.sub

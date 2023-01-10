@@ -5,8 +5,6 @@ main.sub{// 서브페이지 시작
     box-sizing: border-box;
     border:1px solid red;
     background-color: var(--navy-main);
-    background-image: url(../../img/sub/sub-deco/texture-bg.png);
-    background-blend-mode : multiply;
     
     .sub-title{/* 섹션 제목 */
       display: block;

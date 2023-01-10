@@ -73,35 +73,32 @@ main.sub section.sub-history figure.bg-deco img.lantern {
   top: 0;
   right: 15%;
 }
-main.sub section.sub-history figure.bg-deco img.flower1 {
-  bottom: 18%;
-  left: 10%;
-  width: 7%;
-}
-main.sub section.sub-history figure.bg-deco img.flower2 {
-  top: 40%;
-  right: 7%;
-  width: 3%;
-}
-@media screen and (max-width: 900px) {
-  main.sub section.sub-history figure.bg-deco img.flower2 {
-    width: 5%;
-  }
-}
-main.sub section.sub-history div.content {
-  position: relative;
+main.sub section.sub-history div.sub-history-content {
   margin: 0 auto;
+  margin-top: 20px;
   height: 60%;
   width: 80%;
+  border: 1px solid #fff;
 }
 @media screen and (min-width: 900px) {
-  main.sub section.sub-history div.content {
+  main.sub section.sub-history div.sub-history-content {
     max-width: 1200px;
-    border: 1px solid #fff;
   }
 }
 @media screen and (max-width: 900px) {
-  main.sub section.sub-history div.content {
-    border: 1px solid #fff;
+  main.sub section.sub-history div.sub-history-content {
+    max-width: 400px;
   }
+}
+main.sub section.sub-history div.sub-history-content .inner {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  border: 1px solid red;
+  overflow: hidden;
+}
+main.sub section.sub-history div.sub-history-content .inner img {
+  position: absolute;
+  top: -60%;
+  left: 0;
 }/*# sourceMappingURL=sub-history.css.map */
