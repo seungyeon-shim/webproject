@@ -27,14 +27,19 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 500px;
-          max-width: 1200px;
           margin: 0 auto;
+          height: 500px;
           figure {
             position: relative;
             display: flex;
-            width: 60%;
-            height: 85%;
+            @media screen and (min-width: 1200px) {
+              width: 60%;
+              height: 85%;
+            } //lg
+            @media screen and (max-width: 1200px) {
+              width: 100%;
+              height: 80%;
+            } //sm
             .kbg {
               position: absolute;
               right: 0;
