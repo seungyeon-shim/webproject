@@ -21,7 +21,6 @@ main.sub section.sub-content-center {
 }
 @media screen and (max-width: 1000px) {
   main.sub section {
-    height: 100%;
     padding: 50px 0;
   }
 }
