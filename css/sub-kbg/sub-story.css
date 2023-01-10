@@ -2,6 +2,8 @@ main.sub section.sub-story-kbg {
   /* background-image: url(../../img/story/sub-story/sub-kbg/bg/1.png); */
 }
 main.sub section.sub-story-kbg .sub-title-textbox {
+  position: relative;
+  z-index: 10;
   width: 80%;
   max-width: 700px;
   margin: 0 auto;
@@ -12,6 +14,9 @@ main.sub section.sub-story-kbg .sub-title-textbox {
   main.sub section.sub-story-kbg .sub-title-textbox {
     margin-top: 50px;
   }
+}
+main.sub section.sub-story-kbg .sub-title-textbox .sub-desc {
+  padding: 20px 0;
 }
 main.sub section.sub-story-kbg figure.img-box {
   position: absolute;
@@ -28,4 +33,23 @@ main.sub section.sub-story-kbg figure.img-box img {
   height: 100%;
   left: 0;
   top: 0;
+}
+main.sub section.sub-story-kbg .sub-middle-title-box {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+main.sub section.sub-story-kbg .sub-middle-title-box .sub-middle-title {
+  width: 33.33%;
+}
+main.sub section.sub-story-kbg .sub-middle-title-box .sub-middle-title .sub-first-desc {
+  font-family: "EBS";
+  font-size: 1.5em;
+  color: var(--yellow-sub);
 }/*# sourceMappingURL=sub-story.css.map */
