@@ -1,55 +1,69 @@
-main.sub section.sub-story-kbg {
+main.sub {
   /* background-image: url(../../img/story/sub-story/sub-kbg/bg/1.png); */
 }
-main.sub section.sub-story-kbg .sub-title-textbox {
+main.sub .sub-title-wrap {
   position: relative;
   z-index: 10;
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 150px;
-  text-align: center;
 }
-@media screen and (max-width: 900px) {
-  main.sub section.sub-story-kbg .sub-title-textbox {
-    margin-top: 50px;
-  }
-}
-main.sub section.sub-story-kbg .sub-title-textbox .sub-desc {
-  padding: 20px 0;
-}
-main.sub section.sub-story-kbg figure.img-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-main.sub section.sub-story-kbg figure.img-box img {
+main.sub img {
   position: absolute;
   object-fit: cover;
   object-position: center;
-  width: 100%;
-  height: 100%;
+}
+main.sub img.back-pattern {
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
 }
-main.sub section.sub-story-kbg .sub-middle-title-box {
+main.sub img.story-left {
+  top: 2%;
+  left: 1%;
+  width: 100px;
+}
+main.sub img.story-right {
+  top: 2%;
+  right: 1%;
+  width: 100px;
+}
+main.sub img.folding-screen {
+  width: 65%;
+  bottom: 18%;
+}
+main.sub img.wave {
+  width: 100%;
+  bottom: 0;
+}
+main.sub .sub-middle-title-box {
   position: relative;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1100px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 250px;
   text-align: center;
 }
-main.sub section.sub-story-kbg .sub-middle-title-box .sub-middle-title {
-  width: 33.33%;
+main.sub .sub-middle-title-box .sub-middle-title {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 0 70px;
 }
-main.sub section.sub-story-kbg .sub-middle-title-box .sub-middle-title .sub-first-desc {
+main.sub .sub-middle-title-box .sub-middle-title .sub-first-desc {
   font-family: "EBS";
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: var(--yellow-sub);
+}
+main.sub .sub-middle-title-box .sub-middle-title .sub-second-desc {
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+main.sub .sub-middle-title-box .sub-middle-title img {
+  width: 20%;
+}
+@media screen and (max-width: 1100px) {
+  main.sub {
+    height: 200%;
+  }
 }/*# sourceMappingURL=sub-story.css.map */
