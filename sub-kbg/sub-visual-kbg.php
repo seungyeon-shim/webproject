@@ -8,7 +8,7 @@
 <div id="particles-js"></div>
 <!-- particles.js container -->
   <figure class="kbg-img">
-    <img src="./img/sub/sub-visual/kbg/kbg.png" alt="">
+   <!--  <img src="./img/sub/sub-visual/kbg/kbg.png" alt=""> -->
   </figure>
   <div class="sub-title-wrap">
     <h3 class="sub1-title">조선의 으뜸 궁궐</h3>
