@@ -1,66 +1,130 @@
 section.sub-location {
+  height: 100%;
+  overflow: hidden;
   .location-wrap {
     position: relative;
-    border: 1px solid red;
+    margin-top: 40px;
     @media screen and (orientation: landscape) {
       width: 80%;
-      max-width: 1000px;  
+      max-width: 1000px;
     } //land
     @media screen and (orientation: portrait) {
-       min-height: 0;
+      min-height: 0;
     } //land
     img.grap {
       position: absolute;
+      transition: all 1s;
       @media screen and (orientation: landscape) {
-        &.grap-land{
-          height: 100%;
-          top:0%;
+        &.grap-land {
+          height: 120%;
+          top: -10%;
         }
-        &.grap-left{
-          left:0;
+        &.grap-left {
+          right: 50%; /* 100% */
         }
-        &.grap-right{
-          right:0%;
+        &.grap-right {
+          left: 50%; /* 100% */
         }
         &.grap-port {
           display: none;
         }
       } //land
       @media screen and (orientation: portrait) {
-        &.grap-port{
-          width: 100%;
-          left: 0;
+        &.grap-port {
+          width: 120%;
+          left: -10%;
         }
-        &.grap-top{
-          top:0;
+        &.grap-top {
+          bottom: 50%; /* 100 */
         }
-        &.grap-bottom{
-          bottom:0;
+        &.grap-bottom {
+          top: 50%; /*100*/
         }
         &.grap-land {
           display: none;
         }
-      }//port
-    } //grap 
-    .scr-paper{
-   
+      } //port
+    } //grap
+    .paper-wrap {
+      position: relative;
+      transition: all 1s;
       @media screen and (orientation: landscape) {
-        &.scr-paper-land{
-          width: 100%;
-
-        }
-        &.scr-paper-port{
-          display: none;
-        } 
-      }//landscape
+        clip-path: polygon(50% 0,  50% 0,   50% 100%,  50% 100% ); 
+      } //landscape
       @media screen and (orientation: portrait) {
-        &.scr-paper-port{
-          height: 100%;
-        } 
-        &.scr-paper-land{
-          display: none; 
+        clip-path: polygon( 0% 50%, 100% 50%,    100% 50%,  0% 50%  );
+      } //port
+
+      .scr-paper {
+        @media screen and (orientation: landscape) {
+          &.scr-paper-land {
+            width: 100%;
+          }
+          &.scr-paper-port {
+            display: none;
+          }
+        } //landscape
+        @media screen and (orientation: portrait) {
+          &.scr-paper-port {
+            height: 100%;
+            max-height: 400px;
+          }
+          &.scr-paper-land {
+            display: none;
+          }
+        } //port
+      } //scr-paper
+      .map-wrap{
+        display: flex;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        @media screen and (orientation:landscape){
+          flex-direction: row;
+          width: 87%;
+          height: 80%;
+        }//port
+        @media screen and (orientation:portrait){
+          flex-direction: column;
+          width: 80%;
+          height: 80%;
+        }//port
+        >div{flex: 1;}
+        .bus{
+          overflow-y: auto;
+          padding: 10px;
+          box-sizing: border-box;
+        }//bus
+        .map{
+          iframe{
+            width: 100%;
+            height: 100%;
+          }
         }
-      }//port
-    }//scr-paper
+      }//map-wrap
+    } //paper-wrap
+  } //location-wrap
+  /* active----------------------------------------- */
+  .location-wrap.active {
+    div.paper-wrap {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    } //paper-wrap
+    @media screen and (orientation: landscape) {
+      .grap-left {
+        right: 100%  !important; /* 100 */
+      }
+      .grap-right {
+        left: 100%  !important; /* 100 */
+      }
+    } //landscape
+    @media screen and (orientation: portrait) {
+      .grap-top {
+        bottom: 100% !important; /* 100 */
+      }
+      .grap-bottom { 
+        top: 100%  !important; /* 100 */
+      }
+    } //port
   } //location-wrap
 } //section.sub-location

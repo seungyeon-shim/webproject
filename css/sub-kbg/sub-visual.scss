@@ -1,94 +1,59 @@
-main.sub {
-  .sub-visual-kbg {
-    position: relative;
-    width: 100%;
-    background-image: url(../../img/sub/sub-visual/kbg/kbg-background.png) !important;
-    background-attachment: fixed;
-    video{
-      position: absolute;
-      width: 70%;
-      opacity: 0.6;
-      top: 0;
-      right: 0;
-      bottom: 50px;
-      mix-blend-mode: screen;
-      @media screen and (min-width:1200px){
-
-      }
-      @media screen and (max-width:1200px){
-        position: absolute;
-        
-        width: 100%;
-        
-
-      }
+.sub-visual {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/sub/sub-visual/kbg/kbg-background.png) !important;
+  background-attachment: fixed;
+  video {
+    position: absolute;
+    width: 70%;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    bottom: 50px;
+    mix-blend-mode: screen;
+    @media screen and (min-width: 1200px) {
     }
-    #particles-js{
-      position:absolute;
-      width:100%;
-      height:100%;
-     top:0;
-    }
-    .kbg-img {
-      @media screen and (max-width: 600px) {
-        object-fit: contain;
-      }
-      img {
-        position: absolute;
-        width: 100%;
-        min-width: 700px;
-        left: 50%;
-        bottom: 0%;
-        transform: translateX(-50%);
-        
-        @media screen and (max-width: 600px) {
-          width: 100%;
-          max-width: 500px;
-         /*  min-width: 700px; */
-        }
-      }
+    @media screen and (max-width: 1200px) {
       position: absolute;
+
       width: 100%;
-      bottom: 0;
     }
-    .sub-title-wrap {
-      @media screen and (max-width: 900px) {
-        width: 90%;
-        max-width: 400px;
-        margin-top: 300px;
+  }
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  .sub-title-wrap {
+    position: relative;
+  } //sub-title-wrap
+
+  .sub-visual-slider{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    @media screen and (orientation:landscape){
+      height: 50%;
+    }//land
+    @media screen and (orientation:portrait){
+      height: 50%;
+    }//port
+    figure.castle{
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center top;
       }
-      color: #fff;
-      border: 1px solid skyblue;
-      width: 70%;
-      margin: 0 auto;
-      margin-top: 100px;
-      .sub1-title {
-        text-align: center;
-        font-size: 2em;
-        font-family: "EBS";
-        box-sizing: border-box;
-        padding-bottom: 0px;
-        @media screen and (max-width: 900px) {
-          /* font-size: 7vw; */
-        }
-      }
-      .sub-title {
-        width: 50%;
-        margin: 0 auto;
-        border: 1px solid green;
-        text-align: center;
-      } //sub-title
-      .sub-desc {
-        width: 40%;
-        line-height: 30px;
-        margin: 0 auto;
-        margin-top: 35px;
-        text-align: center;
-        @media screen and (max-width: 900px) {
-          width: 80%;
-          font-size: 3vw;
-        }
-      }
-    } //sub-title-wrap
-  } //sub-visual-kbg
-}
+    }//figure.castle
+  }//sub-visual-slider
+} //sub-visual

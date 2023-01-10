@@ -1,6 +1,11 @@
+section.sub-location {
+  height: 100%;
+  overflow: hidden;
+  /* active----------------------------------------- */
+}
 section.sub-location .location-wrap {
   position: relative;
-  border: 1px solid red;
+  margin-top: 40px;
 }
 @media screen and (orientation: landscape) {
   section.sub-location .location-wrap {
@@ -15,17 +20,18 @@ section.sub-location .location-wrap {
 }
 section.sub-location .location-wrap img.grap {
   position: absolute;
+  transition: all 1s;
 }
 @media screen and (orientation: landscape) {
   section.sub-location .location-wrap img.grap.grap-land {
-    height: 100%;
-    top: 0%;
+    height: 120%;
+    top: -10%;
   }
   section.sub-location .location-wrap img.grap.grap-left {
-    left: 0;
+    right: 50%; /* 100% */
   }
   section.sub-location .location-wrap img.grap.grap-right {
-    right: 0%;
+    left: 50%; /* 100% */
   }
   section.sub-location .location-wrap img.grap.grap-port {
     display: none;
@@ -33,32 +39,99 @@ section.sub-location .location-wrap img.grap {
 }
 @media screen and (orientation: portrait) {
   section.sub-location .location-wrap img.grap.grap-port {
-    width: 100%;
-    left: 0;
+    width: 120%;
+    left: -10%;
   }
   section.sub-location .location-wrap img.grap.grap-top {
-    top: 0;
+    bottom: 50%; /* 100 */
   }
   section.sub-location .location-wrap img.grap.grap-bottom {
-    bottom: 0;
+    top: 50%; /*100*/
   }
   section.sub-location .location-wrap img.grap.grap-land {
     display: none;
   }
 }
+section.sub-location .location-wrap .paper-wrap {
+  position: relative;
+  transition: all 1s;
+}
 @media screen and (orientation: landscape) {
-  section.sub-location .location-wrap .scr-paper.scr-paper-land {
+  section.sub-location .location-wrap .paper-wrap {
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+}
+@media screen and (orientation: portrait) {
+  section.sub-location .location-wrap .paper-wrap {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+}
+@media screen and (orientation: landscape) {
+  section.sub-location .location-wrap .paper-wrap .scr-paper.scr-paper-land {
     width: 100%;
   }
-  section.sub-location .location-wrap .scr-paper.scr-paper-port {
+  section.sub-location .location-wrap .paper-wrap .scr-paper.scr-paper-port {
     display: none;
   }
 }
 @media screen and (orientation: portrait) {
-  section.sub-location .location-wrap .scr-paper.scr-paper-port {
+  section.sub-location .location-wrap .paper-wrap .scr-paper.scr-paper-port {
     height: 100%;
+    max-height: 400px;
   }
-  section.sub-location .location-wrap .scr-paper.scr-paper-land {
+  section.sub-location .location-wrap .paper-wrap .scr-paper.scr-paper-land {
     display: none;
+  }
+}
+section.sub-location .location-wrap .paper-wrap .map-wrap {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (orientation: landscape) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap {
+    flex-direction: row;
+    width: 87%;
+    height: 80%;
+  }
+}
+@media screen and (orientation: portrait) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap {
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+  }
+}
+section.sub-location .location-wrap .paper-wrap .map-wrap > div {
+  flex: 1;
+}
+section.sub-location .location-wrap .paper-wrap .map-wrap .bus {
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+section.sub-location .location-wrap .paper-wrap .map-wrap .map iframe {
+  width: 100%;
+  height: 100%;
+}
+section.sub-location .location-wrap.active div.paper-wrap {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media screen and (orientation: landscape) {
+  section.sub-location .location-wrap.active .grap-left {
+    right: 100% !important; /* 100 */
+  }
+  section.sub-location .location-wrap.active .grap-right {
+    left: 100% !important; /* 100 */
+  }
+}
+@media screen and (orientation: portrait) {
+  section.sub-location .location-wrap.active .grap-top {
+    bottom: 100% !important; /* 100 */
+  }
+  section.sub-location .location-wrap.active .grap-bottom {
+    top: 100% !important; /* 100 */
   }
 }/*# sourceMappingURL=sub-location.css.map */
