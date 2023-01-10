@@ -21,21 +21,21 @@ $(function(){
 
 
   /**************************************** */
-  function fnYoutubeResize(){
-    var imgW = $('.gnb-map .youtube-img').innerWidth()
-    var imgH = $('.gnb-map .youtube-img').innerHeight()
-    $('.gnb-map iframe').width(imgW)//넓이 설정
-    $('.gnb-map iframe').height(imgH)//높이 설정
-  }
+  // function fnYoutubeResize(){
+  //   var imgW = $('.gnb-map .youtube-img').innerWidth()
+  //   var imgH = $('.gnb-map .youtube-img').innerHeight()
+  //   $('.gnb-map iframe').width(imgW)//넓이 설정
+  //   $('.gnb-map iframe').height(imgH)//높이 설정
+  // }
 
-  $(window).load(function(){//이미지가 다 다운로드 되고나서...그래야 이미지사이즈를 측정할 수 있음
-    fnYoutubeResize()
-  })
+  // $(window).load(function(){//이미지가 다 다운로드 되고나서...그래야 이미지사이즈를 측정할 수 있음
+  //   fnYoutubeResize()
+  // })
   
 
-  $(window).resize(function(){//사이즈창의 크기가 변했을때 
-    fnYoutubeResize()
-  })
+  // $(window).resize(function(){//사이즈창의 크기가 변했을때 
+  //   fnYoutubeResize()
+  // })
 
   /*gnb-btn***************************************** */
   $('.gnb-btn').click(function(){

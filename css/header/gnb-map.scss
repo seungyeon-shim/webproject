@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  //display: none;
+  display: none;
   transition: all 0.3s;
   &.active{
     display: block; 
@@ -29,27 +29,14 @@
     }//img
   }//hover-bg
   
-  .video-wrap {
+  .video-wrap2 {
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    //overflow: hidden;
-    border: 5px solid yellow;
-    img {
-      /*넓이하고 높이가 꽉찬다*/
-      position: relative; /*마우스 이벤트를 받게 하지 않기위해서 영상 위로 이미지를 올려줌*/
-      min-width: 100%;
-      min-height: 100%;
+    video {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      object-position: center;
-      opacity: 0;
-    }//img
-    iframe {
-      position: absolute;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%, -50%); /*중앙정렬*/
     }//ifram
   }//video-wrap
 
@@ -98,4 +85,43 @@
       }//span
     }//li
   }//ul
+
+  .lantern-container{
+    width: 100%;
+    mix-blend-mode: lighten;
+    .lantern {
+      top: 0;
+      position: absolute;
+      scale: 1;
+    }
+    .lantern-left {
+      left: 0;
+      //animation: lantern-motion  5s infinite linear;
+      //transform-origin: top left;
+    }//lantern-left
+    .lantern-right {
+      right: 0;
+     // animation: lantern-motion  7s infinite linear;
+      //transform-origin: top right;
+    }//lantern-right
+  }//lantern
 } //gnb-map
+
+@keyframes lantern-motion {
+  0%{
+
+    transform: rotate(0);
+  } 
+  30%{
+      transform: rotate(-3deg);
+  }
+  50%{
+    transform: rotate(0);
+  }
+  70%{
+    transform: rotate(-3deg);
+}
+100%{
+  transform: rotate(0deg);
+}
+}
