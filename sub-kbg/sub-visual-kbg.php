@@ -11,7 +11,6 @@
    <!--  <img src="./img/sub/sub-visual/kbg/kbg.png" alt=""> -->
   </figure>
   <div class="sub-title-wrap">
-    <h3 class="sub1-title">조선의 으뜸 궁궐</h3>
     <h2 class="sub-title">경복궁</h2>
     <p class="sub-desc">
       건청궁·향원정에 이르기까지 경복궁 별빛야행에서만

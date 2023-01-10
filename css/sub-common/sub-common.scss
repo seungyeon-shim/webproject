@@ -1,48 +1,53 @@
-main.sub{// 서브페이지 시작
+main.sub {
+  // 서브페이지 시작
   display: inline;
 
-  section{// 페이지 안의 섹션 하나하나
+  section {
+    position: relative;
     box-sizing: border-box;
-    border:1px solid red;
     background-color: var(--navy-main);
-    background-image: url(../../img/sub/sub-deco/texture-bg.png);
-    background-blend-mode : multiply;
-    
-    .sub-title{/* 섹션 제목 */
-      display: block;
-      font-family: 'EBS';
-      font-size: 4em;
-      margin: 0 auto;
-      color: var(--yellow-sub);
-      @media screen and (max-width:1000px){
-        font-size: 9vw;
-      }
+    &.sub-content-center{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    .sub-desc{
-
-      font-size: 1.3em;
-      color: #fff;
-      @media screen and (max-width:1000px){
-        font-size: 1.1em;
-
-      }
-    }
-  }
-
-  section.sub-visual{
-    top:0;
-  /*   position: fixed; */
-    width: 100%;
-    
-    @media screen and (min-width:1000px){
+    @media screen and (min-width: 1000px) {
       height: 100%;
+      padding: 100px 0;
     }
-    @media screen and (max-width:1000px){
-      min-height: 100%;
+    @media screen and (max-width: 1000px) {
+      height: 100%;
+      padding: 50px 0;
     }
-    
-
-  }//section.sub-visual
-
-
-}//main
+    .sub-title-wrap {
+      &.sub-title-wrap-center {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto; 
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .sub-title {
+        /* 섹션 제목 */
+        display: block;
+        font-family: "EBS";
+        font-size: 4em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color: var(--yellow-sub);
+        @media screen and (max-width: 700px) {
+          font-size: 9vw; 
+        }
+      }
+      .sub-desc {
+        font-size: 1.3em;
+        color: #fff;
+        letter-spacing: 0.1em;
+        @media screen and (max-width: 1000px) {
+          font-size: 1.1em;
+        }
+      }
+    } //sub-title-wrap
+  } //section
+} //main

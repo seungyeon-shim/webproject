@@ -3,45 +3,56 @@ main.sub {
   display: inline;
 }
 main.sub section {
+  position: relative;
   box-sizing: border-box;
-  border: 1px solid red;
   background-color: var(--navy-main);
-  background-image: url(../../img/sub/sub-deco/texture-bg.png);
-  background-blend-mode: multiply;
 }
-main.sub section .sub-title { /* 섹션 제목 */
+main.sub section.sub-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  main.sub section {
+    height: 100%;
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub section {
+    height: 100%;
+    padding: 50px 0;
+  }
+}
+main.sub section .sub-title-wrap.sub-title-wrap-center {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+main.sub section .sub-title-wrap .sub-title {
+  /* 섹션 제목 */
   display: block;
   font-family: "EBS";
   font-size: 4em;
   margin: 0 auto;
+  margin-bottom: 20px;
   color: var(--yellow-sub);
 }
-@media screen and (max-width: 1000px) {
-  main.sub section .sub-title {
+@media screen and (max-width: 700px) {
+  main.sub section .sub-title-wrap .sub-title {
     font-size: 9vw;
   }
 }
-main.sub section .sub-desc {
+main.sub section .sub-title-wrap .sub-desc {
   font-size: 1.3em;
   color: #fff;
+  letter-spacing: 0.1em;
 }
 @media screen and (max-width: 1000px) {
-  main.sub section .sub-desc {
+  main.sub section .sub-title-wrap .sub-desc {
     font-size: 1.1em;
-  }
-}
-main.sub section.sub-visual {
-  top: 0;
-  /*   position: fixed; */
-  width: 100%;
-}
-@media screen and (min-width: 1000px) {
-  main.sub section.sub-visual {
-    height: 100%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  main.sub section.sub-visual {
-    min-height: 100%;
   }
 }/*# sourceMappingURL=sub-common.css.map */
