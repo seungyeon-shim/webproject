@@ -1,19 +1,7 @@
 main.sub {
   color: #fff;
 }
-main.sub section.sub-history .sub-title-wrap {
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 150px;
-  text-align: center;
-}
-@media screen and (max-width: 900px) {
-  main.sub section.sub-history .sub-title-wrap {
-    margin-top: 50px;
-  }
-}
-main.sub section.sub-history figure.bg-deco {
+main.sub figure.bg-deco {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,84 +9,103 @@ main.sub section.sub-history figure.bg-deco {
   height: 100%;
   overflow: hidden;
 }
-main.sub section.sub-history figure.bg-deco img {
+main.sub figure.bg-deco img {
   position: absolute;
   object-fit: cover;
   object-position: center;
   opacity: 0.5;
 }
-main.sub section.sub-history figure.bg-deco img.mountain {
+main.sub figure.bg-deco img.mountain {
   width: 105%;
   bottom: -15%;
   opacity: 0.1;
 }
 @media screen and (max-width: 900px) {
-  main.sub section.sub-history figure.bg-deco img.mountain {
+  main.sub figure.bg-deco img.mountain {
     bottom: -5%;
   }
 }
-main.sub section.sub-history figure.bg-deco img.frame1 {
+main.sub figure.bg-deco img.frame1 {
   top: 0;
   width: 10%;
   opacity: 0.8;
 }
 @media screen and (max-width: 900px) {
-  main.sub section.sub-history figure.bg-deco img.frame1 {
+  main.sub figure.bg-deco img.frame1 {
     width: 20%;
   }
 }
-main.sub section.sub-history figure.bg-deco img.frame1-left {
+main.sub figure.bg-deco img.frame1-left {
   left: 0;
 }
-main.sub section.sub-history figure.bg-deco img.frame1-right {
+main.sub figure.bg-deco img.frame1-right {
   right: 0;
 }
-main.sub section.sub-history figure.bg-deco img.cloud {
+main.sub figure.bg-deco img.cloud {
   width: 30%;
 }
-main.sub section.sub-history figure.bg-deco img.cloud1 {
+main.sub figure.bg-deco img.cloud1 {
   top: 20%;
   left: 5%;
 }
-main.sub section.sub-history figure.bg-deco img.cloud2 {
+main.sub figure.bg-deco img.cloud2 {
   top: 50%;
   left: -7%;
 }
-main.sub section.sub-history figure.bg-deco img.cloud3 {
+main.sub figure.bg-deco img.cloud3 {
   bottom: 20%;
   right: -5%;
 }
-main.sub section.sub-history figure.bg-deco img.lantern {
+main.sub figure.bg-deco img.lantern {
   width: 25%;
   top: 0;
   right: 15%;
 }
-main.sub section.sub-history div.sub-history-content {
+main.sub div.sub-history-content {
   margin: 0 auto;
   margin-top: 20px;
-  height: 60%;
+  height: 80%;
   width: 80%;
   border: 1px solid #fff;
 }
 @media screen and (min-width: 900px) {
-  main.sub section.sub-history div.sub-history-content {
+  main.sub div.sub-history-content {
     max-width: 1200px;
   }
 }
 @media screen and (max-width: 900px) {
-  main.sub section.sub-history div.sub-history-content {
+  main.sub div.sub-history-content {
     max-width: 400px;
   }
 }
-main.sub section.sub-history div.sub-history-content .inner {
+main.sub div.sub-history-content .inner {
   position: relative;
   width: 100%;
   height: 30%;
-  border: 1px solid red;
   overflow: hidden;
 }
-main.sub section.sub-history div.sub-history-content .inner img {
+main.sub div.sub-history-content .inner img {
   position: absolute;
-  top: -60%;
+  bottom: -60%;
   left: 0;
+  transform: translateX(-16%);
+}
+main.sub div.sub-history-content .inner .bar-textbox {
+  position: absolute;
+  width: 3600px;
+  bottom: -11%;
+  left: 10px;
+  color: var(--navy-main);
+}
+main.sub div.sub-history-content .inner .bar-textbox p {
+  font-size: 1.2em;
+}
+main.sub div.sub-history-content .inner .bar-textbox h3 {
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 600;
+}
+main.sub div.sub-history-content .inner .bar-textbox .point-sans {
+  display: inline-block;
+  font-size: 3.9em;
 }/*# sourceMappingURL=sub-history.css.map */

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./css/sub-kbg/sub-history.css">
-<section class="sub-content sub-history sub-history-kbg">
-  <div class="sub-title-wrap">
+<section class="sub-content sub-history sub-history-kbg sub-content-center">
+  <div class="sub-title-wrap sub-title-wrap-center">
     <h2 class="sub-title">경복궁 역사</h2>
     <p class="sub-desc">조선 제일의 법도 경복궁의 역사를 안내드립니다.</p>
   </div><!-- sub-title-wrap -->
@@ -19,8 +19,11 @@
     <div class="inner"><!-- 상단바  -->
       <img src="./img/sub/sub-history/kbg/history-bar.png" alt="">
       <div class="bar-textbox">
-        <p>1300 ~ 1399</p>
-        <h3>1300 <b class=".point-sans">年</b></h3>
+        <div class="year1">
+          <p>1300 ~ 1399</p>
+          <h3>1300</h3>
+          <p class="point-sans">年</p>
+        </div>
       </div>
     </div><!-- 상단 바  -->
     <div class="c2">
