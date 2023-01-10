@@ -5,14 +5,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  display: none;
-  transition: all 0.3s;
+  visibility: hidden; /*트랜스폼 먹게하려고 display block 대신*/
+  transform: translateY(-100%);
+  transition: transform 1s;
+  overflow: hidden;
 }
 .gnb-map.active {
-  display: block;
-  transform: scale(1);
+  visibility: visible;
+  transform: translateY(0);
 }
 .gnb-map .hover-bg {
+  width: 100%;
   mix-blend-mode: screen;
 }
 .gnb-map .hover-bg img {
@@ -53,12 +56,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .gnb-map ul li {
-  width: 25%;
   height: 100%;
   position: relative;
   text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .gnb-map ul li {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gnb-map ul li {
+    margin-bottom: 60px;
+    width: 50%;
+  }
 }
 .gnb-map ul li a, .gnb-map ul li span {
   position: absolute;
@@ -82,20 +96,31 @@
   font-size: 4em;
   opacity: 0.3;
 }
-.gnb-map .lantern-container {
+.gnb-map .bg-container {
   width: 100%;
-  mix-blend-mode: lighten;
 }
-.gnb-map .lantern-container .lantern {
-  top: 0;
+.gnb-map .bg-container > img {
   position: absolute;
+}
+.gnb-map .bg-container .lantern {
+  mix-blend-mode: lighten;
+  top: 0;
   scale: 1;
 }
-.gnb-map .lantern-container .lantern-left {
+.gnb-map .bg-container .lantern-left {
   left: 0;
 }
-.gnb-map .lantern-container .lantern-right {
+.gnb-map .bg-container .lantern-right {
   right: 0;
+}
+.gnb-map .bg-container .bg-tree {
+  width: 100%;
+  bottom: 0;
+  mix-blend-mode: color-burn;
+  transition: transform 0.3s;
+}
+.gnb-map .bg-container .bg-tree:nth-child(2) {
+  opacity: 2;
 }
 
 @keyframes lantern-motion {

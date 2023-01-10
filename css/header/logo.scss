@@ -1,33 +1,35 @@
 .logo{
-  width: 300px;
-  height: 60px;
-
-
+ // border: 1px solid #EEE;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: scale(0.7);
   .inner-logo {
-    position: relative;
- 
-vertical-align: middle;
     span.logo-icon{
+      //background-color: aqua;
       display: inline-block;
-      width: 48px;
-      height: 48px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       animation: moon 10s linear infinite;
       margin-right: 10px;
-      //background-color: yellow;
     }//span.logo-icon
+      }//inner-logo
     div.logo-text{
       display: inline-block;
-      position: absolute;
-    
-      height: 100%;
-      //background-color: antiquewhite;
+      //background-color: antiquewhite; 
+     img{
+        width: 100%;
+      }//figure
+      
       span.star{
         position: absolute;/*넓이랑 위치잡아줌*/
         width: 3px;
         height: 3px;
         color: #FFF;
-        top: 50%;
+        top: -20%;
         left: 50%;
         border-radius: 50%;
         box-shadow: 0 0 0 4px rgba(255,255,255,0.1), 
@@ -43,19 +45,16 @@ vertical-align: middle;
           transform: translateY(-50%);
           background: linear-gradient(90deg,#fff, transparent);
         }//&::before
-        &:nth-child(1){
+        &:nth-child(2){
           position: absolute;
           top: 0;
           left: 0;
           animation-delay: 0;
           animation-duration: 5s;
-        }//&:nth-child(1)
+        }//&:nth-child(2)
       }//span.star
-      img.logo-img{
-        height: 100%;
-      }//img.logo-img
     }//logo-text
-  }//inner-logo
+
 }//logo
 
 @keyframes moon{

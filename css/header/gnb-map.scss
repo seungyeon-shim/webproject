@@ -4,13 +4,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  display: none;
-  transition: all 0.3s;
+  visibility: hidden; /*트랜스폼 먹게하려고 display block 대신*/
+  transform: translateY(-100%);
+  transition: transform 1s;
+  overflow: hidden;
   &.active{
-    display: block; 
-    transform: scale(1);
+    visibility: visible;
+    transform: translateY(0);
   }// &.active
   .hover-bg{
+    width: 100%;
     mix-blend-mode: screen;
     img{
       position: absolute;
@@ -53,14 +56,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     //border: 1px solid yellow;
     li{
-      width: 25%;
       height: 100%;
       position: relative;
       text-align: center;
       //border: 1px solid red;
+      @media screen and (min-width:800px){
+        width: 25%;
+      }
 
+      @media screen and (max-width:800px){
+        margin-bottom: 60px;
+        width: 50%;
+      }
       a,span{
         position: absolute;
         color: #FFF;
@@ -86,26 +96,40 @@
     }//li
   }//ul
 
-  .lantern-container{
+  .bg-container{
     width: 100%;
-    mix-blend-mode: lighten;
-    .lantern {
-      top: 0;
+    >img{
+     
       position: absolute;
+    }
+    .lantern {
+      mix-blend-mode: lighten;
+      top: 0;
       scale: 1;
     }
     .lantern-left {
       left: 0;
-      //animation: lantern-motion  5s infinite linear;
-      //transform-origin: top left;
     }//lantern-left
     .lantern-right {
       right: 0;
-     // animation: lantern-motion  7s infinite linear;
-      //transform-origin: top right;
     }//lantern-right
+    .bg-tree{
+      width: 100%;
+      bottom: 0;
+      mix-blend-mode: color-burn;
+      // transform: scale(1.2);
+      transition: transform 0.3s;
+      &:nth-child(2){
+        opacity: 2;
+      }
+    }
   }//lantern
+
 } //gnb-map
+
+
+
+
 
 @keyframes lantern-motion {
   0%{

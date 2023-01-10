@@ -18,7 +18,6 @@ header div.inner {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 header div.inner h1 {
   transform: scale(0.7);

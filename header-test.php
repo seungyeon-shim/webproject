@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./css/header/header-test.css">
   <link rel="stylesheet" href="./css/header/logo.css">
   <link rel="stylesheet" href="./css/header/gnb-map.css">
+  <link rel="stylesheet" href="./css/footer/footer-test.css">
 
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <!--제이쿼리-->
@@ -82,22 +83,28 @@
   </header><!--header-->
 
   <nav class="gnb-map">
-    <?php include "menu.php" ?>
-    <div class="video-wrap">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/kSZddHca0ME?autoplay=1&mute=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loop></iframe>
-        <img class="youtube-img" src="./img/logo&icon/video-img.jpg" alt="" draggable="false"><!--draggable="false"..이미지 드래그 막기-->
+   
+      <?php include "menu.php" ?>
+      <div class="video-wrap2">
+        <video src="./img/logo&icon/star.mp4" autoplay muted loop></video>
       </div>
+
       <figure class="hover-bg">
-        <img class="gnb-bg gnb-bg-img1" src="./img/logo&icon/test1.jpg" alt="">
-        <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/test2.png" alt="">
+        <img class="gnb-bg gnb-bg-img1" src="./img/logo&icon/bg1.jpg" alt="">
+        <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/bg2.png" alt="">
+        <img class="gnb-bg gnb-bg-img3" src="./img/logo&icon/bg3.png" alt="">
+        <img class="gnb-bg gnb-bg-img4" src="./img/logo&icon/bg4.png" alt="">
       </figure>
+
+      <figure class="bg-container">
+        <img class="bg-tree" src="./img/logo&icon/bg-tree.png" alt="">
+        <img class="lantern lantern-left" src="./img/logo&icon/lantern1.png" alt="">
+        <img class="lantern lantern-right" src="./img/logo&icon/lantern2.png" alt="">
+      </figure>
+
   </nav>
 
-  <script>
-    $('.gnb-map ul li').mouseenter(function(){
-      
-    })
-  </script>
+
 
   <div class="dummy">
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
