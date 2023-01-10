@@ -23,6 +23,7 @@
         width: 100%;
         border: 5px solid yellow;
         .palace {
+          position: relative;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -30,34 +31,77 @@
           max-width: 1200px;
           margin: 0 auto;
           figure {
+            position: relative;
             display: flex;
             width: 60%;
-            height: 90%;
-            .cloud{
-
-            }//구름
-            .kbj{
-
-            }//경복궁
+            height: 85%;
+            .kbg {
+              position: absolute;
+              right: 0;
+              top: -10%;
+            } //경복궁
+            .cloud {
+              position: absolute;
+              right: -10%;
+              top: -10%;
+            } //구름
           } //figure(나중에 이미지로 교체)
+          .palace-name2 {
+            position: absolute;
+            font-size: 4em;
+            color: #fff;
+            left: -90%;
+            top: 5%;
+            color: #181933;
+            font-weight: 500;
+          } //palace-name2
           .palacae-text-all {
-            width: 36%;
+            width: 550px;
             height: 90%;
+            color: #fff;
+            .palace-name {
+              font-size: 1.3em;
+              margin-bottom: 5px;
+            } //palace-name
+            .palace-h {
+              font-size: 2.3em;
+              margin-bottom: 15px;
+            } //palace-h
+            .palacae-text {
+              letter-spacing: 2px;
+              font-weight: 100;
+              font-size: 0.9em;
+              margin-bottom: 60px;
+              color: #eee;
+            } //palacae-text
+            .palace-zoom {
+              position: relative;
+              font-size: 1.1em;
+              &::after {
+                content: " ";
+                top: -5px;
+                left: -15px;
+                display: block;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: var(--yellow-sub);
+                opacity: 0.6;
+              } //palace-zoom::after
+            } //palace-zoom
           } //palacae-text-all
         } //palace1
       } //sticky-inner-container
-      .palace1 {
-        /* background-color: darkcyan; */
-      }//palace1
       .palace2 {
         background-color: rgb(191, 26, 241);
-      }//palace2
+      } //palace2
       .palace3 {
         background-color: rgb(50, 238, 106);
-      }//palace3
+      } //palace3
       .palace4 {
         background-color: tomato;
-      }//palace4
+      } //palace4
     } //sticky-inner
   } //sticky
 } //sticky-container

@@ -27,6 +27,7 @@
   border: 5px solid yellow;
 }
 .sticky-container .sticky .sticky-inner .sticky-inner-container .palace {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,16 +36,65 @@
   margin: 0 auto;
 }
 .sticky-container .sticky .sticky-inner .sticky-inner-container .palace figure {
+  position: relative;
   display: flex;
   width: 60%;
-  height: 90%;
+  height: 85%;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace figure .kbg {
+  position: absolute;
+  right: 0;
+  top: -10%;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace figure .cloud {
+  position: absolute;
+  right: -10%;
+  top: -10%;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palace-name2 {
+  position: absolute;
+  font-size: 4em;
+  color: #fff;
+  left: -90%;
+  top: 5%;
+  color: #181933;
+  font-weight: 500;
 }
 .sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all {
-  width: 36%;
+  width: 550px;
   height: 90%;
+  color: #fff;
 }
-.sticky-container .sticky .sticky-inner .palace1 {
-  /* background-color: darkcyan; */
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all .palace-name {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all .palace-h {
+  font-size: 2.3em;
+  margin-bottom: 15px;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all .palacae-text {
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 0.9em;
+  margin-bottom: 60px;
+  color: #eee;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all .palace-zoom {
+  position: relative;
+  font-size: 1.1em;
+}
+.sticky-container .sticky .sticky-inner .sticky-inner-container .palace .palacae-text-all .palace-zoom::after {
+  content: " ";
+  top: -5px;
+  left: -15px;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--yellow-sub);
+  opacity: 0.6;
 }
 .sticky-container .sticky .sticky-inner .palace2 {
   background-color: rgb(191, 26, 241);
