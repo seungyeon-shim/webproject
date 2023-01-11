@@ -1,10 +1,11 @@
 section.sub-story {
   overflow: hidden;
   /* background-image: url(../../img/story/sub-story/sub-kbg/bg/1.png); */
+  /* hover motion ----------------------------------- */
 }
 section.sub-story .sub-title-wrap {
   position: relative;
-  z-index: 10;
+  z-index: 11;
 }
 section.sub-story img {
   position: absolute;
@@ -27,12 +28,9 @@ section.sub-story img.story-right {
   right: 1%;
   width: 100px;
 }
-section.sub-story img.folding-screen {
-  width: 65%;
-  bottom: 18%;
-}
 section.sub-story img.wave {
   width: 100%;
+  min-width: 1000px;
   bottom: 0;
 }
 section.sub-story .sub-middle-title-box {
@@ -46,25 +44,59 @@ section.sub-story .sub-middle-title-box {
   margin-bottom: 250px;
   text-align: center;
 }
+@media screen and (max-width: 1100px) {
+  section.sub-story .sub-middle-title-box {
+    width: 95%;
+  }
+}
+section.sub-story .sub-middle-title-box img.folding-screen {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  top: -195%;
+}
 section.sub-story .sub-middle-title-box .sub-middle-title {
   width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   padding: 0 70px;
 }
-section.sub-story .sub-middle-title-box .sub-middle-title .sub-first-desc {
+section.sub-story .sub-middle-title-box .sub-middle-title p {
+  position: relative;
+  z-index: 1;
+}
+section.sub-story .sub-middle-title-box .sub-middle-title p.sub-first-desc {
   font-family: "EBS";
   font-size: 1.6em;
   color: var(--yellow-sub);
 }
-section.sub-story .sub-middle-title-box .sub-middle-title .sub-second-desc {
-  margin-top: 10px;
-  font-size: 0.95em;
+section.sub-story .sub-middle-title-box .sub-middle-title p.sub-second-desc {
+  box-sizing: border-box;
+  padding-top: 25px;
+  font-size: 0.85em;
+  font-weight: 100;
+  line-height: 20px;
 }
 section.sub-story .sub-middle-title-box .sub-middle-title img {
-  width: 20%;
+  width: 17%;
+  box-sizing: border-box;
+  padding-top: 420px;
 }
-@media screen and (max-width: 1100px) {
-  section.sub-story {
-    height: 200%;
-  }
+section.sub-story .sub-middle-title-box .sub-middle-title img.sub-third-img {
+  width: 22%;
+}
+section.sub-story .sub-middle-title-box .sub-middle-title img.text-bg {
+  padding-top: 15px;
+  width: 25%;
+}
+section.sub-story .sub-middle-title1 .story-hover-bg {
+  transform: translateY(-200%);
+}
+section.sub-story .sub-middle-title1:hover .story-hover-bg {
+  width: 100%;
+  transform: translateY(0);
 }/*# sourceMappingURL=sub-story.css.map */
