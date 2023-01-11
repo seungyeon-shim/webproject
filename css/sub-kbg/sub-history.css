@@ -1,3 +1,9 @@
+@charset "UTF-8";
+main.sub .sub-history {
+  height: 100%;
+  /* bg----------------------------------------------- */
+  /* content--------------------------------------------- */
+}
 main.sub .sub-history figure.bg-deco {
   position: absolute;
   top: 0;
@@ -17,7 +23,7 @@ main.sub .sub-history figure.bg-deco img.mountain {
   bottom: -15%;
   opacity: 0.1;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   main.sub .sub-history figure.bg-deco img.mountain {
     bottom: -5%;
   }
@@ -27,7 +33,7 @@ main.sub .sub-history figure.bg-deco img.frame1 {
   width: 10%;
   opacity: 0.8;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   main.sub .sub-history figure.bg-deco img.frame1 {
     width: 20%;
   }
@@ -45,10 +51,6 @@ main.sub .sub-history figure.bg-deco img.cloud1 {
   top: 20%;
   left: 5%;
 }
-main.sub .sub-history figure.bg-deco img.cloud2 {
-  top: 50%;
-  left: -7%;
-}
 main.sub .sub-history figure.bg-deco img.cloud3 {
   bottom: 20%;
   right: -5%;
@@ -61,18 +63,21 @@ main.sub .sub-history figure.bg-deco img.lantern {
 main.sub .sub-history div.sub-history-content {
   margin: 0 auto;
   margin-top: 20px;
-  height: 80%;
   width: 80%;
-  border: 1px solid #fff;
+  height: 80%;
+  overflow: hidden;
+  /* 상단 bar------------------------------------------- */
+  /* history,img-------------------------------------------- */
+  /* button-------------------------------------------- */
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   main.sub .sub-history div.sub-history-content {
     max-width: 1200px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   main.sub .sub-history div.sub-history-content {
-    max-width: 400px;
+    max-width: 800px;
   }
 }
 main.sub .sub-history div.sub-history-content .inner {
@@ -83,26 +88,158 @@ main.sub .sub-history div.sub-history-content .inner {
 }
 main.sub .sub-history div.sub-history-content .inner img {
   position: absolute;
-  bottom: -60%;
-  left: 0;
-  transform: translateX(-16%);
+}
+@media screen and (min-width: 1000px) {
+  main.sub .sub-history div.sub-history-content .inner img {
+    bottom: -60%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content .inner img {
+    bottom: -60%;
+    left: 0;
+  }
 }
 main.sub .sub-history div.sub-history-content .inner .bar-textbox {
   position: absolute;
+  display: flex;
   width: 3600px;
-  bottom: -11%;
+  bottom: -12%;
   left: 10px;
-  color: var(--navy-main);
 }
-main.sub .sub-history div.sub-history-content .inner .bar-textbox p {
+main.sub .sub-history div.sub-history-content .inner .bar-textbox div.year {
+  width: 530px;
+  color: var(--gray);
+}
+main.sub .sub-history div.sub-history-content .inner .bar-textbox div.year.active {
+  color: var(--main-navy);
+}
+main.sub .sub-history div.sub-history-content .inner .bar-textbox div.year p {
   font-size: 1.2em;
 }
-main.sub .sub-history div.sub-history-content .inner .bar-textbox h3 {
+main.sub .sub-history div.sub-history-content .inner .bar-textbox div.year h3 {
   display: inline-block;
   font-size: 4em;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
-main.sub .sub-history div.sub-history-content .inner .bar-textbox .point-sans {
+main.sub .sub-history div.sub-history-content .inner .bar-textbox div.year .point-sans {
   display: inline-block;
   font-size: 3.9em;
+}
+main.sub .sub-history div.sub-history-content .contents {
+  display: flex;
+  height: 50%;
+}
+main.sub .sub-history div.sub-history-content .contents .content {
+  display: flex;
+  flex: 1;
+}
+main.sub .sub-history div.sub-history-content .contents .content .textbox {
+  color: #fff;
+  width: 250px;
+  height: 100%;
+}
+main.sub .sub-history div.sub-history-content .contents .content .textbox .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+main.sub .sub-history div.sub-history-content .contents .content .textbox .wrap img {
+  width: 60px;
+}
+main.sub .sub-history div.sub-history-content .contents .content .textbox .wrap h2 {
+  font-size: 1.3em;
+}
+main.sub .sub-history div.sub-history-content .contents .content .textbox p {
+  font-size: 0.8em;
+  line-height: 20px;
+  padding: 5px 20px;
+}
+main.sub .sub-history div.sub-history-content .contents .content .kbg-img {
+  display: flex;
+  width: 250px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content .contents .content .kbg-img {
+    display: none;
+  }
+}
+main.sub .sub-history div.sub-history-content .contents .content .kbg-img .kbg {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+main.sub .sub-history div.sub-history-content .contents .content .kbg-img .kbg1 {
+  width: 52%;
+  height: 80%;
+}
+main.sub .sub-history div.sub-history-content .contents .content .kbg-img .kbg2 {
+  width: 45%;
+  height: 60%;
+}
+main.sub .sub-history div.sub-history-content div.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+main.sub .sub-history div.sub-history-content div.controls div.indicator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+main.sub .sub-history div.sub-history-content div.controls div.indicator button {
+  margin-top: 60px;
+  position: relative;
+  z-index: 100;
+  width: 16%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2em;
+}
+main.sub .sub-history div.sub-history-content div.controls div.indicator button::before {
+  margin: 0 auto;
+  display: flex;
+  vertical-align: middle;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+main.sub .sub-history div.sub-history-content div.controls div.indicator button:hover, main.sub .sub-history div.sub-history-content div.controls div.indicator button.active {
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+}
+main.sub .sub-history div.sub-history-content div.controls div.indicator button.active::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+}
+main.sub .sub-history div.sub-history-content div.controls .prev, main.sub .sub-history div.sub-history-content div.controls .next {
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  opacity: 0.5;
+}
+main.sub .sub-history div.sub-history-content div.controls .prev:hover, main.sub .sub-history div.sub-history-content div.controls .next:hover {
+  opacity: 1;
 }/*# sourceMappingURL=sub-history.css.map */
