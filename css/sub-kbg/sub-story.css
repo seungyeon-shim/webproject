@@ -1,4 +1,5 @@
 section.sub-story {
+  overflow: hidden;
   /* background-image: url(../../img/story/sub-story/sub-kbg/bg/1.png); */
 }
 section.sub-story .sub-title-wrap {
