@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
 }
-
 .sticky-container {
   border: 10px solid red;
   .sticky {
@@ -11,59 +10,72 @@
     top: 0;
     .text-box {
       background-color: pink;
-      margin: 100px auto;
+      width: 90%;
       max-width: 400px;
       text-align: center;
+      @media screen and (min-width: 800px) {
+        margin: 100px auto;
+      }//@media - lg
+      
+      @media screen and (max-width: 800px) {
+        margin: 50px auto;
+      }//@media - sm
     } //text-box
     .sticky-inner {
       width: 400%;
       border: 5px solid green;
+      margin-top: -20px;//위로 땡기고 싶어서 줬는데 스티키 영역이 먹는지 모르겠어서 확인필요---------
       .sticky-inner-container {
         display: flex;
         width: 100%;
         border: 5px solid yellow;
         .palace {
-          position: relative;
           display: flex;
+          justify-content: center; //양옆
+          flex-wrap: wrap; //모바일에서 두줄
           align-items: center;
-          justify-content: center;
           margin: 0 auto;
-          height: 500px;
+          width: 90%;
+          max-width: 1100px;
+          border: 10px solid violet;
           figure {
             position: relative;
-            display: flex;
-            @media screen and (min-width: 1200px) {
+            border: 1px solid yellow;
+            @media screen and (min-width: 1100px) {
               width: 60%;
-              height: 85%;
-            } //lg
-            @media screen and (max-width: 1200px) {
+            }//@media - lg
+            @media screen and (max-width: 1100px) and (min-width: 700px) {
+              width: 50%;
+            }//@media - md
+            @media screen and (max-width: 600px) {
               width: 100%;
-              height: 80%;
-            } //sm
-            .kbg {
-              position: absolute;
-              right: 0;
-              top: -10%;
-            } //경복궁
-            .cloud {
-              position: absolute;
-              right: -10%;
-              top: -10%;
-            } //구름
+            }//@media - sm
+            .obj-wrap {
+              width: 100%;
+              img.img-palacae {
+                position: relative; //이미지 두 개 중 한개 높이값 가지게...
+                top: 0; left: 0;
+                width: 100%;
+              } 
+              img.img-obj {
+                position: absolute;
+                width: 100%;
+              } 
+            } //obj-wrap
           } //figure(나중에 이미지로 교체)
-          .palace-name2 {
-            position: absolute;
-            font-size: 4em;
-            color: #fff;
-            left: -90%;
-            top: 5%;
-            color: #181933;
-            font-weight: 500;
-          } //palace-name2
+
           .palacae-text-all {
-            width: 550px;
-            height: 90%;
             color: #fff;
+            border: 1px solid red;
+            @media screen and (min-width: 1100px) {
+              width: 30%;
+            }//@media - lg
+            @media screen and (max-width: 1100px) and (min-width: 700px) {
+              width: 45%;
+            }//@media - md
+            @media screen and (max-width: 600px) {
+              width: 90%;
+            }//@media - sm
             .palace-name {
               font-size: 1.3em;
               margin-bottom: 5px;
@@ -73,40 +85,41 @@
               margin-bottom: 15px;
             } //palace-h
             .palacae-text {
+              opacity: 0.9;
               letter-spacing: 2px;
-              font-weight: 100;
+              font-weight: 400;
               font-size: 0.9em;
-              margin-bottom: 60px;
+              @media screen and (min-width: 800px) {
+                margin-bottom: 60px;
+              }//@media - lg
+              
+              @media screen and (max-width: 800px) {
+                margin-bottom: 30px;
+              }//@media - sm
               color: #eee;
+              .tt-mob-none {
+                @media screen and (max-width: 600px) {
+                  display: none;
+                }//@medis
+              }//tt-mob-none
             } //palacae-text
-            .palace-zoom {
-              position: relative;
-              font-size: 1.1em;
-              &::after {
-                content: " ";
-                top: -5px;
-                left: -15px;
-                display: block;
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: var(--yellow-sub);
-                opacity: 0.6;
-              } //palace-zoom::after
-            } //palace-zoom
           } //palacae-text-all
-        } //palace1
+        } //palace1 경복궁
+        .palace2 {
+          
+        } //palace2 덕수궁
+        .palace3 {
+
+        } //palace3 창경궁
+        .palace4 {
+          .obj-wrap{
+            .sakura{
+              //bottom: 3%;
+              //right: 0%;
+            }//sakura
+          }//obj-wrap
+        } //palace4 창덕궁
       } //sticky-inner-container
-      .palace2 {
-        background-color: rgb(191, 26, 241);
-      } //palace2
-      .palace3 {
-        background-color: rgb(50, 238, 106);
-      } //palace3
-      .palace4 {
-        background-color: tomato;
-      } //palace4
     } //sticky-inner
   } //sticky
 } //sticky-container
