@@ -3,6 +3,7 @@
 <section class="sub-visual sub-visual-kbg ">
   <video src="./video/tree.mp4" autoplay muted loop></video>
   <!-- particles.js container -->
+  <script src="./js/sub-visual/sub-visual-kbg/sub-visual-kbg.js"></script>
   <script src="./js/sub-visual/sub-visual-kbg/particles.js"></script>
   <script src="./js/sub-visual/sub-visual-kbg/app_particle_star.js"></script>
   <div id="particles-js"></div>
@@ -19,12 +20,18 @@
     </p>
   </div><!-- sub-title-wrap -->
 
+
   <div class="sub-visual-slider">
-    <figure class="castle castle1">
-      
-    </figure>
+    <figure class="castle castle1 active"></figure>
+    <figure class="castle castle2"></figure>
+    <figure class="castle castle3"></figure>
     <script>
-      $('.castle1').append(`<img src="./img/sub/sub-visual/kbg/kbg-1.png">`)
+      for (var i = 1; i <= 3; i++) { 
+        for (var j = 1; j <= 10; j++) {
+          $(`.castle${i}`).append(`<img class="img${j} lg" src="./img/sub/sub-visual/kbg/kbg-${i}.png">`)
+          $(`.castle${i}`).append(`<img class="img${j} sm" src="./img/sub/sub-visual/kbg/kbg-${i}s.png">`)
+        }
+      }
     </script>
   </div>
 </section>
