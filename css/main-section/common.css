@@ -1,18 +1,25 @@
 @charset "UTF-8";
 /* ----------텍스트 css---------- */
-.wrap {
-  background-image: url(../../img/main/main-visual/kbg/kbg-background.png); /* 전체배경 */
-}
-
 .text-box {
   text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1100px) {
+  .text-box {
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .text-box {
+    padding: 50px 0;
+  }
 }
 .text-box .section-title {
   font-family: "EBS";
 }
 @media screen and (min-width: 800px) {
   .text-box .section-title {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 @media screen and (max-width: 800px) {
@@ -32,11 +39,11 @@
 }
 
 /* ----------자세히보기 버튼--------- */
-.palace-zoom {
+.more-btn {
   position: relative;
   font-size: 1.1em;
 }
-.palace-zoom::before {
+.more-btn::before {
   content: " ";
   display: block;
   position: absolute;
@@ -45,7 +52,40 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #d0bf98;
+  box-shadow: 10px -5px #ffee00 inset;
+  animation: moon-move 1s linear infinite;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.5;
+  transition: left 1s, width 2s, height 2s, box-shadow 2s;
+}
+.more-btn:hover::before {
+  left: 80%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 40px 0 #ffbb00 inset;
+  opacity: 1;
+}
+.more-btn:hover i {
+  animation: btn-move 1s linear infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes btn-move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moon-move {
+  0% {
+    transform: rotate(30px);
+  }
+  100% {
+    transform: rotate(-30px);
+  }
 }/*# sourceMappingURL=common.css.map */

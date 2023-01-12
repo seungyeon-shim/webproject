@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./css/main-section/main-section1.css">
-<script src="./js/index/layout.js"></script>
+<script src="./js/index/main-section1.js"></script>
 <!-- 본문시작 -->
 
 <div class="sticky-container">
@@ -15,6 +15,7 @@
 
     <div class="sticky-inner">
       <div class="sticky-inner-container">
+
         <section class="palace palace1">
           <figure>
             <div class="obj-wrap">
@@ -22,6 +23,7 @@
               <img class="img-palacae kbg" src="./img/main/section1-about/kbg/kbg-1.png" alt=""><!-- img -->
             </div>
           </figure><!-- figure -->
+
           <div class="palacae-text-all">
             <p class="palace-name">조선왕조 제일의 법궁</p>
             <h3 class="palace-h ebs">경복궁</h3>
@@ -35,9 +37,7 @@
               경복궁에서 격조 높고 품위 있는 왕실 문화의
               진수를 느껴보시기 바랍니다.
             </p>
-            <a class="palace-zoom" href="#">
-              <p>자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
-            </a><!-- palace-zoom -->
+            <a class="more-btn" href="#">자세히보기 <i class="fa-solid fa-arrow-right"></i></a><!-- more-btn-->
           </div><!-- 경복궁텍스트 -->
         </section><!-- palace1 경복궁 -->
 
@@ -49,6 +49,7 @@
               <img class="img-palacae dsk" src="./img/main/section1-about/dsk/dsk-1.png" alt=""><!-- img -->
             </div>
           </figure><!-- figure -->
+
           <div class="palacae-text-all">
             <p class="palace-name">조선왕조 제일의 법궁</p>
             <h3 class="palace-h ebs">덕수궁</h3>
@@ -62,9 +63,7 @@
               경복궁에서 격조 높고 품위 있는 왕실 문화의
               진수를 느껴보시기 바랍니다.
             </p>
-            <a class="palace-zoom" href="#">
-              <p>자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
-            </a><!-- palace-zoom -->
+            <a class="more-btn" href="#">자세히보기 <i class="fa-solid fa-arrow-right"></i></a><!-- more-btn -->
           </div><!-- 덕수궁텍스트 -->
         </section><!-- palace2 덕수궁 -->
 
@@ -87,9 +86,7 @@
               </i>
               영조와 사도세자의 이야기를 궁과함께 알아보자
             </p>
-            <a class="palace-zoom" href="#">
-              <p>자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
-            </a><!-- palace-zoom -->
+            <a class="more-btn" href="#">자세히보기 <i class="fa-solid fa-arrow-right"></i></a><!-- more-btn -->
           </div><!-- 창경궁텍스트 -->
         </section><!-- palace3  -->
 
@@ -100,21 +97,20 @@
               <img class="img-palacae cdg" src="./img/main/section1-about/cdg/cdg-1.png" alt=""><!-- img -->
             </div>
           </figure><!-- figure -->
+
           <div class="palacae-text-all">
             <p class="palace-name">자연과의 조화 세계문화유산</p>
             <h3 class="palace-h ebs">창덕궁</h3>
             <p class="palacae-text">
               궁의 뜻은 덕의 근본을 밝혀 창성하게 되라는 뜻이다.
               <i class="tt-mob-none">
-              조선시대의 뛰어난 조경을 보여주며 
-              300년이 넘는 나무와 비교적 원형이 충실히 보전 되어있다.
+                조선시대의 뛰어난 조경을 보여주며
+                300년이 넘는 나무와 비교적 원형이 충실히 보전 되어있다.
               </i>
-              조선의 조경을 충실히 보존하고있는 
+              조선의 조경을 충실히 보존하고있는
               세계문화유산 을 느껴보시기 바랍니다.
             </p>
-            <a class="palace-zoom" href="#">
-              <p>자세히보기 <i class="fa-solid fa-arrow-right"></i></p>
-            </a><!-- palace-zoom -->
+            <a class="more-btn" href="#">자세히보기 <i class="fa-solid fa-arrow-right"></i></a><!-- more-btn -->
           </div><!-- 창덕궁텍스트 -->
         </section><!-- palace4  -->
 
