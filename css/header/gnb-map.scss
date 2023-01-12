@@ -8,6 +8,7 @@
   transform: translateY(-100%);
   transition: transform 1s;
   overflow: hidden;
+  z-index: 101;
   &.active{
     visibility: visible;
     transform: translateY(0);

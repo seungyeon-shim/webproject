@@ -9,6 +9,7 @@
   transform: translateY(-100%);
   transition: transform 1s;
   overflow: hidden;
+  z-index: 101;
 }
 .gnb-map.active {
   visibility: visible;
