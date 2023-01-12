@@ -1,7 +1,15 @@
 <link rel="stylesheet" href="./css/sub-kbg/sub-location.css">
 <script src="./js/sub-location/sub-location.js"></script>
+
 <section class="sub-content sub-location sub-location-kbg sub-content-center">
-  <div class="sub-title-wrap  sub-title-wrap-center">
+
+
+<img class="texture" src="./img/sub/sub-deco/texture-bg.png" alt="">
+<img class="left" src="./img/sub/sub-deco/frame2-left.png" alt="">
+<img class="right" src="./img/sub/sub-deco/frame2-right.png" alt="">
+
+
+<div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">경복궁 오시는길</h2>
     <p class="sub-desc">
       경복궁으로 오세요

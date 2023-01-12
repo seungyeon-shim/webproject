@@ -1,4 +1,23 @@
 section.sub-location {
+  
+  .left{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+  }
+  .right{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+  }
+  .texture{
+    position: absolute;
+    opacity: 0.1;
+  }
   height: 100%;
   overflow: hidden;
   .location-wrap {
@@ -46,6 +65,7 @@ section.sub-location {
       } //port
     } //grap
     .paper-wrap {
+      
       position: relative;
       transition: all 1s;
       @media screen and (orientation: landscape) {
