@@ -25,7 +25,7 @@
           <p>
             <img class="brush" src="./img/sub/sub-deco/title-bottom.png" alt="">
             <span>
-            향원정 북쪽에 있는 건청궁  
+            향원정 북쪽에 있는 건청궁 <br> 
             곤녕합에서 일본인들에게 시해
             </span>
           </p>
@@ -49,7 +49,7 @@
           <p>
             <img class="brush" src="./img/sub/sub-deco/title-bottom.png" alt="">
             <span>
-            세종대왕은 경복궁에서 오래 머무르면서
+            세종대왕은 경복궁에서 오래 머무르면서 <br> 
             한글을 창제 후 과학기술 발전 도모
             </span>
           </p>
@@ -72,7 +72,7 @@
           <p>
             <img class="brush" src="./img/sub/sub-deco/title-bottom.png" alt="">
             <span>
-            경회루 연못에서 청동으로 만든 
+            경회루 연못에서 청동으로 만든 <br> 
             용(龍) 두 마리가 발견
             </span>
           </p>

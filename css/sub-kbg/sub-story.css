@@ -227,6 +227,7 @@ section.sub-story .open-container .open {
 section.sub-story .open-container .open h4 {
   color: var(--navy-main);
   font-size: 1.5em;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 section.sub-story .open-container .open p {
