@@ -13,7 +13,7 @@ $(function(){
   }).resize(function(){
     motion()
   })//event
-
+ 
   var n = 1
   $('.sub-story .indicator').click(function(){
     var increase = parseInt($(this).attr('data-n'))
@@ -24,5 +24,15 @@ $(function(){
 
     $('.sub-story .box').removeClass('active')
     $('.sub-story .box' + n).addClass('active')
+  })
+
+  $('.sub-story .box').click(function(){
+    var n = $(this).attr('data-n')
+    console.log(n);
+    $('.sub-story .open'+n).addClass('active')
+  })
+
+  $('.sub-story .open').click(function(){
+    $(this).removeClass('active')
   })
 })

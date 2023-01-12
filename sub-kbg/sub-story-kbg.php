@@ -14,7 +14,7 @@
   </div>
 
   <div class="content">
-    <div class="box box1 active">
+    <div class="box box1 active" data-n="1">
       <div class="flip">
         <div class="face front">
           <img class="screen" src="./img/sub/sub-deco/folding-screen1.png" alt="">
@@ -25,20 +25,20 @@
           <p>
             <img class="brush" src="./img/sub/sub-deco/title-bottom.png" alt="">
             <span>
-            향원정 북쪽에 있는 건청궁 
+            향원정 북쪽에 있는 건청궁  
             곤녕합에서 일본인들에게 시해
             </span>
           </p>
           <img class="main" src="./img/sub/sub-story/kbg/original/1.png" alt="">
         </div><!-- front -->
         <div class="face back">
-          <img src="./img/sub/sub-deco/folding-screen1-back.png" alt="">
+          <img src="./img/sub/sub-deco/folding-screen1-back.png" alt=""> 
         </div><!-- back -->
         
       </div><!-- flip -->
     </div><!-- box1 -->
 
-    <div class="box box2">
+    <div class="box box2" data-n="2">
       <div class="flip">
         <div class="face front">
         <img class="screen" src="./img/sub/sub-deco/folding-screen2.png" alt="">
@@ -61,7 +61,7 @@
       </div><!-- flip -->
     </div><!-- box2 -->
 
-    <div class="box box3">
+    <div class="box box3" data-n="3">
       <div class="flip">
         <div class="face front">
         <img class="screen" src="./img/sub/sub-deco/folding-screen3.png" alt="">
