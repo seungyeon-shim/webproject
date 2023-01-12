@@ -232,6 +232,7 @@ section.sub-story .open-container .open h4 {
 }
 section.sub-story .open-container .open p {
   font-size: 0.95em;
+  text-align: center;
   margin-bottom: 20px;
 }
 section.sub-story .open-container .open img {
