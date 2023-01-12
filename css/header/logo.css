@@ -51,10 +51,10 @@
 
 @keyframes moon {
   0% {
-    box-shadow: -52px 0 #FFF inset;
+    box-shadow: -80px 0 #FFF inset;
   }
   100% {
-    box-shadow: 20px 0 #FFF inset;
+    box-shadow: 80px 0 #FFF inset;
   }
 }
 @keyframes star {
