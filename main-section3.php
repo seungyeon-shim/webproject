@@ -8,7 +8,35 @@
       <p class="section-desc">과거와 현재의 운치 있는 만남</p>
     </div><!-- text-box -->
 
+    <div class="banner greet-banner">
+      <ul class="banner-list">
 
+        <li class="banner-name banner-kbg">
+          <a href="#" target="">
+            경복궁
+          </a>
+        </li>
+
+        <li class="banner-name banner-dsg">
+          <a href="#" target="">
+            덕수궁
+          </a>
+        </li>
+
+        <li class="banner-name banner-cgg">
+          <a href="#" target="">
+            창경궁
+          </a>
+        </li>
+
+        <li class="banner-name banner-cdg">
+          <a href="#" target="">
+            창덕궁
+          </a>
+        </li>
+
+      </ul><!-- banner-list -->
+    </div><!-- banner greet-banner -->
   </div><!--wrap....컨텐츠 감싸는 영역-->
 
 
