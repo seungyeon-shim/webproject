@@ -1,15 +1,16 @@
 <link rel="stylesheet" href="./css/sub-kbg/sub-location.css">
+<link rel="stylesheet" href="./css/scrollbar.css">
 <script src="./js/sub-location/sub-location.js"></script>
 
 <section class="sub-content sub-location sub-location-kbg sub-content-center">
 
+  <img class="location-bg" src="./img/sub/sub-location/location-bg.png" alt="">
+  <img class="texture" src="./img/sub/sub-deco/texture-bg.png" alt="">
+  <img class="left" src="./img/sub/sub-deco/frame2-left.png" alt="">
+  <img class="right" src="./img/sub/sub-deco/frame2-right.png" alt="">
 
-<img class="texture" src="./img/sub/sub-deco/texture-bg.png" alt="">
-<img class="left" src="./img/sub/sub-deco/frame2-left.png" alt="">
-<img class="right" src="./img/sub/sub-deco/frame2-right.png" alt="">
 
-
-<div class="sub-title-wrap  sub-title-wrap-center">
+  <div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">경복궁 오시는길</h2>
     <p class="sub-desc">
       경복궁으로 오세요
@@ -25,28 +26,38 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25295.6604935355!2d126.94202207910156!3d37.57961700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1673347520949!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- map -->
 
-        <div class="transportation">
 
-         <div class="big-text">
+        <div class="transportation" id="style-4">
+          
+          <div class="big-text">
             <h2 class="ebs">경복궁</h2>
-              <h3>서울 종로구 사직로 161 경복궁</h3>
-         </div>
-           
+            <h3>서울 종로구 사직로 161 경복궁</h3>
+          </div>
+
           <div class="kbg-trans">
             <div class="subway">
               <h3><i class="fa-solid fa-train-subway"></i> 지하철로 오시는길</h3>
-                <li><p class="orange"> 3호선 </p><em>경복궁역 5번출구 도보 5분</em></li>
-                <li><p class="purple"> 5호선 </p><em>광화문역 2번출구 도보 약 10분</em></li>
+              <li>
+                <p class="orange"> 3호선 </p><em>경복궁역 5번출구 도보 5분</em>
+              </li>
+              <li>
+                <p class="purple"> 5호선 </p><em>광화문역 2번출구 도보 약 10분</em>
+              </li>
             </div>
             <div class="bus">
               <h3><i class="fa-solid fa-bus-simple"></i> 버스로 오시는길</h3>
-              <li><p class="green">마을</p><em>종로11 | 종로9 | 종로01</em></li>
-                <li><p class="blue">간선</p><em>109 | 171 | 272 | 601</em></li>
+              <li>
+                <p class="green">마을</p><em>종로11 | 종로9 | 종로01</em>
+              </li>
+              <li>
+                <p class="blue">간선</p><em>109 | 171 | 272 | 601</em>
+              </li>
             </div>
           </div><!-- kbg-trans -->
 
 
         </div><!-- transportation -->
+       
 
       </div><!-- map-wrap -->
     </div><!-- paper-wrap -->
