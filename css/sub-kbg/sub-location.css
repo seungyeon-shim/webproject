@@ -7,13 +7,20 @@ section.sub-location {
 section.sub-location .location-bg {
   position: absolute;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   opacity: 0.1;
 }
 @media screen and (max-width: 550px) {
   section.sub-location .location-bg {
     width: 140%;
   }
+}
+section.sub-location .mount {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  opacity: 0.3;
 }
 section.sub-location .left {
   position: absolute;
@@ -47,8 +54,7 @@ section.sub-location .texture {
 }
 @media screen and (max-width: 880px) {
   section.sub-location .sub-title-wrap-center {
-    position: absolute;
-    top: 60px;
+    transform: translateY(-50%);
   }
 }
 section.sub-location .location-wrap {
