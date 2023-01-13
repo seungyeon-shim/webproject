@@ -1,6 +1,7 @@
 section.sub-location {
   height: 100%;
   overflow: hidden;
+  /* ---------------------------------------------------------------- */
   /* active----------------------------------------- */
 }
 section.sub-location .location-bg {
@@ -8,6 +9,11 @@ section.sub-location .location-bg {
   width: 100%;
   max-width: 1200px;
   opacity: 0.1;
+}
+@media screen and (max-width: 550px) {
+  section.sub-location .location-bg {
+    width: 140%;
+  }
 }
 section.sub-location .left {
   position: absolute;
@@ -38,6 +44,12 @@ section.sub-location .right {
 section.sub-location .texture {
   position: absolute;
   opacity: 0.1;
+}
+@media screen and (max-width: 880px) {
+  section.sub-location .sub-title-wrap-center {
+    position: absolute;
+    top: 60px;
+  }
 }
 section.sub-location .location-wrap {
   position: relative;
