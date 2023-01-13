@@ -52,25 +52,32 @@ main.sub {
         right :15%;
       }
     }//figure.bg-deco
-     /* content--------------------------------------------- */
+
+    /* content--------------------------------------------- */
     div.sub-history-content{
       margin :0 auto;
-      margin-top: 20px;
       width :80%;
       height :80%;
       overflow :hidden;
       @media screen and (min-width:1000px){
         max-width: 1200px;
+        margin-top: 50px;
       }
       @media screen and (max-width:1000px){
         max-width :800px;
+        margin-top: 0px;
       }
 /* 상단 img --------------------------------------- */
       .bar-inner{
         position :relative;
-        width: 300%;
-        height: 30%;
+        height: 210px;
         overflow: hidden;
+        @media screen and (min-width:1000px){
+          width: 300%;
+        }
+        @media screen and (max-width:1000px){
+          width: 600%;
+        }
         img{
           position: absolute;
           bottom :-50%;
@@ -99,20 +106,38 @@ main.sub {
           }//li
         }//ol.centurybox
       }//bar-inner
+
 /* main content--------------------------------------- */
       ol.main-content{
         color :#fff; //임시로 해둠 안보여서
         width :300%;
         display: flex;
         margin-top: 30px;
+        @media screen and (min-width:1000px){
+          width :300%;
+        }
+        @media screen and (max-width:1000px){
+          width :600%
+        }
         >li{
           display :flex;
-          width :16.6%; 
           height :50%;
+          overflow: hidden;
+          @media screen and (min-width:1000px){
+            width :16.6%;  
+          }
+          @media screen and (max-width:1000px){
+            width :16.6%;  
+            display: block;
+          }
           >div{
             padding: 10px;
             box-sizing: border-box;
             width :50%;
+            @media screen and (max-width:1000px){
+              width: 100%;
+              margin-bottom: 10px;
+            }
             h4{
               display: flex;
               height :50px;
@@ -127,8 +152,13 @@ main.sub {
               }//em.history-title
             }//h4
             ul.yearly-textbox{
-              margin-top :40px;
               padding-left :10px;
+              @media screen and (min-width:1000px){
+                margin-top :40px;
+              }
+              @media screen and (max-width:1000px){
+                margin-top :30px;
+              }
               li{
                 padding: 5px;
                 em{
@@ -142,11 +172,18 @@ main.sub {
             }//ul.yearly-textbox
           }//div
           figure{
-            width:50%;
             display: flex;
             align-items: flex-end;
             padding-bottom: 20px;
             box-sizing :border-box;
+            @media screen and (min-width:1000px){
+              width:50%;
+              align-items: flex-end;
+            }
+            @media screen and (max-width:1000px){
+              width: 100%;
+              /* align-items: flex-start; */
+            }
             img{
               display :inline-block;
               object-fit: cover;
@@ -170,19 +207,21 @@ main.sub {
        /* button--------------------------------------------- */
       div.controls{
         position: relative;
-        z-index :100;
         width :100%;
         display :flex;
         align-items: center;
         justify-content :center;
         margin-top :15px;
+        @media screen and (max-width:1000px){
+          
+        }
         div.indicator{
           width :100%;
           display :flex;
           justify-content: center;
           margin :0 20px;
-          @media screen and (max-width1000px){
-            flex-wrap: wrap;
+          @media screen and (max-width:1000px){
+            display: none;
           }
           button{
             flex :1;
@@ -193,6 +232,10 @@ main.sub {
             &:hover,&.active{
               opacity: 1;
               font-size: 3em;
+            }
+            &.active{
+              color: var(--yellow-sub);
+              font-weight: 600;
             }
           }//button
         }//div.indicator

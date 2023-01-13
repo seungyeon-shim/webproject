@@ -61,7 +61,6 @@ main.sub .sub-history figure.bg-deco img.lantern {
 }
 main.sub .sub-history div.sub-history-content {
   margin: 0 auto;
-  margin-top: 20px;
   width: 80%;
   height: 80%;
   overflow: hidden;
@@ -72,18 +71,29 @@ main.sub .sub-history div.sub-history-content {
 @media screen and (min-width: 1000px) {
   main.sub .sub-history div.sub-history-content {
     max-width: 1200px;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 1000px) {
   main.sub .sub-history div.sub-history-content {
     max-width: 800px;
+    margin-top: 0px;
   }
 }
 main.sub .sub-history div.sub-history-content .bar-inner {
   position: relative;
-  width: 300%;
-  height: 30%;
+  height: 210px;
   overflow: hidden;
+}
+@media screen and (min-width: 1000px) {
+  main.sub .sub-history div.sub-history-content .bar-inner {
+    width: 300%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content .bar-inner {
+    width: 600%;
+  }
 }
 main.sub .sub-history div.sub-history-content .bar-inner img {
   position: absolute;
@@ -118,15 +128,42 @@ main.sub .sub-history div.sub-history-content ol.main-content {
   display: flex;
   margin-top: 30px;
 }
+@media screen and (min-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content {
+    width: 300%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content {
+    width: 600%;
+  }
+}
 main.sub .sub-history div.sub-history-content ol.main-content > li {
   display: flex;
-  width: 16.6%;
   height: 50%;
+  overflow: hidden;
+}
+@media screen and (min-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li {
+    width: 16.6%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li {
+    width: 16.6%;
+    display: block;
+  }
 }
 main.sub .sub-history div.sub-history-content ol.main-content > li > div {
   padding: 10px;
   box-sizing: border-box;
   width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li > div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 main.sub .sub-history div.sub-history-content ol.main-content > li > div h4 {
   display: flex;
@@ -142,8 +179,17 @@ main.sub .sub-history div.sub-history-content ol.main-content > li > div h4 em.h
   line-height: 25px;
 }
 main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox {
-  margin-top: 40px;
   padding-left: 10px;
+}
+@media screen and (min-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox {
+    margin-top: 30px;
+  }
 }
 main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox li {
   padding: 5px;
@@ -156,11 +202,22 @@ main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.year
   padding-left: 10px;
 }
 main.sub .sub-history div.sub-history-content ol.main-content > li figure {
-  width: 50%;
   display: flex;
   align-items: flex-end;
   padding-bottom: 20px;
   box-sizing: border-box;
+}
+@media screen and (min-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li figure {
+    width: 50%;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main.sub .sub-history div.sub-history-content ol.main-content > li figure {
+    width: 100%;
+    /* align-items: flex-start; */
+  }
 }
 main.sub .sub-history div.sub-history-content ol.main-content > li figure img {
   display: inline-block;
@@ -180,7 +237,6 @@ main.sub .sub-history div.sub-history-content ol.main-content > li figure img:la
 }
 main.sub .sub-history div.sub-history-content div.controls {
   position: relative;
-  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -193,9 +249,9 @@ main.sub .sub-history div.sub-history-content div.controls div.indicator {
   justify-content: center;
   margin: 0 20px;
 }
-@media screen and (max-width1000px) {
+@media screen and (max-width: 1000px) {
   main.sub .sub-history div.sub-history-content div.controls div.indicator {
-    flex-wrap: wrap;
+    display: none;
   }
 }
 main.sub .sub-history div.sub-history-content div.controls div.indicator button {
@@ -208,6 +264,10 @@ main.sub .sub-history div.sub-history-content div.controls div.indicator button 
 main.sub .sub-history div.sub-history-content div.controls div.indicator button:hover, main.sub .sub-history div.sub-history-content div.controls div.indicator button.active {
   opacity: 1;
   font-size: 3em;
+}
+main.sub .sub-history div.sub-history-content div.controls div.indicator button.active {
+  color: var(--yellow-sub);
+  font-weight: 600;
 }
 main.sub .sub-history div.sub-history-content div.controls .prev, main.sub .sub-history div.sub-history-content div.controls .next {
   font-size: 3em;
