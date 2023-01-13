@@ -2,7 +2,6 @@ section.sub-story {
   overflow: hidden;
   height: 100%;
   box-sizing: border-box;
-  border: 1px solid #FFF;
   /* background-image: url(../../img/story/sub-story/sub-kbg/bg/1.png); */
   /* open-container active----------------------------------- */
 }
