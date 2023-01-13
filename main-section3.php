@@ -8,36 +8,29 @@
       <p class="section-desc">과거와 현재의 운치 있는 만남</p>
     </div><!-- text-box -->
 
-    <div class="banner greet-banner">
-      <ul class="banner-list">
 
-        <li class="banner-name banner-kbg">
-          <a href="#" target="">
+    <div class="btn-wrap">
+      <div class="banner greet-banner">
+        <div class="banner-list">
+
+          <button class="banner-name banner-kbg">
             경복궁
-          </a>
-        </li>
+          </button>
 
-        <li class="banner-name banner-dsg">
-          <a href="#" target="">
+          <button class="banner-name banner-dsg">
             덕수궁
-          </a>
-        </li>
+          </button>
 
-        <li class="banner-name banner-cgg">
-          <a href="#" target="">
+          <button class="banner-name banner-cgg">
             창경궁
-          </a>
-        </li>
+          </button>
 
-        <li class="banner-name banner-cdg">
-          <a href="#" target="">
+          <button class="banner-name banner-cdg">
             창덕궁
-          </a>
-        </li>
+          </button>
 
-      </ul><!-- banner-list -->
-    </div><!-- banner greet-banner -->
-  </div><!--wrap....컨텐츠 감싸는 영역-->
-
+        </div><!-- banner-list -->
+      </div><!-- banner greet-banner -->
+    </div><!--wrap....컨텐츠 감싸는 영역-->
 
 </section>
