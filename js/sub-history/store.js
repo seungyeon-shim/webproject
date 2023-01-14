@@ -7,7 +7,7 @@ historyArr1 = [
     yearlyArr : [//ul
       '<em>1392년</em> <b>조선 개국</b>',//il m
       '<em>1394년</em> <b>개경에서 한양으로 천도</b>',
-      '<em>1395년</em> <b>종묘·사직 그리고 경복궁 창건</b>',
+      '<em>1395년</em> <b>종묘·사직과 경복궁 창건</b>',
     ],
     imgArr : [
       'kbg-l1.png','kbg-s1.png'

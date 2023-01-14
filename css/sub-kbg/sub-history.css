@@ -50,10 +50,6 @@ main.sub .sub-history figure.bg-deco img.cloud1 {
   top: 20%;
   left: 5%;
 }
-main.sub .sub-history figure.bg-deco img.cloud3 {
-  bottom: 20%;
-  right: -5%;
-}
 main.sub .sub-history figure.bg-deco img.lantern {
   width: 25%;
   top: 0;
@@ -63,10 +59,21 @@ main.sub .sub-history div.sub-history-content {
   margin: 0 auto;
   width: 80%;
   height: 80%;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   /* 상단 img --------------------------------------- */
-  /* main content--------------------------------------- */
-  /* button--------------------------------------------- */
+}
+main.sub .sub-history div.sub-history-content::-webkit-scrollbar {
+  height: 10px;
+}
+main.sub .sub-history div.sub-history-content::-webkit-scrollbar-track {
+  height: 5px;
+  background-color: #fff;
+  opacity: 0.7;
+}
+main.sub .sub-history div.sub-history-content::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #fff;
 }
 @media screen and (min-width: 1000px) {
   main.sub .sub-history div.sub-history-content {
@@ -80,146 +87,142 @@ main.sub .sub-history div.sub-history-content {
     margin-top: 0px;
   }
 }
-main.sub .sub-history div.sub-history-content .bar-inner {
-  position: relative;
-  height: 210px;
-  overflow: hidden;
+main.sub .sub-history div.sub-history-content .inner {
+  /* main content--------------------------------------- */
+  /* button--------------------------------------------- */
 }
 @media screen and (min-width: 1000px) {
-  main.sub .sub-history div.sub-history-content .bar-inner {
+  main.sub .sub-history div.sub-history-content .inner {
     width: 300%;
   }
 }
 @media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content .bar-inner {
+  main.sub .sub-history div.sub-history-content .inner {
     width: 600%;
   }
 }
-main.sub .sub-history div.sub-history-content .bar-inner img {
+main.sub .sub-history div.sub-history-content .inner .bar-inner {
+  width: 100%;
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+main.sub .sub-history div.sub-history-content .inner .bar-inner img {
   position: absolute;
   bottom: -50%;
 }
-main.sub .sub-history div.sub-history-content .bar-inner ol.century-box {
+main.sub .sub-history div.sub-history-content .inner .bar-inner ol.century-box {
   position: absolute;
   bottom: -12%;
   display: flex;
   width: 100%;
 }
-main.sub .sub-history div.sub-history-content .bar-inner ol.century-box li {
+main.sub .sub-history div.sub-history-content .inner .bar-inner ol.century-box li {
   width: 16.6%;
   margin-left: 10px;
   padding-right: 20px;
   box-sizing: border-box;
   color: var(--gray);
 }
-main.sub .sub-history div.sub-history-content .bar-inner ol.century-box li p.century {
+main.sub .sub-history div.sub-history-content .inner .bar-inner ol.century-box li p.century {
   font-size: 1.2em;
 }
-main.sub .sub-history div.sub-history-content .bar-inner ol.century-box li h3.year {
+main.sub .sub-history div.sub-history-content .inner .bar-inner ol.century-box li h3.year {
   font-size: 5em;
   font-weight: 600;
 }
-main.sub .sub-history div.sub-history-content .bar-inner ol.century-box li h3.year span.point-sans {
+main.sub .sub-history div.sub-history-content .inner .bar-inner ol.century-box li h3.year span.point-sans {
   font-weight: 400;
 }
-main.sub .sub-history div.sub-history-content ol.main-content {
+main.sub .sub-history div.sub-history-content .inner ol.main-content {
   color: #fff;
-  width: 300%;
   display: flex;
+  width: 100%;
   margin-top: 30px;
 }
-@media screen and (min-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content {
-    width: 300%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content {
-    width: 600%;
-  }
-}
-main.sub .sub-history div.sub-history-content ol.main-content > li {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li {
   display: flex;
   height: 50%;
   overflow: hidden;
 }
 @media screen and (min-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li {
     width: 16.6%;
   }
 }
 @media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li {
     width: 16.6%;
     display: block;
   }
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div {
   padding: 10px;
   box-sizing: border-box;
   width: 50%;
 }
 @media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li > div {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div h4 {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div h4 {
   display: flex;
   height: 50px;
   align-items: center;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div h4 .arrow {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div h4 .arrow {
   width: 50px;
   height: 50px;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div h4 em.history-title {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div h4 em.history-title {
   font-size: 1.5em;
   line-height: 25px;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div ul.yearly-textbox {
   padding-left: 10px;
 }
 @media screen and (min-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div ul.yearly-textbox {
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div ul.yearly-textbox {
     margin-top: 30px;
   }
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox li {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div ul.yearly-textbox li {
+  white-space: nowrap;
   padding: 5px;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox li em {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div ul.yearly-textbox li em {
   display: inline-block;
   width: 50px;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li > div ul.yearly-textbox li b {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li > div ul.yearly-textbox li b {
   padding-left: 10px;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li figure {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li figure {
   display: flex;
   align-items: flex-end;
   padding-bottom: 20px;
   box-sizing: border-box;
 }
 @media screen and (min-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li figure {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li figure {
     width: 50%;
     align-items: flex-end;
   }
 }
 @media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content ol.main-content > li figure {
+  main.sub .sub-history div.sub-history-content .inner ol.main-content > li figure {
     width: 100%;
     /* align-items: flex-start; */
   }
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li figure img {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li figure img {
   display: inline-block;
   object-fit: cover;
   object-position: center;
@@ -227,15 +230,15 @@ main.sub .sub-history div.sub-history-content ol.main-content > li figure img {
   padding: 5px;
   flex: 1;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li figure img:first-child {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li figure img:first-child {
   width: 55%;
   height: 200px;
 }
-main.sub .sub-history div.sub-history-content ol.main-content > li figure img:last-child {
+main.sub .sub-history div.sub-history-content .inner ol.main-content > li figure img:last-child {
   width: 40%;
   height: 160px;
 }
-main.sub .sub-history div.sub-history-content div.controls {
+main.sub .sub-history div.sub-history-content .inner div.controls {
   position: relative;
   width: 100%;
   display: flex;
@@ -243,39 +246,39 @@ main.sub .sub-history div.sub-history-content div.controls {
   justify-content: center;
   margin-top: 15px;
 }
-main.sub .sub-history div.sub-history-content div.controls div.indicator {
+main.sub .sub-history div.sub-history-content .inner div.controls div.indicator {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 0 20px;
 }
 @media screen and (max-width: 1000px) {
-  main.sub .sub-history div.sub-history-content div.controls div.indicator {
+  main.sub .sub-history div.sub-history-content .inner div.controls div.indicator {
     display: none;
   }
 }
-main.sub .sub-history div.sub-history-content div.controls div.indicator button {
+main.sub .sub-history div.sub-history-content .inner div.controls div.indicator button {
   flex: 1;
   color: #fff;
   font-size: 2em;
   margin: 0 10px;
   opacity: 0.5;
 }
-main.sub .sub-history div.sub-history-content div.controls div.indicator button:hover, main.sub .sub-history div.sub-history-content div.controls div.indicator button.active {
+main.sub .sub-history div.sub-history-content .inner div.controls div.indicator button:hover, main.sub .sub-history div.sub-history-content .inner div.controls div.indicator button.active {
   opacity: 1;
   font-size: 3em;
 }
-main.sub .sub-history div.sub-history-content div.controls div.indicator button.active {
+main.sub .sub-history div.sub-history-content .inner div.controls div.indicator button.active {
   color: var(--yellow-sub);
   font-weight: 600;
 }
-main.sub .sub-history div.sub-history-content div.controls .prev, main.sub .sub-history div.sub-history-content div.controls .next {
+main.sub .sub-history div.sub-history-content .inner div.controls .prev, main.sub .sub-history div.sub-history-content .inner div.controls .next {
   font-size: 3em;
   text-align: center;
   color: #fff;
   opacity: 0.5;
   transition: all 0.5s;
 }
-main.sub .sub-history div.sub-history-content div.controls .prev:hover, main.sub .sub-history div.sub-history-content div.controls .next:hover {
+main.sub .sub-history div.sub-history-content .inner div.controls .prev:hover, main.sub .sub-history div.sub-history-content .inner div.controls .next:hover {
   opacity: 1;
 }/*# sourceMappingURL=sub-history.css.map */

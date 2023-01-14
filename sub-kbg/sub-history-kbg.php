@@ -6,18 +6,17 @@
     <p class="sub-desc">조선 제일의 법도 경복궁의 역사를 안내드립니다.</p>
   </div><!-- sub-title-wrap -->
 
-  <figure class="bg-deco">
+ <!--  <figure class="bg-deco">
     <img class="mountain" src="./img/sub/sub-deco/mountain3.png" alt="">
     <img class="frame1 frame1-left" src="./img/sub/sub-deco/frame1-left.png" alt="">
     <img class="frame1 frame1-right" src="./img/sub/sub-deco/frame1-right.png" alt="">
     <img class="cloud cloud1" src="./img/sub/sub-deco/cloud4.png" alt="">
-    <img class="cloud cloud3" src="./img/sub/sub-deco/cloud4.png" alt="">
     <img class="lantern" src="./img/sub/sub-deco/lantern1.png" alt="">
-  </figure>
+  </figure> -->
 
   <div class="sub-history-content"><!-- 전체 -->
     <!-- 상단 바 이미지 -->
-
+  <div class="inner">
     <div class="bar-inner">
       <img src="./img/sub/sub-history/kbg/history-bar.png" alt="">
       <ol class="century-box"></ol>
@@ -64,7 +63,7 @@
       }) //historyArr1
     </script>
 
-
+<!-- 
     <div class="controls">
       <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
       <div class="indicator">
@@ -74,10 +73,10 @@
         <button>1800</button>
         <button>1900</button>
         <button>2000</button>
-      </div> <!-- indicator  -->
+      </div>
       <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
-    </div> <!-- controls  -->
+    </div> -->
 
-
+    </div>
   </div><!-- content  -->
 </section>
