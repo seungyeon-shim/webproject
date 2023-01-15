@@ -2,6 +2,7 @@ historyArr1 = [
   {//v
     century : '1300 ~ 1399',
     year : '1300',
+    slideImg : 'slide-img1.png',
     arrow : 'arrow.png',
     title : '조선 건국과 조선의 법궁, 경복궁 창건',
     yearlyArr : [//ul
@@ -16,6 +17,7 @@ historyArr1 = [
   {//v
     century : '1400 ~ 1499',
     year : '1400',
+    slideImg : 'slide-img2.png',
     arrow : 'arrow.png',
     title : '경복궁 법궁체제확립',
     yearlyArr : [//ul
@@ -30,6 +32,7 @@ historyArr1 = [
   {//v
     century : '1500 ~ 1599',
     year : '1500',
+    slideImg : 'slide-img3.png',
     arrow : 'arrow.png',
     title : '화재와 임진왜란으로의 소실',
     yearlyArr : [//ul
@@ -44,6 +47,7 @@ historyArr1 = [
   {//v
     century : '1800 ~ 1899',
     year : '1800',
+    slideImg : 'slide-img4.png',
     arrow : 'arrow.png',
     title : '대원군의 중건과 화재',
     yearlyArr : [//ul
@@ -59,6 +63,7 @@ historyArr1 = [
   {//v
     century : '1900 ~ 1999',
     year : '1900',
+    slideImg : 'slide-img5.png',
     arrow : 'arrow.png',
     title : '민족 수난기와 경복궁 복원',
     yearlyArr : [//ul
@@ -74,8 +79,9 @@ historyArr1 = [
   {//v
     century : '2000 ~ 2023',
     year : '2000',
+    slideImg : 'slide-img6.png',
     arrow : 'arrow.png',
-    title : '경복궁 복원',
+    title : '계속되는 경복궁 복원',
     yearlyArr : [//ul
       '<em>2001년</em> <b>흥례문·유화문·영제교 복원</b>',//il m
       '<em>2010년</em> <b>광화문 일곽 복원</b>',

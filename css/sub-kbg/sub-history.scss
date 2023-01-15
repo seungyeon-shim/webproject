@@ -1,6 +1,7 @@
 main.sub {
   .sub-history{
     height: 100%;
+    position: relative;
     figure.bg-deco{
       position: absolute;
       top: 0; left: 0;
@@ -17,247 +18,226 @@ main.sub {
         width :105%;
         bottom :-15%; 
         opacity :0.1;
-        @media screen and (max-width1000px){
+        @media screen and (max-width:1000px){
           bottom :-5%;
+          height: 20%;
         }
       }//img.mountain
-      img.frame1{
-        top :0;
-        width: 10%;
-        opacity: 0.8;
-        @media screen and (max-width1000px){
-          width :20%;
-        }
-      }//img.frame1
-      img.frame1-left{
-        left: 0;
-      }//img.frame1-left
-      img.frame1-right{
-        right: 0;
-      }//img.frame1-right
-      img.cloud{
-        width :30%;
-      }
-      img.cloud1{
-        top :20%;
-        left :5%;
-      }
-      img.lantern{
-        width :25%;
-        top :0;
-        right :15%;
-      }
     }//figure.bg-deco
 
     /* content--------------------------------------------- */
     div.sub-history-content{
       margin :0 auto;
-      width :80%;
-      height :80%;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      &::-webkit-scrollbar{
-        height: 10px;
-      }
-      &::-webkit-scrollbar-track{
-        height: 5px;
-        background-color: #fff;
-        opacity: 0.7;
-      }
-      &::-webkit-scrollbar-thumb{
-        height: 10px;
-        background-color: #fff;
-      }
+      height :100%;
+      overflow: hidden;
       @media screen and (min-width:1000px){
+        width :100%;
         max-width: 1200px;
         margin-top: 50px;
       }
       @media screen and (max-width:1000px){
+        width :80%;
         max-width :800px;
-        margin-top: 0px;
       }
-/* 상단 img --------------------------------------- */
-    .inner{
+      div.col_width{//한칸의 크기 
+          height: 100%;
+        @media screen and (min-width:1000px){
+          width: 50%;
+        }
+        @media screen and (max-width:1000px){
+          width: 100%;
+        }
+        ol.img_container{
+          position :relative;
+          width: 600%;
+          height: 100%;
+          display: flex;
+          cursor: grab;
+          li{
+            position: relative;
+            width: 16.6666%;
+            height: 100%;
+            color :var(--gray);
+            figure.top-img{
+              position: relative;
+              width: 100%;
+              height: 30%;
+              overflow: hidden;
+              @media screen and (max-width:1000px){
+                height: 25%;
+              }
+              img{
+                position: absolute;
+                bottom :-50%;
+              }//img
+            }//figure.top-img
+            div.century-textbox{
+              position: absolute;
+              top: 60px; left: 0;
+              width: 100%;
+              margin-left: 10px;
+              padding-right: 20px;
+              box-sizing: border-box;
+              p.century{
+                font-size: 1.2em;
+              }//p.century
+              h3.year{
+                font-size :5em;
+                font-weight: 600;
+                line-height: 90px;
+                span.point-sans{
+                  font-weight: 400;
+                }//sub.point-sans
+              }//h3.year
+            }//div.century-textbox
+            div.bottom-content{
+              height: 50%;
+              display: flex;
+              @media screen and (max-width:1000px){
+                display:block;
+              }
+              div.bottom-textbox{
+                width: 50%;
+                padding: 10px;
+                padding-top: 30px;
+                box-sizing: border-box;
+                @media screen and (max-width:1000px){
+                  width: 100%;
+                }
+                h4{
+                  display: flex;
+                  height :50px;
+                  align-items: center;
+                  .arrow{
+                    width :50px;
+                    height :50px;
+                  }//img
+                  em.history-title{
+                    font-size: 1.5em;
+                    line-height: 25px;
+                  }//em.history-title
+                }//h4
+                ol.yearly-textbox{
+                  padding-left :10px;
+                  @media screen and (min-width:1000px){
+                    margin-top :40px;
+                  }
+                  @media screen and (max-width:1000px){
+                    margin-top :30px;
+                  }
+                  li{
+                    white-space: nowrap;
+                    padding: 5px;
+                    p.yearly{
+                      em{
+                        display: inline-block;
+                        width :50px;
+                      }
+                      b{
+                        padding-left: 10px;
+                      }
+                    }//p.yearly
+                  }//li
+                }//ol.yearly-textbox
+              }//div.bottom-textbox
+              figure{
+                display: flex;
+                padding-bottom: 20px;
+                box-sizing :border-box;
+                align-items: flex-end;
+                @media screen and (min-width:1000px){
+                  width:50%;
+                }
+                @media screen and (max-width:1000px){
+                  width: 100%;
+                }
+                img{
+                  object-fit: cover;
+                  object-position: center;
+                  box-sizing :border-box;
+                  padding :5px;
+                  flex :1;
+                  &:first-child{
+                    width: 55%;
+                    height: 200px;
+                  }//first-child
+                  &:last-child{
+                    width: 40%;
+                    height: 160px;
+                  }//last-child
+                }//img
+              }//figure
+            }//div.bottom-content
+          }//li한칸안의 내용들
+        }//ol.img_container
+      }//div.col_width
+      /* button--------------------------------------------- */
+    div.controls{
+      position: absolute;
+      display :flex;
+      align-items: center;
+      justify-content :center;
+      width: 100%;
       @media screen and (min-width:1000px){
-        width: 300%;
+        max-width: 1200px;
+        bottom: 100px;
+        margin-top :15px;
       }
       @media screen and (max-width:1000px){
-        width: 600%;
+        max-width :800px;
       }
-      .bar-inner{
-        width: 100%;
-        position :relative;
-        height: 210px;
-        overflow: hidden;
-        img{
-          position: absolute;
-          bottom :-50%;
-        }//img
-        ol.century-box{
-          position: absolute;
-          bottom :-12%;
-          display :flex;
-          width: 100%;
-          li{
-            width: 16.6%;
-            margin-left: 10px;
-            padding-right: 20px;
-            box-sizing: border-box;
-            color :var(--gray);
-            p.century{
-              font-size: 1.2em;
-            }//p.century
-            h3.year{
-              font-size :5em;
-              font-weight: 600;
-              span.point-sans{
-                font-weight: 400;
-              }//sub.point-sans
-            }//h3.year
-          }//li
-        }//ol.centurybox
-      }//bar-inner
-
-/* main content--------------------------------------- */
-      ol.main-content{
-        color :#fff; //임시로 해둠 안보여서
-        display: flex;
-        width :100%;
-        margin-top: 30px;
-        >li{
-          display :flex;
-          height :50%;
-          overflow: hidden;
-          @media screen and (min-width:1000px){
-            width :16.6%;  
-          }
-          @media screen and (max-width:1000px){
-            width :16.6%;  
-            display: block;
-          }
-          >div{
-            padding: 10px;
-            box-sizing: border-box;
-            width :50%;
-            @media screen and (max-width:1000px){
-              width: 100%;
-              margin-bottom: 10px;
-            }
-            h4{
-              display: flex;
-              height :50px;
-              align-items: center;
-              .arrow{
-                width :50px;
-                height :50px;
-              }//img
-              em.history-title{
-                font-size: 1.5em;
-                line-height: 25px;
-              }//em.history-title
-            }//h4
-            ul.yearly-textbox{
-              padding-left :10px;
-              @media screen and (min-width:1000px){
-                margin-top :40px;
-              }
-              @media screen and (max-width:1000px){
-                margin-top :30px;
-              }
-              li{
-                white-space: nowrap;
-                padding: 5px;
-                em{
-                  display: inline-block;
-                  width :50px;
-                }
-                b{
-                  padding-left: 10px;
-                }
-              }//li
-            }//ul.yearly-textbox
-          }//div
-          figure{
-            display: flex;
-            align-items: flex-end;
-            padding-bottom: 20px;
-            box-sizing :border-box;
-            @media screen and (min-width:1000px){
-              width:50%;
-              align-items: flex-end;
-            }
-            @media screen and (max-width:1000px){
-              width: 100%;
-              /* align-items: flex-start; */
-            }
-            img{
-              display :inline-block;
-              object-fit: cover;
-              object-position: center;
-              box-sizing :border-box;
-              padding :5px;
-              flex :1;
-              &:first-child{
-                width: 55%;
-                height: 200px;
-              }//first-child
-              &:last-child{
-                width: 40%;
-                height: 160px;
-              }//last-child
-            }//img
-          }//figure
-        }//li
-      }//ol.main-content
-      
-       /* button--------------------------------------------- */
-      div.controls{
-        position: relative;
+      div.indicator{
         width :100%;
         display :flex;
-        align-items: center;
-        justify-content :center;
-        margin-top :15px;
+        justify-content: center;
+        margin :0 20px;
         @media screen and (max-width:1000px){
-          
+          display: none;
         }
-        div.indicator{
-          width :100%;
-          display :flex;
-          justify-content: center;
-          margin :0 20px;
-          @media screen and (max-width:1000px){
-            display: none;
-          }
-          button{
-            flex :1;
-            color :#fff;
-            font-size: 2em;
-            margin : 0 10px;
-            opacity: 0.5;
-            &:hover,&.active{
-              opacity: 1;
-              font-size: 3em;
-            }
-            &.active{
-              color: var(--yellow-sub);
-              font-weight: 600;
-            }
-          }//button
-        }//div.indicator
-        .prev,.next{
-          font-size :3em;
-          text-align :center;
+        button{
+          flex :1;
           color :#fff;
+          font-size: 2em;
+          margin : 0 10px;
           opacity: 0.5;
-          transition: all 0.5s;
-          &:hover{
+          &:hover,&.active{
             opacity: 1;
+            font-size: 3em;
           }
-        }//.prev,.next
-      }//div.controls
-    }
-    }//div.sub-history-content
+          &.active{
+            color: var(--yellow-sub);
+            font-weight: 600;
+          }
+        }//button
+      }//div.indicator
+      .prev,.next{
+        position: absolute;
+        font-size :3em;
+        text-align :center;
+        color :#fff;
+        opacity: 0.5;
+        transition: all 0.5s;
+        &:hover{
+          opacity: 1;
+        }
+      }//.prev,.next
+      .prev{
+        @media screen and (min-width:1000px){
+          top: -50%;
+          left: 5%;
+        }
+        @media screen and (max-width:1000px){
+        }
+      }
+      .next{
+        @media screen and (min-width:1000px){
+          top: -50%;
+          right: 5%;
+        }
+        @media screen and (max-width:1000px){
+        }
+      }
+    }//div.controls
+    }//div.sub-history-content overflow
   }//sub-history-kbg
 }//main.sub
-
