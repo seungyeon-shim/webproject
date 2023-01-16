@@ -1,5 +1,136 @@
+.home-main {
+  display: inline;
+}
+
+.main-section .title {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  filter: url(#ripple);
+}
+.main-section .title h2 {
+  position: relative;
+  margin: 5px 0 5px 0;
+  color: #FFF;
+  font-size: 5em;
+  animation: light-text 1s infinite linear alternate;
+}
+@keyframes light-text {
+  0% {
+    filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+  }
+  100% {
+    filter: drop-shadow(0 0 10px rgb(0, 174, 255));
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-section .title h2 {
+    font-size: 10vw;
+  }
+}
+.main-section .title em {
+  position: relative;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+.main-section .title p {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .main-visual {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-color: darkslateblue;
+}
+.main-visual .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../../img/main/main-visual/kbg-background.png);
+  background-size: cover;
+  background-position: center;
+}
+.main-visual .slider .star {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main-visual .slider .season {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+}
+.main-visual .slider video.moon {
+  position: absolute;
+  width: 70%;
+  max-width: 750px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+.main-visual .slider em {
+  position: absolute;
+  width: 80%;
+  max-width: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  mix-blend-mode: overlay;
+  font-size: 15em;
+}
+@media screen and (max-width: 900px) {
+  .main-visual .slider em {
+    font-size: 25vw;
+  }
+}
+.main-visual .slider figure.castle {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  animation: light 3s infinite linear alternate;
+}
+@keyframes light {
+  0% {
+    filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+  }
+  100% {
+    filter: drop-shadow(0 0 30px rgb(144, 144, 224));
+  }
+}
+@media screen and (min-width: 900px) {
+  .main-visual .slider figure.castle {
+    min-width: 1500px;
+  }
+  .main-visual .slider figure.castle img.sm {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-visual .slider figure.castle {
+    min-width: 500px;
+  }
+  .main-visual .slider figure.castle img.lg {
+    display: none;
+  }
+}
+.main-visual .slider figure.castle img {
+  width: 100%;
 }/*# sourceMappingURL=main-visual.css.map */
