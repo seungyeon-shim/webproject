@@ -1,0 +1,45 @@
+section.sub-gallery{
+  position: relative;
+  height: 100%;
+  img.deco{
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s;
+    @media screen and (max-width:1000px) {
+      &.gallery-bg{
+        max-height: 80%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &.gallery-bg{
+      bottom: 0;
+    }
+    &.gallery-top{
+      top: -10%;
+    }
+    &.gallery-bottom{
+      bottom: -10%;
+    }
+  }
+  /* active -------------------------------------------- */
+  img.deco.active{
+    @media screen and (min-width:1000px) {
+      &.gallery-top{
+        transform: translateY(-60%);
+      }
+      &.gallery-bottom{
+        transform: translateY(60%);
+      }
+    }
+    @media screen and (max-width:1000px) {
+      &.gallery-top{
+        transform: translateY(-20%);
+      }
+      &.gallery-bottom{
+        transform: translateY(10%);
+      }
+    }
+
+  }
+}

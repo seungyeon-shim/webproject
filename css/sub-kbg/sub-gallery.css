@@ -1,0 +1,42 @@
+section.sub-gallery {
+  position: relative;
+  height: 100%;
+  /* active -------------------------------------------- */
+}
+section.sub-gallery img.deco {
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 1000px) {
+  section.sub-gallery img.deco.gallery-bg {
+    max-height: 80%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+section.sub-gallery img.deco.gallery-bg {
+  bottom: 0;
+}
+section.sub-gallery img.deco.gallery-top {
+  top: -10%;
+}
+section.sub-gallery img.deco.gallery-bottom {
+  bottom: -10%;
+}
+@media screen and (min-width: 1000px) {
+  section.sub-gallery img.deco.active.gallery-top {
+    transform: translateY(-60%);
+  }
+  section.sub-gallery img.deco.active.gallery-bottom {
+    transform: translateY(60%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.sub-gallery img.deco.active.gallery-top {
+    transform: translateY(-20%);
+  }
+  section.sub-gallery img.deco.active.gallery-bottom {
+    transform: translateY(10%);
+  }
+}/*# sourceMappingURL=sub-gallery.css.map */
