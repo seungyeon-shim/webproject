@@ -17,7 +17,11 @@ section.sub-location {
   bottom: 0;
   width: 100%;
   height: 70%;
-  opacity: 0.3;
+  opacity: 1;
+  @media screen and (max-width:550px){
+    height: 50%;
+    max-width: 500px;
+  }
 }
 
   .left{
@@ -48,7 +52,7 @@ section.sub-location {
   }
 /* ---------------------------------------------------------------- */
 .sub-title-wrap-center{
-  @media screen and (max-width:880px){
+  @media screen and (max-width:950px){
     transform: translateY(-50% ,);
   }
 

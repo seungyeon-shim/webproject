@@ -20,7 +20,13 @@ section.sub-location .mount {
   bottom: 0;
   width: 100%;
   height: 70%;
-  opacity: 0.3;
+  opacity: 1;
+}
+@media screen and (max-width: 550px) {
+  section.sub-location .mount {
+    height: 50%;
+    max-width: 500px;
+  }
 }
 section.sub-location .left {
   position: absolute;
@@ -52,7 +58,7 @@ section.sub-location .texture {
   position: absolute;
   opacity: 0.1;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 950px) {
   section.sub-location .sub-title-wrap-center {
     transform: translateY(-50%);
   }
