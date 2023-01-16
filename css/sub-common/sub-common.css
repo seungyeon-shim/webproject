@@ -6,6 +6,7 @@ main.sub section {
   position: relative;
   box-sizing: border-box;
   background-color: var(--navy-main);
+  overflow: hidden;
 }
 main.sub section.sub-content-center {
   display: flex;

@@ -6,6 +6,7 @@ main.sub {
     position: relative;
     box-sizing: border-box;
     background-color: var(--navy-main);
+    overflow: hidden;
     &.sub-content-center{
       display: flex;
       flex-direction: column;

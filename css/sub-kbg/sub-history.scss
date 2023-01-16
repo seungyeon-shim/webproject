@@ -1,7 +1,14 @@
 main.sub {
   .sub-history{
     height: 100%;
-    position: relative;
+    @media screen and (max-width:1000px){
+      height: 120%;
+    }
+    .sub-title-wrap{
+      @media screen and (max-width:1000px){
+        padding-top: 70px;
+      }
+    }
     figure.bg-deco{
       position: absolute;
       top: 0; left: 0;
@@ -61,7 +68,7 @@ main.sub {
             figure.top-img{
               position: relative;
               width: 100%;
-              height: 30%;
+              height: 40%;
               overflow: hidden;
               @media screen and (max-width:1000px){
                 height: 25%;
@@ -69,32 +76,42 @@ main.sub {
               img{
                 position: absolute;
                 bottom :-50%;
+                @media screen and (max-width:1000px){
+                  bottom :-70%;
+                }
               }//img
             }//figure.top-img
             div.century-textbox{
               position: absolute;
-              top: 60px; left: 0;
+              top: 16%; left: 0;
               width: 100%;
               margin-left: 10px;
               padding-right: 20px;
               box-sizing: border-box;
+              @media screen and (max-width:1000px){
+                top: 7%;
+              }
               p.century{
                 font-size: 1.2em;
               }//p.century
               h3.year{
                 font-size :5em;
                 font-weight: 600;
-                line-height: 90px;
+
+                @media screen and (max-width:1000px){
+                  font-size :12vw;
+                }
                 span.point-sans{
                   font-weight: 400;
                 }//sub.point-sans
               }//h3.year
             }//div.century-textbox
             div.bottom-content{
-              height: 50%;
+              height: 60%;
               display: flex;
               @media screen and (max-width:1000px){
                 display:block;
+                height: 70%;
               }
               div.bottom-textbox{
                 width: 50%;
@@ -117,7 +134,7 @@ main.sub {
                     line-height: 25px;
                   }//em.history-title
                 }//h4
-                ol.yearly-textbox{
+                div.yearly-textbox{
                   padding-left :10px;
                   @media screen and (min-width:1000px){
                     margin-top :40px;
@@ -125,28 +142,26 @@ main.sub {
                   @media screen and (max-width:1000px){
                     margin-top :30px;
                   }
-                  li{
+                  p.yearly{
                     white-space: nowrap;
                     padding: 5px;
-                    p.yearly{
-                      em{
-                        display: inline-block;
-                        width :50px;
-                      }
-                      b{
-                        padding-left: 10px;
-                      }
-                    }//p.yearly
-                  }//li
-                }//ol.yearly-textbox
+                    em{
+                      display: inline-block;
+                      width :50px;
+                    }
+                    b{
+                      padding-left: 10px;
+                    }
+                  }//p.yearly
+                }//div.yearly-textbox
               }//div.bottom-textbox
               figure{
                 display: flex;
-                padding-bottom: 20px;
                 box-sizing :border-box;
-                align-items: flex-end;
+                align-items: flex-start;
                 @media screen and (min-width:1000px){
                   width:50%;
+                  padding: 30px 0;
                 }
                 @media screen and (max-width:1000px){
                   width: 100%;
@@ -159,11 +174,10 @@ main.sub {
                   flex :1;
                   &:first-child{
                     width: 55%;
-                    height: 200px;
                   }//first-child
                   &:last-child{
                     width: 40%;
-                    height: 160px;
+                    padding-top: 18%;
                   }//last-child
                 }//img
               }//figure
@@ -171,73 +185,74 @@ main.sub {
           }//li한칸안의 내용들
         }//ol.img_container
       }//div.col_width
-      /* button--------------------------------------------- */
-    div.controls{
-      position: absolute;
+    }//div.sub-history-content overflow
+  }//sub-history-kbg
+  /* button--------------------------------------------- */
+  div.controls{
+
+    display :flex;
+    align-items: center;
+    justify-content :center;
+    width: 100%;
+    @media screen and (min-width:1000px){
+      max-width: 1200px;
+      bottom: 100px;
+      margin-top :15px;
+    }
+    @media screen and (max-width:1000px){
+      max-width :800px;
+    }
+    div.indicator{
+      width :100%;
       display :flex;
-      align-items: center;
-      justify-content :center;
-      width: 100%;
-      @media screen and (min-width:1000px){
-        max-width: 1200px;
-        bottom: 100px;
-        margin-top :15px;
-      }
-      @media screen and (max-width:1000px){
-        max-width :800px;
-      }
-      div.indicator{
-        width :100%;
-        display :flex;
-        justify-content: center;
-        margin :0 20px;
+      justify-content: center;
+      margin :0 20px;
+      button{
+        flex :1;
+        color :#fff;
+        font-size: 2em;
+        margin : 0 10px;
+        opacity: 0.5;
         @media screen and (max-width:1000px){
           display: none;
         }
-        button{
-          flex :1;
-          color :#fff;
-          font-size: 2em;
-          margin : 0 10px;
-          opacity: 0.5;
-          &:hover,&.active{
-            opacity: 1;
-            font-size: 3em;
-          }
-          &.active{
-            color: var(--yellow-sub);
-            font-weight: 600;
-          }
-        }//button
-      }//div.indicator
-      .prev,.next{
-        position: absolute;
-        font-size :3em;
-        text-align :center;
-        color :#fff;
-        opacity: 0.5;
-        transition: all 0.5s;
-        &:hover{
+        &:hover,&.active{
           opacity: 1;
+          font-size: 3em;
         }
-      }//.prev,.next
-      .prev{
-        @media screen and (min-width:1000px){
-          top: -50%;
-          left: 5%;
+        &.active{
+          color: var(--yellow-sub);
+          font-weight: 600;
         }
-        @media screen and (max-width:1000px){
-        }
+      }//button
+    }//div.indicator
+    .prev,.next{
+      position: absolute;
+      font-size :3em;
+      text-align :center;
+      color :#fff;
+      opacity: 0.5;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover{
+        opacity: 1;
       }
-      .next{
-        @media screen and (min-width:1000px){
-          top: -50%;
-          right: 5%;
-        }
-        @media screen and (max-width:1000px){
-        }
+    }//.prev,.next
+    .prev{
+      @media screen and (min-width:1000px){
+        top: 0;
+        left: -5%;
       }
-    }//div.controls
-    }//div.sub-history-content overflow
-  }//sub-history-kbg
+      @media screen and (max-width:1000px){
+      }
+    }
+    .next{
+      @media screen and (min-width:1000px){
+        top: 0;
+        right: -5%;
+      }
+      @media screen and (max-width:1000px){
+      }
+    }
+  }//div.controls
 }//main.sub

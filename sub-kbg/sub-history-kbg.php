@@ -16,7 +16,8 @@
     <div class="col_width">
       <ol class="img_container"></ol>
     </div>
-    <div class="controls">
+  </div><!-- content  -->
+  <div class="controls">
       <div class="indicator">
         <button class="active">1300</button>
         <button>1400</button>
@@ -28,7 +29,6 @@
       <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
       <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
-  </div><!-- content  -->
     
     <script>
       historyArr1.forEach(function(v) {
@@ -47,7 +47,7 @@
                   <img class="arrow" src="./img/sub/sub-deco/${v.arrow}" alt="">
                   <em class="history-title">${v.title}</em>
                 </h4>
-                <ol class="yearly-textbox"></ol>
+                <div class="yearly-textbox"></div>
               </div>
                 <figure>
                 </figure>
@@ -56,11 +56,9 @@
         `)
         v.yearlyArr.forEach(function(e) {
           $(`.img_container >li:last-child .yearly-textbox`).append(`
-            <li>
             <p class="yearly">
              ${e}
             </p>
-          </li> 
             `)
         }) //yearlyArr
         v.imgArr.forEach(function(i) {
