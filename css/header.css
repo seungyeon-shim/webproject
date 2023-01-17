@@ -1,12 +1,15 @@
 @charset "UTF-8";
 header {
+  z-index: 102;
   position: absolute;
   overflow: hidden; /*별 밖으로 나가는거 처리*/
   top: 0;
   width: 100%;
   height: 70px;
   border-bottom: 1px solid #fff;
-  z-index: 102;
+}
+header .logo {
+  transform-origin: left;
 }
 header.active {
   position: fixed;
@@ -92,7 +95,7 @@ header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
   header div.inner .right .gnb-lg ul li a {
     color: #fff;
   }
-  header div.inner .right .gnb-lg ul li span {
+  header div.inner .right .gnb-lg ul li span.point-serif {
     display: none;
   }
 }

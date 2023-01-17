@@ -3,20 +3,67 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  visibility: hidden; /*트랜스폼 먹게하려고 display block 대신*/
-  transform: translateY(-100%);
-  transition: transform 1s;
+  height: 0;
+  //visibility: hidden; /*트랜스폼 먹게하려고 display block 대신*/
+  transform: translateY(-2000px);
+  transition: height 0.5s, transform 1s;
   overflow: hidden;
   z-index: 101;
-  &.active{
-    visibility: visible;
+  &.active {
+    //  visibility: visible;
     transform: translateY(0);
-  }// &.active
-  .hover-bg{
+    height: 100%;
+  } // &.active
+  .bg-star {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: rorate-bg 30s infinite ;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.2);
+    } //img
+
+    span.star{
+      position: absolute;/*넓이랑 위치잡아줌*/
+      width: 10px;
+      height: 10px;
+      color: #FFF;
+      top: -20%;
+      left: 50%;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 
+      0 0 0 8px rgba(255,255,255,0.1),
+      0 0 10px rgba(255,255,255,0.1);
+      animation: star 3s linear infinite;
+      &::before{//직선
+        content: '';
+        position: absolute;
+        top:50%;
+        width: 100px;
+        height: 1px;
+        transform: translateY(-50%);
+        background: linear-gradient(90deg,#fff, transparent);
+      }//&::before
+      &:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation-delay: 5s;
+        animation-duration: 2s;
+      }//&:nth-child(2)
+    }//span.star
+
+
+  } //bg-star
+
+  .hover-bg {
     width: 100%;
     mix-blend-mode: screen;
-    img{
+    img {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -27,30 +74,18 @@
       object-position: center;
       opacity: 0;
       transition: all 0.5s;
-      &.active{
+      &.active {
         opacity: 1;
-      }//&.active
-    }//img
-  }//hover-bg
-  
-  .video-wrap2 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }//ifram
-  }//video-wrap
+      } //&.active
+    } //img
+  } //hover-bg
 
   ul{
     position: absolute;
-    width: 100%;
-    height: 20%;
+ 
     max-width: 1100px;
     z-index: 11;
-    left: 50%; top:40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     
     margin: 0 auto;
@@ -58,42 +93,67 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    @media screen and (min-width:950px){
+       top:40%;
+       width: 100%;
+      }
+      
+      @media screen and (max-width:950px){
+        margin-top: 60px;
+        top:50%;
+        //border: 1px solid red;
+      width: 100%;
+    }
     //border: 1px solid yellow;
     li{
-      height: 100%;
-      position: relative;
-      text-align: center;
-      //border: 1px solid red;
-      @media screen and (min-width:800px){
-        width: 25%;
+      //border: 2px solid yellow;
+      box-sizing: border-box;
+      //position: relative;
+      //text-align: center;
+      transition: transform 2s;
+      padding: 0 50px;
+      @media screen and (min-width:950px){
+        writing-mode: vertical-lr;
+        
       }
 
-      @media screen and (max-width:800px){
-        margin-bottom: 60px;
-        width: 50%;
+      @media screen and (max-width:950px){
+        
+        text-align: center;
       }
       a,span{
-        position: absolute;
+        //position: absolute;
         color: #FFF;
-        writing-mode: vertical-rl;
+       
       }//a,span
       a{
         font-size: 2.3em;
+        span:not(.point-serif){
         &::before{
           content: '';
-          position: absolute;
-          top: 0;left: -10px;
-          
+          //position: absolute;
           display: block;
           width: 3px;
-          height: 100%;
+          height: 50%;
+          margin-right: 5px;
           background-color: #FFF;
         }//::before
-      }//a
-      span{
-        font-size: 4em;
+      }//span:not(.point-serif)
+      span.point-serif{
+        display: block;
+ 
+        font-size: 2em;
         opacity: 0.3;  
+        @media screen and (min-width:950px){
+          transform: translateX(-50%);//세로일때만
+        }
+        @media screen and (max-width:950px){
+          transform: translateY(-80%);//가로 일떄만
+          
+        }
       }//span
+       }//a
     }//li
   }//ul
 
@@ -128,25 +188,43 @@
 
 } //gnb-map
 
-
-
-
-
 @keyframes lantern-motion {
-  0%{
-
+  0% {
     transform: rotate(0);
-  } 
-  30%{
-      transform: rotate(-3deg);
   }
-  50%{
+  30% {
+    transform: rotate(-3deg);
+  }
+  50% {
     transform: rotate(0);
+  }
+  70% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/**************/
+
+
+@keyframes star {
+  0%{
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
   }
   70%{
-    transform: rotate(-3deg);
+    opacity: 0.3;
+  }
+  100%{
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
 }
-100%{
-  transform: rotate(0deg);
-}
+
+@keyframes rorate-bg {
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(10deg);}
+  100%{transform: rotate(0deg);}
 }

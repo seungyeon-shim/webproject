@@ -1,4 +1,5 @@
 header {
+  z-index: 102;
   position: absolute;
   overflow: hidden; /*별 밖으로 나가는거 처리*/
   top: 0;
@@ -6,7 +7,9 @@ header {
   height: 70px;
   // background-color: #EEE;
   border-bottom: 1px solid #fff;
-  z-index: 102;
+  .logo {
+    transform-origin: left;
+  }
   &.active {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -35,6 +38,7 @@ header {
         width: 30px;
         height: 30px;
         transform: scale(0.7);
+       
         .hamburger{
           position: relative;
           //background-color: aqua;
@@ -97,7 +101,7 @@ header {
               a{
                 color: #fff;
               }
-              span{
+              span.point-serif{
                 display: none;
               }
             } //li
@@ -113,3 +117,5 @@ header {
     } //right
   } //div.inner
 } //header
+
+

@@ -80,23 +80,34 @@
   </header><!--header-->
 
   <nav class="gnb-map">
-   
-      <?php include "menu.php" ?>
-      <div class="video-wrap2">
+
+    <?php include "menu.php" ?>
+    <!-- <div class="video-wrap2">
         <video src="./img/logo&icon/star.mp4" autoplay muted loop></video>
-      </div>
+      </div> -->
+    <figure class="bg-star">
 
-      <figure class="hover-bg">
-        <img class="gnb-bg gnb-bg-img1" src="./img/logo&icon/bg1.jpg" alt="">
-        <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/bg2.png" alt="">
-        <img class="gnb-bg gnb-bg-img3" src="./img/logo&icon/bg3.png" alt="">
-        <img class="gnb-bg gnb-bg-img4" src="./img/logo&icon/bg4.png" alt="">
-      </figure>
+      <span class="star"></span>
+      <span class="star"></span>
+      <span class="star"></span>
 
-      <figure class="bg-container">
-        <img class="bg-tree" src="./img/logo&icon/bg-tree.png" alt="">
-        <img class="lantern lantern-left" src="./img/logo&icon/lantern1.png" alt="">
-        <img class="lantern lantern-right" src="./img/logo&icon/lantern2.png" alt="">
-      </figure>
+
+      <img src="./img/logo&icon/bg.jpg" alt="">
+
+
+    </figure>
+
+    <figure class="hover-bg">
+      <img class="gnb-bg gnb-bg-img1" src="./img/logo&icon/bg1.jpg" alt="">
+      <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/bg2.png" alt="">
+      <img class="gnb-bg gnb-bg-img3" src="./img/logo&icon/bg3.png" alt="">
+      <img class="gnb-bg gnb-bg-img4" src="./img/logo&icon/bg4.png" alt="">
+    </figure>
+
+    <figure class="bg-container">
+      <img class="bg-tree" src="./img/logo&icon/bg-tree.png" alt="">
+      <img class="lantern lantern-left" src="./img/logo&icon/lantern1.png" alt="">
+      <img class="lantern lantern-right" src="./img/logo&icon/lantern2.png" alt="">
+    </figure>
 
   </nav>
