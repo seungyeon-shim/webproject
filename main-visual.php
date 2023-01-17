@@ -32,18 +32,42 @@
   <div class="slider slider1">
     <div class="star" id="star1"></div>
     <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
-
+    <em class="name point-sans">
+      景福宮
+    </em>
+    <figure class="castle castle1">
+      <img class="lg" src="./img/main/main-visual/kbg.png" alt="">
+      <img class="sm" src="./img/main/main-visual/kbgs.png" alt="">
+    </figure>
+    <video class="season spring" src="./video/spring.mp4" loop muted autoplay playisline></video>
   </div><!-- 1 -->
+
   <div class="slider slider2">
     <div class="star" id="star2"></div>
     <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
-
+    <em class="name point-sans">
+      德壽宮
+    </em>
+    <figure class="castle castle2">
+      <img class="lg" src="./img/main/main-visual/dsg.png" alt="">
+      <img class="sm" src="./img/main/main-visual/dsgs.png" alt="">
+    </figure>
+    <video class="season summer" src="./video/summer2.mp4" loop muted autoplay playisline></video>
   </div><!-- 2 -->
+
   <div class="slider slider3">
     <div class="star" id="star3"></div>
     <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
-
+    <em class="name point-sans">
+      昌慶宮
+    </em>
+    <figure class="castle castle3">
+      <img class="lg" src="./img/main/main-visual/cgg.png" alt="">
+      <img class="sm" src="./img/main/main-visual/cggs.png" alt="">
+    </figure>
+    <video class="season autumn" src="./video/autumn.mp4" loop muted autoplay playisline></video>
   </div><!-- 3 -->
+
   <div class="slider slider4">
 
     <div class="star" id="star4"></div>
@@ -52,8 +76,8 @@
       昌德宮
     </em>
     <figure class="castle castle4">
-      <img class="lg" src="./img/main/main-visual/kbg.png" alt="">
-      <img class="sm" src="./img/main/main-visual/kbgs.png" alt="">
+      <img class="lg" src="./img/main/main-visual/cdg.png" alt="">
+      <img class="sm" src="./img/main/main-visual/cdgs.png" alt="">
     </figure>
     <video class="season winter" src="./video/winter.mp4" loop muted autoplay playisline></video>
 
