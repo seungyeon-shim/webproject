@@ -35,4 +35,5 @@
       }
     </script>
   </div>
+  <video class="season winter" src="./video/spring.mp4" loop muted autoplay playsInline></video>
 </section>
