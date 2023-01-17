@@ -4,21 +4,15 @@
   width: 100%;
   background-image: url(../../img/sub/sub-visual/kbg/kbg-background.png) !important;
   background-attachment: fixed;
-  video {
+
+  video.moon {
     position: absolute;
     width: 70%;
-    opacity: 0.6;
-    top: 0;
-    right: 0;
-    bottom: 50px;
+    max-width: 750px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
     mix-blend-mode: screen;
-    @media screen and (min-width: 1200px) {
-    }
-    @media screen and (max-width: 1200px) {
-      position: absolute;
-
-      width: 100%;
-    }
   }
   #particles-js {
     position: absolute;
@@ -28,6 +22,18 @@
   }
 
   .sub-title-wrap {
+    animation: light-text 1s infinite linear alternate;
+    @keyframes light-text {
+      0% {
+        filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+        
+      }
+      100% {
+        filter: drop-shadow(0 0 10px rgb(0, 174, 255));
+       
+      }
+    }
+  
     @media screen and (min-width: 800px) {
       position: relative;
     }
@@ -44,6 +50,15 @@
       position: absolute;
       width: 100%;
       bottom: 0;
+      animation: light 3s infinite linear alternate;
+      @keyframes light {
+        0% {
+          filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+        }
+        100% {
+          filter: drop-shadow(0 0 30px rgb(144, 144, 224));
+        }
+      }
       img {
         position: absolute;
         top: 0;
