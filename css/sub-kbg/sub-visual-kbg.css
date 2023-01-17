@@ -35,10 +35,10 @@
 }
 @keyframes light-text {
   0% {
-    filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+    filter: drop-shadow(0 0 0px rgb(219, 112, 147));
   }
   100% {
-    filter: drop-shadow(0 0 10px rgb(0, 174, 255));
+    filter: drop-shadow(0 0 10px rgb(255, 182, 193));
   }
 }
 @media screen and (min-width: 800px) {
@@ -65,10 +65,10 @@
 }
 @keyframes light {
   0% {
-    filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+    filter: drop-shadow(0 0 0px rgb(219, 112, 147));
   }
   100% {
-    filter: drop-shadow(0 0 30px rgb(0, 174, 255));
+    filter: drop-shadow(0 0 30px rgb(255, 182, 193));
   }
 }
 .sub-visual .sub-visual-slider figure.castle img {
@@ -174,4 +174,4 @@
 }
 .sub-visual .sub-visual-slider figure.castle.active .img10 {
   clip-path: polygon(0% 90%, 100% 90%, 100% 100%, 0 100%);
-}/*# sourceMappingURL=sub-visual.css.map */
+}/*# sourceMappingURL=sub-visual-kbg.css.map */

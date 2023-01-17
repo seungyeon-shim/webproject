@@ -38,11 +38,11 @@
     animation: light-text 1s infinite linear alternate;
     @keyframes light-text {
       0% {
-        filter: drop-shadow(0 0 0px rgb(219,112,147));
+        filter: drop-shadow(0 0 0px rgb(67, 67, 255));
         
       }
       100% {
-        filter: drop-shadow(0 0 10px rgb(255,182,193));
+        filter: drop-shadow(0 0 10px rgb(0, 174, 255));
        
       }
     }
@@ -66,10 +66,10 @@
       animation: light 3s infinite linear alternate;
       @keyframes light {
         0% {
-          filter: drop-shadow(0 0 0px rgb(219,112,147));
+          filter: drop-shadow(0 0 0px rgb(67, 67, 255));
         }
         100% {
-          filter: drop-shadow(0 0 30px rgb(255,182,193));
+          filter: drop-shadow(0 0 30px rgb(0, 174, 255));
         }
       }
       img {
