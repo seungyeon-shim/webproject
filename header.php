@@ -101,9 +101,9 @@
 
     <figure class="hover-bg">
       <img class="gnb-bg gnb-bg-img1" src="./img/logo&icon/bg1.jpg" alt="">
-      <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/bg2.png" alt="">
-      <img class="gnb-bg gnb-bg-img3" src="./img/logo&icon/bg3.png" alt="">
-      <img class="gnb-bg gnb-bg-img4" src="./img/logo&icon/bg4.png" alt="">
+      <img class="gnb-bg gnb-bg-img2" src="./img/logo&icon/bg2.jpg" alt="">
+      <img class="gnb-bg gnb-bg-img3" src="./img/logo&icon/bg3.jpg" alt="">
+      <img class="gnb-bg gnb-bg-img4" src="./img/logo&icon/bg4.jpg" alt="">
     </figure>
 
     <figure class="bg-container">

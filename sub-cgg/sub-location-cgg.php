@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/sub-kbg/sub-location.css">
+<link rel="stylesheet" href="./css/sub/sub-location.css">
 <link rel="stylesheet" href="./css/scrollbar.css">
 <script src="./js/sub-location/sub-location.js"></script>
 
