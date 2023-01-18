@@ -293,7 +293,8 @@ main.sub .sub-history div.sub-history-content div.col_width ol.img_container li 
   }
 }
 main.sub .sub-history div.sub-history-content div.col_width ol.img_container li div.bottom-content div.bottom-textbox div.yearly-textbox p.yearly {
-  white-space: nowrap;
+  font-weight: 200;
+  font-size: 0.95em;
   padding: 5px;
 }
 main.sub .sub-history div.sub-history-content div.col_width ol.img_container li div.bottom-content div.bottom-textbox div.yearly-textbox p.yearly em {
@@ -337,7 +338,7 @@ main.sub .sub-history div.sub-history-content div.col_width ol.img_container li 
 main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .history-title,
 main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .yearly-textbox {
   color: var(--gray);
-  transition: color 2s;
+  transition: color 1s;
 }
 main.sub .sub-history div.sub-history-content div.col_width ol.img_container li.active .century-textbox {
   color: var(--navy-main);
@@ -357,7 +358,7 @@ main.sub div.controls {
 @media screen and (min-width: 1000px) {
   main.sub div.controls {
     max-width: 1200px;
-    bottom: 10%;
+    bottom: 5%;
     margin-top: 15px;
   }
 }

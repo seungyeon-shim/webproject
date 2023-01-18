@@ -224,7 +224,8 @@ main.sub {
                     margin-top :20px;
                   }
                   p.yearly{
-                    white-space: nowrap;
+                    font-weight: 200;
+                    font-size: 0.95em;
                     padding: 5px;
                     em{
                       display: inline-block;
@@ -271,7 +272,7 @@ main.sub {
             .yearly-textbox
             {
               color: var(--gray);
-              transition: color 2s;
+              transition: color 1s;
             }
           }//li active 전 
 
@@ -300,7 +301,7 @@ main.sub {
     height: 10%;
     @media screen and (min-width:1000px){
       max-width: 1200px;
-      bottom: 10%;
+      bottom: 5%;
       margin-top :15px;
     }
     @media screen and (max-width:1000px){
