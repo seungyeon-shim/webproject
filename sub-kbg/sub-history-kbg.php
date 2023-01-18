@@ -12,27 +12,34 @@
     <img class="mountain" src="./img/sub/sub-deco/mountain3.png" alt="">
   </figure>
 
+  <div class="clouds">
+    <img class="cloud right-front" src="./img/sub/sub-deco/right_front.png" alt=""></img>
+    <img class="cloud right-back" src="./img/sub/sub-deco/right_back.png" alt=""></img>
+    <img class="cloud left-front" src="./img/sub/sub-deco/left_front.png" alt=""></img>
+    <img class="cloud left-back" src="./img/sub/sub-deco/left_back.png" alt=""></img>
+  </div>
+
   <div class="sub-history-content overflow"><!-- 전체 -->
     <div class="col_width">
       <ol class="img_container"></ol>
     </div>
   </div><!-- content  -->
   <div class="controls">
-      <div class="indicator">
-        <button class="active">1300</button>
-        <button>1400</button>
-        <button>1500</button>
-        <button>1800</button>
-        <button>1900</button>
-        <button>2000</button>
-      </div>
-      <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
-      <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="indicator">
+      <button class="active">1300</button>
+      <button>1400</button>
+      <button>1500</button>
+      <button>1800</button>
+      <button>1900</button>
+      <button>2000</button>
     </div>
-    
-    <script>
-      historyArr1.forEach(function(v) {
-        $(`.sub-history .overflow .img_container`).append(`
+    <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+  </div>
+
+  <script>
+    historyArr1.forEach(function(v) {
+      $(`.sub-history .overflow .img_container`).append(`
           <li>
             <figure class="top-img">
               <img src="./img/sub/sub-history/kbg/${v.slideImg}" alt>
@@ -54,18 +61,18 @@
               </div>
           </li>
         `)
-        v.yearlyArr.forEach(function(e) {
-          $(`.img_container >li:last-child .yearly-textbox`).append(`
+      v.yearlyArr.forEach(function(e) {
+        $(`.img_container >li:last-child .yearly-textbox`).append(`
             <p class="yearly">
              ${e}
             </p>
             `)
-        }) //yearlyArr
-        v.imgArr.forEach(function(i) {
-          $(`.img_container >li:last-child .bottom-content figure`).append(`
+      }) //yearlyArr
+      v.imgArr.forEach(function(i) {
+        $(`.img_container >li:last-child .bottom-content figure`).append(`
             <img src="./img/sub/sub-history/kbg/${i}" alt="">
           `)
-        }) //imgArr
-      }) //historyArr1
-    </script>
+      }) //imgArr
+    }) //historyArr1
+  </script>
 </section>

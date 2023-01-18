@@ -3,6 +3,7 @@ main.sub {
 }
 main.sub .sub-history {
   height: 100%;
+  /* clouds animaition ---------------------------------- */
   /* content--------------------------------------------- */
 }
 @media screen and (max-width: 1000px) {
@@ -27,7 +28,7 @@ main.sub .sub-history figure.bg-deco img {
   position: absolute;
   object-fit: cover;
   object-position: center;
-  opacity: 0.5;
+  opacity: 0.03;
 }
 main.sub .sub-history figure.bg-deco img.mountain {
   width: 105%;
@@ -38,6 +39,118 @@ main.sub .sub-history figure.bg-deco img.mountain {
   main.sub .sub-history figure.bg-deco img.mountain {
     bottom: -5%;
     height: 20%;
+  }
+}
+main.sub .sub-history div.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+main.sub .sub-history div.clouds .cloud {
+  filter: drop-shadow(0 0 5px #fff);
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (max-width: 700px) {
+  main.sub .sub-history div.clouds .cloud {
+    display: none;
+  }
+}
+main.sub .sub-history div.clouds .right-front {
+  width: 643px;
+  height: 632px;
+  right: -40px;
+  top: -180px;
+  animation: right-front;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+main.sub .sub-history div.clouds .right-back {
+  width: 885px;
+  height: 864px;
+  right: -40px;
+  top: -300px;
+  animation: right-back;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+main.sub .sub-history div.clouds .left-front {
+  width: 916px;
+  height: 838px;
+  left: -50px;
+  top: -20px;
+  animation: left-front;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+main.sub .sub-history div.clouds .left-back {
+  width: 847px;
+  height: 596px;
+  left: -50px;
+  top: -50px;
+  animation: left-back;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes right-back {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50px, -50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+@keyframes right-front {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50px, 50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+@keyframes left-back {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(50px, -50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+}
+@keyframes left-front {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(50px, 50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
   }
 }
 main.sub .sub-history div.sub-history-content {
@@ -220,9 +333,18 @@ main.sub .sub-history div.sub-history-content div.col_width ol.img_container li 
   width: 40%;
   padding-top: 18%;
 }
-main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .century-textbox, main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .history-title {
+main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .century-textbox,
+main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .history-title,
+main.sub .sub-history div.sub-history-content div.col_width ol.img_container li .yearly-textbox {
   color: var(--gray);
-  transition: color 1s;
+  transition: color 2s;
+}
+main.sub .sub-history div.sub-history-content div.col_width ol.img_container li.active .century-textbox {
+  color: var(--navy-main);
+}
+main.sub .sub-history div.sub-history-content div.col_width ol.img_container li.active .history-title,
+main.sub .sub-history div.sub-history-content div.col_width ol.img_container li.active .yearly-textbox {
+  color: #fff;
 }
 main.sub div.controls {
   position: absolute;
