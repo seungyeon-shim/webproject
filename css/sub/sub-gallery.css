@@ -1,6 +1,7 @@
 section.sub-gallery {
   position: relative;
   height: 100%;
+  border: 1px solid red;
   /* active -------------------------------------------- */
 }
 section.sub-gallery figure.bg {
@@ -48,6 +49,7 @@ section.sub-gallery div.content {
   max-width: 1000px;
   max-height: 500px;
   border: 1px solid red;
+  /* button active -------------------------------------- */
 }
 section.sub-gallery div.content .book {
   height: 100%;
@@ -81,6 +83,31 @@ section.sub-gallery div.content .book .page1 div.desc {
 }
 section.sub-gallery div.content .book .page1 div.desc h3 {
   font-size: 2em;
+}
+section.sub-gallery div.content .btns {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+section.sub-gallery div.content .btns button {
+  position: relative;
+  width: 35%;
+  height: 35px;
+  margin: 0 5px;
+  border-radius: 7px;
+  background: var(--yellow-sub);
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--navy-main);
+}
+section.sub-gallery div.content button {
+  transition: all 0.3s;
 }
 @media screen and (min-width: 1000px) {
   section.sub-gallery img.deco.active.gallery-top {

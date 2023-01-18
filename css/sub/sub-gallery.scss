@@ -1,6 +1,7 @@
 section.sub-gallery{
   position: relative;
   height: 100%;
+  border: 1px solid red;
   figure.bg{
     position: absolute;
     top: 0;left: 0;
@@ -88,6 +89,33 @@ section.sub-gallery{
         }//desc
       }//책표지 page
     }//book
+
+    .btns{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      padding: 30px;
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid red;
+      button{
+        position: relative;
+        width: 35%;
+        height: 35px;
+        margin: 0 5px;
+        border-radius: 7px;
+        background: var(--yellow-sub);
+        font-size: 0.95em;
+        font-weight: 600;
+        color: var(--navy-main);
+      }
+    }
+    /* button active -------------------------------------- */
+    button{
+      transition: all 0.3s;
+    }
   }
 
 

@@ -16,6 +16,13 @@ $(function(){
     gallerybg()
   })
 
+  var book = new flipBook('.book')
+  $('.sub-gallery .btns button').click(function(){
+    var n = parseInt($(this).attr('data-n'))
+    book.flip(n)
+    $('.sub-gallery .btns button').removeClass('active')
+    $(this).addClass('active')
+  })
 
 
 })//ready

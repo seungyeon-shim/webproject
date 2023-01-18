@@ -78,6 +78,15 @@
     </div><!-- sheet5 -->
 
   </div><!-- book -->
+
+  <div class="btns">
+    <button class="btn1 active" data-n="1">앞장</button>
+    <button class="btn2" data-n="2">1장</button>
+    <button class="btn3" data-n="3">2장</button>
+    <button class="btn4" data-n="4">3장</button>
+    <button class="btn5" data-n="5">4장</button>
+    <button class="btn6" data-n="6">뒷장</button>
+  </div><!-- btns -->
 </div><!-- content -->
 
 </section>
