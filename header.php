@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/scrollbar.css">
   <link rel="stylesheet" href="./css/isotope.css">
   <link rel="stylesheet" href="./css/justifiedGallery.min.css">
+  <link rel="stylesheet" href="./css/flipBook.min.css">
   <link rel="stylesheet" href="./css/viewbox.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/reset.css">
@@ -37,6 +38,7 @@
   <script src="./js/jquery.isotope.js"></script>
   <script src="./js/jquery.justifiedGallery.min.js"></script>
   <script src="./js/masonry-docs.min.js"></script>
+  <script src="./js/flipBook.js"></script>
   <script src="./js/jquery.viewbox.min.js"></script>
   <script src="./js/responsive_carousel_horz.js"></script>
   <script src="./js/responsive_carousel_vert.js"></script>

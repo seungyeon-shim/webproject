@@ -1,0 +1,76 @@
+.flip-book {
+  perspective: 3000px;
+  /* flip-book.active--------------------------------------------------- */
+}
+.flip-book div.sheet {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: right 1s, bottom 1s, transform 1s;
+}
+@media screen and (orientation: landscape) {
+  .flip-book div.sheet {
+    width: 50%;
+    height: 100%;
+    right: 25%;
+    top: 0;
+    transform-origin: left center;
+    transform: rotateY(0);
+  }
+  .flip-book div.sheet.active {
+    transform: rotateY(-180deg);
+  }
+}
+@media screen and (orientation: portrait) {
+  .flip-book div.sheet {
+    width: 100%;
+    height: 50%;
+    bottom: 25%;
+    transform-origin: center top;
+    transform: rotateX(0);
+  }
+  .flip-book div.sheet.active {
+    transform: rotateX(180deg);
+  }
+}
+.flip-book div.sheet .page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+@media screen and (orientation: landscape) {
+  .flip-book div.sheet .page {
+    background-image: linear-gradient(90deg, #EEE, #FFF, #EEE);
+  }
+  .flip-book div.sheet .page.page-even {
+    transform: rotateY(180deg);
+  }
+}
+@media screen and (orientation: portrait) {
+  .flip-book div.sheet .page {
+    background-image: linear-gradient(0deg, #EEE, #FFF, #EEE);
+  }
+  .flip-book div.sheet .page.page-even {
+    transform: rotateX(180deg);
+  }
+}
+@media screen and (orientation: landscape) {
+  .flip-book.active div.sheet {
+    right: 0%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .flip-book.active div.sheet {
+    bottom: 0%;
+  }
+}
+@media screen and (orientation: landscape) {
+  .flip-book.deactive div.sheet {
+    right: -25%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .flip-book.deactive div.sheet {
+    bottom: -25%;
+  }
+}/*# sourceMappingURL=flipBook.css.map */
