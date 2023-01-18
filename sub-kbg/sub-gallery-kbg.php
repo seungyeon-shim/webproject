@@ -29,11 +29,13 @@
           <img src="./img/sub/sub-deco/gallery-book-cover-stamp.png" alt="">
         </figure>
         <div class="desc">
+          <div class="textbox">
           <h3 class="ebs">경복궁</h3>
-          <em>조선 왕조 제일의 법궁</em>
-          <p>태조4년(1395년)에 창건된 조선의 법궁(法宮)으로 <br>
+          <p>태조4년(1395년)에 창건된 조선의 법궁으로
             대한민국을 대표하는 문화유산
           </p>
+          </div>
+          <em>조선 왕조 제일의 법궁</em>
         </div>
         </div> <!-- page1 -->
       <div class="page page-even page2">

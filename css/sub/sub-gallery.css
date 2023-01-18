@@ -80,9 +80,33 @@ section.sub-gallery div.content .book .page1 figure.book-cover-stamp img {
 section.sub-gallery div.content .book .page1 div.desc {
   position: absolute;
   top: 20%;
+  max-width: 350px;
 }
-section.sub-gallery div.content .book .page1 div.desc h3 {
-  font-size: 2em;
+@media screen and (max-width: 1000px) {
+  section.sub-gallery div.content .book .page1 div.desc {
+    width: 90%;
+  }
+  section.sub-gallery div.content .book .page1 div.desc .textbox h3 {
+    font-size: 2vw;
+  }
+}
+section.sub-gallery div.content .book .page1 div.desc .textbox {
+  display: flex;
+  align-items: flex-start;
+}
+section.sub-gallery div.content .book .page1 div.desc .textbox h3 {
+  font-size: 2.7em;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+section.sub-gallery div.content .book .page1 div.desc .textbox p {
+  width: 60%;
+  padding-top: 5px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+section.sub-gallery div.content .book .page1 div.desc em {
+  margin-left: 3px;
 }
 section.sub-gallery div.content .btns {
   display: flex;

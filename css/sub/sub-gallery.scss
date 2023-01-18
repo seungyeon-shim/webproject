@@ -77,15 +77,32 @@ section.sub-gallery{
         div.desc{
           position: absolute;
           top: 20%;
-          h3{
-            font-size: 2em;
-          }//h3
+          max-width: 350px;
+          @media screen and (max-width:1000px) {
+            width: 90%;
+            .textbox{
+              h3{font-size: 2vw;}
+            }
+          }
+          .textbox{
+            display: flex;
+            align-items: flex-start;
+            h3{
+              font-size: 2.7em;
+              font-weight: bold;
+              margin-bottom: 4px;
+            }//h3
+            p{
+              width: 60%;
+              padding-top: 5px;
+              font-size: 0.7em;
+              font-weight: 600;
+            }//p
+          }
+
           em{
-  
-          }//em
-          p{
-  
-          }//p
+            margin-left: 3px;
+           }//em
         }//desc
       }//책표지 page
     }//book
