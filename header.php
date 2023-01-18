@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/scrollbar.css">
   <link rel="stylesheet" href="./css/isotope.css">
   <link rel="stylesheet" href="./css/justifiedGallery.min.css">
-  <link rel="stylesheet" href="./css/flipBook.min.css">
+  <link rel="stylesheet" href="./css/flipBook.css">
   <link rel="stylesheet" href="./css/viewbox.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/reset.css">
