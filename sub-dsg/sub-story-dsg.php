@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/sub-kbg/sub-story.css">
+<link rel="stylesheet" href="./css/sub/sub-story.css">
 <script src="./js/sub-story/sub-story.js"></script>
 <section class="sub-content sub-story sub-story-kbg sub-content-center">
 
