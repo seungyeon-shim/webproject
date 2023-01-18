@@ -14,7 +14,8 @@
   <div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">덕수궁 오시는길</h2>
     <p class="sub-desc">
-    고궁의 고즈넉함을 온전히 느낄 수 있는 덕수궁으로 오세요
+    1897년에 선포된 황제국, 대한제국의 황궁으로 <br> 
+    옛 이름은 <b style="color: var(--yellow-main);">경운궁慶運宮</b>입니다.
     </p>
   </div><!-- sub-title-wrap -->
 
@@ -32,26 +33,26 @@
           
           <div class="big-text">
             <h2 class="ebs">덕수궁</h2>
-            <h3>서울 종로구 사직로 161 경복궁</h3>
+            <h3>서울 중구 세종대로 99 덕수궁</h3>
           </div>
 
           <div class="kbg-trans">
             <div class="subway">
               <h3><i class="fa-solid fa-train-subway"></i> 지하철로 오시는길</h3>
               <li>
-                <p class="orange"> 3호선 </p><em>경복궁역 5번출구 도보 5분</em>
+                <p class="orange"> 1호선 </p><em>시청역 12번출구 도보 약 5분</em>
               </li>
               <li>
-                <p class="purple"> 5호선 </p><em>광화문역 2번출구 도보 약 10분</em>
+                <p class="purple"> 2호선 </p><em>시청역 12번출구 도보 약 5분</em>
               </li>
             </div>
             <div class="bus">
               <h3><i class="fa-solid fa-bus-simple"></i> 버스로 오시는길</h3>
               <li>
-                <p class="green">마을</p><em>종로11 | 종로9 | 종로01</em>
+                <p class="green">마을</p><em>종로11 | 종로00</em>
               </li>
               <li>
-                <p class="blue">간선</p><em>109 | 171 | 272 | 601</em>
+                <p class="blue">간선</p><em>401 | 171 | 402 | 406</em>
               </li>
             </div>
           </div><!-- kbg-trans -->

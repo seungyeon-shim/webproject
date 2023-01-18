@@ -14,7 +14,7 @@
   <div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">경복궁 오시는길</h2>
     <p class="sub-desc">
-    고궁의 고즈넉함을 온전히 느낄 수 있는 경복궁으로 오세요
+    조선의 으뜸 궁궐, <b style="color: var(--yellow-main);">경복궁</b>
     </p>
   </div><!-- sub-title-wrap -->
 
@@ -39,7 +39,7 @@
             <div class="subway">
               <h3><i class="fa-solid fa-train-subway"></i> 지하철로 오시는길</h3>
               <li>
-                <p class="orange"> 3호선 </p><em>경복궁역 5번출구 도보 5분</em>
+                <p class="orange"> 3호선 </p><em>경복궁역 5번출구 도보 약 5분</em>
               </li>
               <li>
                 <p class="purple"> 5호선 </p><em>광화문역 2번출구 도보 약 10분</em>

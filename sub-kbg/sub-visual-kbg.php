@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/sub-kbg/sub-visual.css">
+<link rel="stylesheet" href="./css/sub/sub-visual.css">
 
 <section class="sub-visual sub-visual-kbg ">
 <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>

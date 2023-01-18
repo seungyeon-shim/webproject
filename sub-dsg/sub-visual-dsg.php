@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/sub-kbg/sub-visual.css">
+<link rel="stylesheet" href="./css/sub/sub-visual.css">
 
 <section class="sub-visual sub-visual-kbg ">
 <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
@@ -16,8 +16,8 @@
       <!--건청궁·향원정에 이르기까지 경복궁 별빛야행에서만
       허락된 경복궁 북측 권역으로의 발걸음은 고궁의
       고즈넉함을 온전히 느끼며,  -->
-      덕수궁만이 지닌 새로운 아름다움을 <br>
-      경험하는 특별한 감동을 선사할 것입니다.
+      대한제국의 황궁으로 옛 이름은 경운궁 <br>
+      대한제국의 역사를 경험하는 잊지못할 감동을 선사할것입니다.  
     </p>
   </div><!-- sub-title-wrap -->
 
@@ -35,5 +35,5 @@
       }
     </script>
   </div>
-  <video class="season winter" src="./video/summer2.mp4" loop muted autoplay playsInline></video>
+  <video class="season winter" src="./video/rain2.mp4" loop muted autoplay playsInline></video>
 </section>
