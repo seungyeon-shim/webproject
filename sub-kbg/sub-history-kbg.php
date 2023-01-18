@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/sub-kbg/sub-history.css">
+<link rel="stylesheet" href="./css/sub/sub-history.css">
 <script src="./js/sub-history/store.js"></script>
 <script src="./js/sub-history/sub-history.js"></script>
 <section class="sub-content sub-history sub-history-kbg sub-content-center">
@@ -38,7 +38,7 @@
   </div>
 
   <script>
-    historyArr1.forEach(function(v) {
+    kbgArr.forEach(function(v) {
       $(`.sub-history .overflow .img_container`).append(`
           <li>
             <figure class="top-img">
