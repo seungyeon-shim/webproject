@@ -32,7 +32,7 @@ particlesJS('star2', {
       "random": false,
       "anim": {
         "enable": true,
-        "speed": 0.2,
+        "speed": 10,
         "opacity_min": 0,
         "sync": false
       }

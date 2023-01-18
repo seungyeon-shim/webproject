@@ -1,7 +1,49 @@
-main{
-  width: 100%;
-  .wrap{
-    width: 100%;
+.home-main {
+  display: inline;
+} 
+.main-section {
+  position: relative;
+  z-index: 1;
+  .title {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    filter: url(#ripple);   
+    h2{
+      position: relative;
+      margin: 5px 0 5px 0;
+      color:#FFF;
+      font-size: 5em;
+      animation: light-text 1s infinite linear alternate;
 
-  }
+      @keyframes light-text {
+        0% {
+          filter: drop-shadow(0 0 0px rgb(67, 67, 255));
+          
+        }
+        100% {
+          filter: drop-shadow(0 0 10px rgb(0, 174, 255));
+         
+        }
+      }
+      @media screen and (max-width:700px){
+        font-size: 10vw;
+      }
+    }
+    em{
+      position: relative;
+      font-size: 1.2em; 
+      font-weight: bold;
+      color:rgba(#FFF,0.8);
+    }
+    p{
+      position: relative;
+      color:rgba(#FFF,0.8);
+    }
+  }//title
 }

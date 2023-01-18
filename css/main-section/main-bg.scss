@@ -1,0 +1,24 @@
+.main-bg{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/main/main-visual/kbg-background.png);
+  background-size: cover;
+  background-position: center;
+  .star{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+  }
+  video.moon {
+    position: absolute;
+    width: 70%;
+    max-width: 750px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+    mix-blend-mode: screen;
+  }
+}

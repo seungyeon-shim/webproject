@@ -1,53 +1,8 @@
-.home-main {
-  display: inline;
-}
-
-.main-section .title {
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  width: 80%;
-  max-width: 800px;
-  text-align: center;
-  filter: url(#ripple);
-}
-.main-section .title h2 {
-  position: relative;
-  margin: 5px 0 5px 0;
-  color: #FFF;
-  font-size: 5em;
-  animation: light-text 1s infinite linear alternate;
-}
-@keyframes light-text {
-  0% {
-    filter: drop-shadow(0 0 0px rgb(67, 67, 255));
-  }
-  100% {
-    filter: drop-shadow(0 0 10px rgb(0, 174, 255));
-  }
-}
-@media screen and (max-width: 700px) {
-  .main-section .title h2 {
-    font-size: 10vw;
-  }
-}
-.main-section .title em {
-  position: relative;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
-}
-.main-section .title p {
-  position: relative;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .main-visual {
   position: relative;
   width: 100%;
   height: 100%;
+  /* active--------------------------- */
 }
 .main-visual .slider {
   position: absolute;
@@ -105,7 +60,7 @@
   left: 50%;
   transform: translate(-50%);
   bottom: 0;
-  animation: light 3s infinite linear alternate;
+  filter: url(#ripple);
 }
 @keyframes light {
   0% {
@@ -133,4 +88,37 @@
 }
 .main-visual .slider figure.castle img {
   width: 100%;
+  animation: light 3s infinite linear alternate;
+}
+.main-visual .slider {
+  transition: -webkit-mask-size 0s;
+  transition-delay: 3s;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-image: url(../../img/main/main-visual/mask-circle.png);
+}
+@media screen and (orientation: landscape) {
+  .main-visual .slider {
+    -webkit-mask-size: 0% auto;
+  }
+}
+@media screen and (orientation: portrait) {
+  .main-visual .slider {
+    -webkit-mask-size: auto 0%;
+  }
+}
+.main-visual .slider.active {
+  z-index: 1;
+  transition: -webkit-mask-size 3s;
+  transition-delay: 0s;
+}
+@media screen and (orientation: landscape) {
+  .main-visual .slider.active {
+    -webkit-mask-size: 150% auto;
+  }
+}
+@media screen and (orientation: portrait) {
+  .main-visual .slider.active {
+    -webkit-mask-size: auto 150%;
+  }
 }/*# sourceMappingURL=main-visual.css.map */
