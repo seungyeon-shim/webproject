@@ -5,7 +5,7 @@
 
 <div class="sub-title-wrap sub-title-wrap-center">
     <h2 class="sub-title">창경궁 역사</h2>
-    <p class="sub-desc">조선 제일의 법도 경복궁의 역사를 안내드립니다.</p>
+    <p class="sub-desc">조선시대의 역사가 살아숨쉬는 창경궁의 역사를 안내드립니다.</p>
   </div><!-- sub-title-wrap -->
 
   <figure class="bg-deco">

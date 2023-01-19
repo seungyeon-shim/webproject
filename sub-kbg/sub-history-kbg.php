@@ -10,6 +10,7 @@
 
   <figure class="bg-deco">
     <img class="mountain" src="./img/sub/sub-deco/mountain3.png" alt="">
+    <img class="star" src="./img/sub/sub-deco/star-bg.jpg" alt="">
   </figure>
 
   <div class="clouds">

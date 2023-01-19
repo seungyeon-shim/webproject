@@ -4,7 +4,7 @@
 <section class="sub-content sub-history sub-history-dsg sub-content-center">
  <div class="sub-title-wrap sub-title-wrap-center">
     <h2 class="sub-title">덕수궁 역사</h2>
-    <p class="sub-desc">조선 제일의 법도 경복궁의 역사를 안내드립니다.</p>
+    <p class="sub-desc">대한 제국 황실의 궁궐 덕수궁의 역사를 안내드립니다.</p>
   </div><!-- sub-title-wrap -->
 
   <figure class="bg-deco">

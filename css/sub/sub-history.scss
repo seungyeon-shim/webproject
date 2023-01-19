@@ -19,7 +19,6 @@ main.sub {
         position: absolute;
         object-fit: cover;
         object-position :center;
-        opacity : 0.03;
       }//img
       img.mountain{
         width :105%;
@@ -30,6 +29,12 @@ main.sub {
           height: 20%;
         }
       }//img.mountain
+      .star{
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: overlay;
+        opacity: 1;
+      }
     }//figure.bg-deco
     div.clouds{
       position: absolute;
