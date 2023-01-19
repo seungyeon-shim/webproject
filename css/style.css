@@ -68,4 +68,8 @@ body {
   --yellow-sub:#fee5b1;
   --dark:#333333;
   --gray: #838383;
+}
+
+video {
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
