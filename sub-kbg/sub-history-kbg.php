@@ -9,8 +9,8 @@
   </div><!-- sub-title-wrap -->
 
   <figure class="bg-deco">
+    <img class="star" src="./img/sub/sub-deco/star.jpg" alt="">
     <img class="mountain" src="./img/sub/sub-deco/mountain3.png" alt="">
-    <img class="star" src="./img/sub/sub-deco/star-bg.jpg" alt="">
   </figure>
 
   <div class="clouds">
