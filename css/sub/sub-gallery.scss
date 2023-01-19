@@ -1,113 +1,185 @@
-section.sub-gallery{
+section.sub-gallery {
+  overflow: hidden;
   position: relative;
   height: 100%;
-  border: 1px solid red;
-  figure.bg{
-    position: absolute;
-    top: 0;left: 0;
-    width: 100%;
-    height: 50%;
-    img{
-      position: absolute;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-      transition: all 1s;
-      @media screen and (max-width:1000px) {
-        height: 60%;
-      }
-    }//img
-    &.gallery-figure-top{
-      img.gallery-top{
-        top: 0;
-        height: 55%;
-  
-      }
-    }//fugure.gallery-figure-top
-    &.gallery-figure-bottom{
-      img.gallery-bottom{
-        bottom: 0;
-        height: 50%;
-      }
-    }//gallery-figure-bottom
-  }//figure
-  img.gallery-bg{
-    position: absolute;
-    bottom: 0;
-    object-fit: cover;
-    object-position: center;
-    @media screen and (max-width:1000px) {
-      max-height: 80%;
-    }//sm -------------------------------------
-  }
 
-  div.content{
+  div.content {
     position: relative;
     width: 95%;
     height: 95%;
     max-width: 1000px;
-    max-height: 500px;
-    border: 1px solid red;
-    .book{
-      height: 100%;
+    max-height: 750px;
+    .book {
+      height: 85%;
       border: 1px solid yellow;
-      .page{
+      .page {
+        img.bg-left {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }//bg-left
+      } //page
+
+      /* 왼쪽 페이지 --------------------------------- */
+      .page-even {
+        position: relative;
+        .inner {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          padding: 30px;
+          .textbox {
+            width: 100%;
+            height: 65%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .title {
+              position: relative;
+              width: 52%;
+              height: 100%;
+              font-size: 2.5em;
+              font-weight: 600;
+              .front {
+                position: absolute;
+                top: 0;
+                color: var(--navy-main);
+              }//front
+              .back {
+                position: absolute;
+                top: 2%;
+                left: 3%;
+                color: #999;
+              }//back
+              img {
+                position: absolute;
+                bottom: 0;
+                width: 95%;
+                height: 50%;
+                object-fit: cover;
+                object-position: center;
+              }//img
+            }//title
+            p {
+              width: 48%;
+              font-size: 0.75em;
+            }//p
+          } //textbox
+          .sidetext {
+            box-sizing: border-box;
+            padding: 15px 0;
+            display: flex;
+            justify-content: flex-end;
+            p {
+              font-weight: 600;
+              font-size: 0.9em;
+              writing-mode: vertical-rl;
+            }//p
+          }//sidetext
+        } //inner
+      } //page-even
+
+      /* 오른쪽 페이지 ----------------------------------------------- */
+      .page-odd{
+        .inner{
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          padding: 30px;
+          border: 1px solid red;
+          .box{
+            width: 100%;
+            height: 100%;
+            figure{
+              width: 40%;
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+            .textbox{
+              width: 60%;
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              box-sizing: border-box;
+              padding-top: 10px;
+              p.left{
+                font-weight: 600;
+                font-size: 0.9em;
+                writing-mode: vertical-rl;
+              }
+              p.right{
+
+              }
+            }
+          }
+        }
+      }
+
+      /* 표지 */
+      .page1,
+      .page7 {
+        height: 100%;
+        background: url(../../img/sub/sub-deco/gallery-book-texture.png);
+        background-size: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid green;
-      }//page
-      .page1{
-        figure.book-cover-front{
-          max-width: 100%;
-          max-height: 100%;
-          img{
+          .star-box{
+            position: relative;
             width: 100%;
             height: 100%;
-          }
-        }//book-cover-front
-        figure.book-cover-stamp{
-          position: absolute;
-          height: 10%;
-          img{
-            max-width: 100%;
-            max-height: 100%;
-          }
-        }
-        div.desc{
-          position: absolute;
-          top: 20%;
-          max-width: 350px;
-          @media screen and (max-width:1000px) {
-            width: 90%;
-            .textbox{
-              h3{font-size: 2vw;}
+            .star{
+              position: absolute;
+              left: 50%; top: 50%;
+              transform: translate(-50%,-50%);
+              max-width: 500px;
+              max-height: 500px;
+              margin: 0 auto;
+              overflow: hidden;
+              img.star-bg{
+                width: 100%;
+                height: 100%;
+                transform: scale(1.2);
+                animation: star 5s linear infinite;
+              }//star-bg
             }
-          }
-          .textbox{
-            display: flex;
-            align-items: flex-start;
-            h3{
-              font-size: 2.7em;
-              font-weight: bold;
-              margin-bottom: 4px;
-            }//h3
-            p{
-              width: 60%;
-              padding-top: 5px;
-              font-size: 0.7em;
-              font-weight: 600;
-            }//p
-          }
+            img.front-back{
+              position: absolute;
+              left: 50%; top: 50%;
+              transform: translate(-50%,-50%);
+              max-width: 95%;
+              max-height: 95%;
+            }//front-back
+          }//star
+        }//page1,7
 
-          em{
-            margin-left: 3px;
-           }//em
-        }//desc
-      }//책표지 page
-    }//book
+      } //book
+    } //content
 
-    .btns{
+    @keyframes star {
+      0%{
+        transform: translate(0,0);
+      }
+      50%{
+        transform: translate(-1%,-1%);
+      }
+      0%{
+        transform: translate(0,0);
+      }
+    }
+
+
+    /* button ------------------------------------------------------- */
+    .btns {
       display: flex;
       justify-content: center;
       position: relative;
@@ -117,7 +189,7 @@ section.sub-gallery{
       max-width: 400px;
       margin: 0 auto;
       border: 1px solid red;
-      button{
+      button {
         position: relative;
         width: 35%;
         height: 35px;
@@ -130,32 +202,55 @@ section.sub-gallery{
       }
     }
     /* button active -------------------------------------- */
-    button{
+    button {
       transition: all 0.3s;
     }
-  }
 
+  /* 뚜껑 */
+  .cover {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transition: all 1s;
+    &.cover-top{
+      top:0%;
+      img{
+        top:0;
+      }
+    }//cover-top
+    &.cover-bottom{
+      bottom:0%;
+      img{
+        bottom:0;
+      }
+    }//cover-bottom
+    img{
+      position: absolute;
+      width: 100%;
+      height: 120%;
+    }//img
 
-  /* active -------------------------------------------- */
-  img.deco.active{
-    @media screen and (min-width:1000px) {
-      &.gallery-top{
-        transform: translateY(-68%);
+    &.active{
+      &.cover-top{
+        top:-53%;
       }
-      &.gallery-bottom{
-        transform: translateY(60%);
+      &.cover-bottom{
+        bottom:-53%;
       }
+    }//active
+  }//cover
+
+  .gallery-bg{
+    position: absolute;
+    
+    left:50%;
+    transform: translate(-50%,0);
+    bottom: 0;
+    @media screen and (orientation:landscape) {
+      width: 100%;
     }
-    @media screen and (max-width:1000px) {
-      &.gallery-top{
-        transform: translateY(-5%);
-      }
-      &.gallery-bottom{
-        transform: translateY(0%);
-      }
+    @media screen and (orientation:portrait) {
+      height: 80%;
     }
-
-  }
-
-
+  }//gallery-bg
 }

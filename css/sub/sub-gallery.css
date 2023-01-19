@@ -1,114 +1,180 @@
+@charset "UTF-8";
 section.sub-gallery {
+  overflow: hidden;
   position: relative;
   height: 100%;
-  border: 1px solid red;
-  /* active -------------------------------------------- */
-}
-section.sub-gallery figure.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-}
-section.sub-gallery figure.bg img {
-  position: absolute;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: all 1s;
-}
-@media screen and (max-width: 1000px) {
-  section.sub-gallery figure.bg img {
-    height: 60%;
-  }
-}
-section.sub-gallery figure.bg.gallery-figure-top img.gallery-top {
-  top: 0;
-  height: 55%;
-}
-section.sub-gallery figure.bg.gallery-figure-bottom img.gallery-bottom {
-  bottom: 0;
-  height: 50%;
-}
-section.sub-gallery img.gallery-bg {
-  position: absolute;
-  bottom: 0;
-  object-fit: cover;
-  object-position: center;
-}
-@media screen and (max-width: 1000px) {
-  section.sub-gallery img.gallery-bg {
-    max-height: 80%;
-  }
+  /* button ------------------------------------------------------- */
+  /* button active -------------------------------------- */
+  /* 뚜껑 */
 }
 section.sub-gallery div.content {
   position: relative;
   width: 95%;
   height: 95%;
   max-width: 1000px;
-  max-height: 500px;
-  border: 1px solid red;
-  /* button active -------------------------------------- */
+  max-height: 750px;
 }
 section.sub-gallery div.content .book {
-  height: 100%;
+  height: 85%;
   border: 1px solid yellow;
+  /* 왼쪽 페이지 --------------------------------- */
+  /* 오른쪽 페이지 ----------------------------------------------- */
+  /* 표지 */
 }
-section.sub-gallery div.content .book .page {
+section.sub-gallery div.content .book .page img.bg-left {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+section.sub-gallery div.content .book .page-even {
+  position: relative;
+}
+section.sub-gallery div.content .book .page-even .inner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+section.sub-gallery div.content .book .page-even .inner .textbox {
+  width: 100%;
+  height: 65%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  border: 1px solid green;
 }
-section.sub-gallery div.content .book .page1 figure.book-cover-front {
-  max-width: 100%;
-  max-height: 100%;
+section.sub-gallery div.content .book .page-even .inner .textbox .title {
+  position: relative;
+  width: 52%;
+  height: 100%;
+  font-size: 2.5em;
+  font-weight: 600;
 }
-section.sub-gallery div.content .book .page1 figure.book-cover-front img {
+section.sub-gallery div.content .book .page-even .inner .textbox .title .front {
+  position: absolute;
+  top: 0;
+  color: var(--navy-main);
+}
+section.sub-gallery div.content .book .page-even .inner .textbox .title .back {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  color: #999;
+}
+section.sub-gallery div.content .book .page-even .inner .textbox .title img {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+section.sub-gallery div.content .book .page-even .inner .textbox p {
+  width: 48%;
+  font-size: 0.75em;
+}
+section.sub-gallery div.content .book .page-even .inner .sidetext {
+  box-sizing: border-box;
+  padding: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+section.sub-gallery div.content .book .page-even .inner .sidetext p {
+  font-weight: 600;
+  font-size: 0.9em;
+  writing-mode: vertical-rl;
+}
+section.sub-gallery div.content .book .page-odd .inner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  border: 1px solid red;
+}
+section.sub-gallery div.content .book .page-odd .inner .box {
   width: 100%;
   height: 100%;
 }
-section.sub-gallery div.content .book .page1 figure.book-cover-stamp {
-  position: absolute;
-  height: 10%;
+section.sub-gallery div.content .book .page-odd .inner .box figure {
+  width: 40%;
 }
-section.sub-gallery div.content .book .page1 figure.book-cover-stamp img {
-  max-width: 100%;
-  max-height: 100%;
+section.sub-gallery div.content .book .page-odd .inner .box figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-section.sub-gallery div.content .book .page1 div.desc {
-  position: absolute;
-  top: 20%;
-  max-width: 350px;
-}
-@media screen and (max-width: 1000px) {
-  section.sub-gallery div.content .book .page1 div.desc {
-    width: 90%;
-  }
-  section.sub-gallery div.content .book .page1 div.desc .textbox h3 {
-    font-size: 2vw;
-  }
-}
-section.sub-gallery div.content .book .page1 div.desc .textbox {
+section.sub-gallery div.content .book .page-odd .inner .box .textbox {
+  width: 60%;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 10px;
 }
-section.sub-gallery div.content .book .page1 div.desc .textbox h3 {
-  font-size: 2.7em;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-section.sub-gallery div.content .book .page1 div.desc .textbox p {
-  width: 60%;
-  padding-top: 5px;
-  font-size: 0.7em;
+section.sub-gallery div.content .book .page-odd .inner .box .textbox p.left {
   font-weight: 600;
+  font-size: 0.9em;
+  writing-mode: vertical-rl;
 }
-section.sub-gallery div.content .book .page1 div.desc em {
-  margin-left: 3px;
+section.sub-gallery div.content .book .page1,
+section.sub-gallery div.content .book .page7 {
+  height: 100%;
+  background: url(../../img/sub/sub-deco/gallery-book-texture.png);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-section.sub-gallery div.content .btns {
+section.sub-gallery div.content .book .page1 .star-box,
+section.sub-gallery div.content .book .page7 .star-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.sub-gallery div.content .book .page1 .star-box .star,
+section.sub-gallery div.content .book .page7 .star-box .star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section.sub-gallery div.content .book .page1 .star-box .star img.star-bg,
+section.sub-gallery div.content .book .page7 .star-box .star img.star-bg {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  animation: star 5s linear infinite;
+}
+section.sub-gallery div.content .book .page1 .star-box img.front-back,
+section.sub-gallery div.content .book .page7 .star-box img.front-back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 95%;
+  max-height: 95%;
+}
+@keyframes star {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-1%, -1%);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+section.sub-gallery .btns {
   display: flex;
   justify-content: center;
   position: relative;
@@ -119,7 +185,7 @@ section.sub-gallery div.content .btns {
   margin: 0 auto;
   border: 1px solid red;
 }
-section.sub-gallery div.content .btns button {
+section.sub-gallery .btns button {
   position: relative;
   width: 35%;
   height: 35px;
@@ -130,22 +196,51 @@ section.sub-gallery div.content .btns button {
   font-weight: 600;
   color: var(--navy-main);
 }
-section.sub-gallery div.content button {
+section.sub-gallery button {
   transition: all 0.3s;
 }
-@media screen and (min-width: 1000px) {
-  section.sub-gallery img.deco.active.gallery-top {
-    transform: translateY(-68%);
-  }
-  section.sub-gallery img.deco.active.gallery-bottom {
-    transform: translateY(60%);
+section.sub-gallery .cover {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  transition: all 1s;
+}
+section.sub-gallery .cover.cover-top {
+  top: 0%;
+}
+section.sub-gallery .cover.cover-top img {
+  top: 0;
+}
+section.sub-gallery .cover.cover-bottom {
+  bottom: 0%;
+}
+section.sub-gallery .cover.cover-bottom img {
+  bottom: 0;
+}
+section.sub-gallery .cover img {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+}
+section.sub-gallery .cover.active.cover-top {
+  top: -53%;
+}
+section.sub-gallery .cover.active.cover-bottom {
+  bottom: -53%;
+}
+section.sub-gallery .gallery-bg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+}
+@media screen and (orientation: landscape) {
+  section.sub-gallery .gallery-bg {
+    width: 100%;
   }
 }
-@media screen and (max-width: 1000px) {
-  section.sub-gallery img.deco.active.gallery-top {
-    transform: translateY(-5%);
-  }
-  section.sub-gallery img.deco.active.gallery-bottom {
-    transform: translateY(0%);
+@media screen and (orientation: portrait) {
+  section.sub-gallery .gallery-bg {
+    height: 80%;
   }
 }/*# sourceMappingURL=sub-gallery.css.map */
