@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="./css/main-section/main-about.css">
-
 <script src="./js/index/main-about.js"></script>
 <!-- 본문시작 -->
 <section class="main-section main-about">
@@ -23,17 +22,22 @@
   <div class="sticky">
     <div class="img-container">
       <figure class="imgbox imgbox1">
-        img1
+        <img class="img3" src="./img/main/main-about/1-3.jpg" alt="">
       </figure>
+
       <figure class="imgbox imgbox2">
-        img1
+        <img class="img3" src="./img/main/main-about/2-3.jpg" alt="">
       </figure>
+
       <figure class="imgbox imgbox3">
-        img1
+        <img class="img3" src="./img/main/main-about/3-3.jpg" alt="">
       </figure>
+
       <figure class="imgbox imgbox4">
-        img1
+        
+        <img class="img3" src="./img/main/main-about/4-3.jpg" alt="">
       </figure>
+
     </div><!-- img-container -->
 
     <div class="text-container">
