@@ -1,11 +1,30 @@
 
 .sub-visual {
+  overflow: hidden;
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url(../../img/sub/sub-deco/visual-background.png) !important;
+  /* background-image: url(../../img/sub/sub-deco/visual-background.png) !important; */
   background-attachment: fixed;
-
+  /* filter: url(#filter); */
+  .sub-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: url(#filter);
+    transform: scale(1.5);
+    img{
+      height: 100%;
+    }
+  }
+  .inner{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
 
   .season {
     top: 0;
@@ -64,6 +83,7 @@
       width: 100%;
       bottom: 0;
       animation: light 3s infinite linear alternate;
+      
       @keyframes light {
         0% {
           filter: drop-shadow(0 0 0px rgb(67, 67, 255));

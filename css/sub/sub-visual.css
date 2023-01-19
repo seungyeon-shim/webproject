@@ -1,9 +1,29 @@
 .sub-visual {
+  overflow: hidden;
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url(../../img/sub/sub-deco/visual-background.png) !important;
+  /* background-image: url(../../img/sub/sub-deco/visual-background.png) !important; */
   background-attachment: fixed;
+  /* filter: url(#filter); */
+}
+.sub-visual .sub-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url(#filter);
+  transform: scale(1.5);
+}
+.sub-visual .sub-bg img {
+  height: 100%;
+}
+.sub-visual .inner {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .sub-visual .season {
   top: 0;

@@ -1,7 +1,21 @@
 <link rel="stylesheet" href="./css/sub/sub-visual.css">
 
 <section class="sub-visual sub-visual-kbg ">
-<video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
+  <figure class="sub-bg">
+    <img src="./img/sub/sub-deco/visual-background.png" alt="">
+  </figure>
+
+  <div class="inner">
+    <svg style="display: none;">
+      <filter id="filter">
+        <feTurbulence id="water" numOctaves="3" seed="1" baseFrequency="0.02 0.5" />
+        <feDisplacementMap scale="10" in="SourceGraphic" />
+        <animate href="#water" attributeName="baseFrequency" keyTimes="0;0.5;1" values="0.002;0.008;0.002" dur="20s" repeatCount="indefinite" />
+      </filter>
+    </svg>
+  </div>
+
+  <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
   <!-- <video src="./video/tree.mp4" autoplay muted loop></video> -->
   <!-- particles.js container -->
   <script src="./js/sub-visual/sub-visual-kbg/sub-visual-kbg.js"></script>
@@ -27,7 +41,7 @@
     <figure class="castle castle2"></figure>
     <figure class="castle castle3"></figure>
     <script>
-      for (var i = 1; i <= 3; i++) { 
+      for (var i = 1; i <= 3; i++) {
         for (var j = 1; j <= 10; j++) {
           $(`.castle${i}`).append(`<img class="img${j} lg" src="./img/sub/sub-visual/kbg/kbg-${i}.png">`)
           $(`.castle${i}`).append(`<img class="img${j} sm" src="./img/sub/sub-visual/kbg/kbg-${i}s.png">`)

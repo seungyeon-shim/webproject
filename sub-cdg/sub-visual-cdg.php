@@ -1,6 +1,20 @@
 <link rel="stylesheet" href="./css/sub/sub-visual.css">
 
 <section class="sub-visual sub-visual-kbg ">
+<figure class="sub-bg">
+    <img src="./img/sub/sub-deco/visual-background.png" alt="">
+  </figure>
+
+  <div class="inner">
+    <svg style="display: none;">
+      <filter id="filter">
+        <feTurbulence id="water" numOctaves="3" seed="1" baseFrequency="0.02 0.5" />
+        <feDisplacementMap scale="10" in="SourceGraphic" />
+        <animate href="#water" attributeName="baseFrequency" keyTimes="0;0.5;1" values="0.002;0.008;0.002" dur="20s" repeatCount="indefinite" />
+      </filter>
+    </svg>
+  </div>
+
 <video class="moon" src="./video/moon.mp4" loop muted autoplay playisline></video>
   <!-- <video src="./video/tree.mp4" autoplay muted loop></video> -->
   <!-- particles.js container -->
