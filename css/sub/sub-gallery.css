@@ -3,8 +3,7 @@ section.sub-gallery {
   overflow: hidden;
   position: relative;
   height: 100%;
-  /* button ------------------------------------------------------- */
-  /* button active -------------------------------------- */
+  /* 버튼 -------------------------------------------- */
   /* 뚜껑 */
 }
 section.sub-gallery div.content {
@@ -16,7 +15,6 @@ section.sub-gallery div.content {
 }
 section.sub-gallery div.content .book {
   height: 85%;
-  border: 1px solid yellow;
   /* 왼쪽 페이지 --------------------------------- */
   /* 오른쪽 페이지 ----------------------------------------------- */
   /* 표지 */
@@ -93,14 +91,14 @@ section.sub-gallery div.content .book .page-odd .inner {
   height: 100%;
   box-sizing: border-box;
   padding: 30px;
-  border: 1px solid red;
 }
 section.sub-gallery div.content .book .page-odd .inner .box {
   width: 100%;
   height: 100%;
 }
 section.sub-gallery div.content .book .page-odd .inner .box figure {
-  width: 40%;
+  width: 100%;
+  height: 40%;
 }
 section.sub-gallery div.content .book .page-odd .inner .box figure img {
   width: 100%;
@@ -109,7 +107,8 @@ section.sub-gallery div.content .book .page-odd .inner .box figure img {
   object-position: center;
 }
 section.sub-gallery div.content .book .page-odd .inner .box .textbox {
-  width: 60%;
+  width: 100%;
+  height: 60%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -117,12 +116,16 @@ section.sub-gallery div.content .book .page-odd .inner .box .textbox {
   padding-top: 10px;
 }
 section.sub-gallery div.content .book .page-odd .inner .box .textbox p.left {
+  width: 8%;
   font-weight: 600;
   font-size: 0.9em;
   writing-mode: vertical-rl;
 }
-section.sub-gallery div.content .book .page1,
-section.sub-gallery div.content .book .page7 {
+section.sub-gallery div.content .book .page-odd .inner .box .textbox p.right {
+  width: 50%;
+  font-size: 0.75em;
+}
+section.sub-gallery div.content .book .page1 {
   height: 100%;
   background: url(../../img/sub/sub-deco/gallery-book-texture.png);
   background-size: 100%;
@@ -130,14 +133,12 @@ section.sub-gallery div.content .book .page7 {
   align-items: center;
   justify-content: center;
 }
-section.sub-gallery div.content .book .page1 .star-box,
-section.sub-gallery div.content .book .page7 .star-box {
+section.sub-gallery div.content .book .page1 .star-box {
   position: relative;
   width: 100%;
   height: 100%;
 }
-section.sub-gallery div.content .book .page1 .star-box .star,
-section.sub-gallery div.content .book .page7 .star-box .star {
+section.sub-gallery div.content .book .page1 .star-box .star {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -147,19 +148,29 @@ section.sub-gallery div.content .book .page7 .star-box .star {
   margin: 0 auto;
   overflow: hidden;
 }
-section.sub-gallery div.content .book .page1 .star-box .star img.star-bg,
-section.sub-gallery div.content .book .page7 .star-box .star img.star-bg {
+section.sub-gallery div.content .book .page1 .star-box .star img.star-bg {
   width: 100%;
   height: 100%;
   transform: scale(1.2);
   animation: star 5s linear infinite;
 }
-section.sub-gallery div.content .book .page1 .star-box img.front-back,
-section.sub-gallery div.content .book .page7 .star-box img.front-back {
+section.sub-gallery div.content .book .page1 .star-box img.front-back {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  max-width: 95%;
+  max-height: 95%;
+}
+section.sub-gallery div.content .book .page7 {
+  height: 100%;
+  background: url(../../img/sub/sub-deco/gallery-book-texture.png);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sub-gallery div.content .book .page7 img {
   max-width: 95%;
   max-height: 95%;
 }
@@ -175,29 +186,49 @@ section.sub-gallery div.content .book .page7 .star-box img.front-back {
   }
 }
 section.sub-gallery .btns {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  padding: 30px;
-  width: 90%;
   max-width: 400px;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 20px auto;
+  text-align: center;
 }
 section.sub-gallery .btns button {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  outline: none;
+  overflow: hidden;
   position: relative;
-  width: 35%;
-  height: 35px;
-  margin: 0 5px;
-  border-radius: 7px;
-  background: var(--yellow-sub);
-  font-size: 0.95em;
-  font-weight: 600;
-  color: var(--navy-main);
+  color: var(--yellow-sub);
+  font-weight: 400;
+  font-size: 13px;
+  background: var(--navy-main);
+  padding: 7px 15px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: background 0.3s;
 }
-section.sub-gallery button {
-  transition: all 0.3s;
+section.sub-gallery .btns button span {
+  position: relative;
+  z-index: 1;
+}
+section.sub-gallery .btns button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 250%;
+  width: 130%;
+  background: var(--navy-sub);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+section.sub-gallery .btns button:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+section.sub-gallery .btns button.active {
+  background: var(--navy-sub);
 }
 section.sub-gallery .cover {
   position: absolute;
