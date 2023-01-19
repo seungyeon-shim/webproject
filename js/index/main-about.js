@@ -1,5 +1,4 @@
 $(function () { 
-  /* 스크롤 텍스트박스 이동 모션 -------------------------------------------------- */
   function textbox(){
     let moveRange = $('.main-about .sticky').innerWidth() - $('.main-about .text-container').innerWidth()
     let scrStart = $('.main-about .scr-target1').offset().top
@@ -20,7 +19,4 @@ $(function () {
   }).scroll(function(){
     textbox()
   })
-
-  /* 스크롤 이미지 교체 -------------------------------------------------- */
-  
 })//read
