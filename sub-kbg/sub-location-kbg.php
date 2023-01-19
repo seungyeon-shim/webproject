@@ -14,7 +14,7 @@
   <div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">경복궁 오시는길</h2>
     <p class="sub-desc">
-    조선의 으뜸 궁궐, <b style="color: var(--yellow-main);">경복궁</b>
+    조선의 으뜸 궁궐, 경복궁
     </p>
   </div><!-- sub-title-wrap -->
 

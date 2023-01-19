@@ -16,8 +16,9 @@
       <!--건청궁·향원정에 이르기까지 경복궁 별빛야행에서만
       허락된 경복궁 북측 권역으로의 발걸음은 고궁의
       고즈넉함을 온전히 느끼며,  -->
-      창경궁만이 지닌 새로운 아름다움을 <br>
-      경험하는 특별한 감동을 선사할 것입니다.
+      창경궁의 밤, 궁궐에 어둠이 찾아오면 <br>
+      신비로운 세계로 향하는 문이 열립니다. 
+      
     </p>
   </div><!-- sub-title-wrap -->
 
@@ -35,5 +36,5 @@
       }
     </script>
   </div>
-  <video class="season winter" src="./video/spring2.mp4" loop muted autoplay playsInline></video>
+  <video class="season winter" src="./video/autumn.mp4" loop muted autoplay playsInline></video>
 </section>

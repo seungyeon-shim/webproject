@@ -14,7 +14,7 @@
   <div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">창경궁 오시는길</h2>
     <p class="sub-desc">
-<b style="color: var(--yellow-main);">세분의 대비</b>를 모시기 위해 옛 수강궁터에 창건한 궁
+      세분의 대비를 모시기 위해 옛 수강궁터에 창건한 궁
     </p>
   </div><!-- sub-title-wrap -->
 

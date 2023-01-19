@@ -14,7 +14,7 @@
   <div class="sub-title-wrap  sub-title-wrap-center">
     <h2 class="sub-title">창덕궁 오시는길</h2>
     <p class="sub-desc">
-    조선의 궁궐 중 <b style="color: var(--yellow-main);">가장 오랜 기간</b> 동안 임금들이 거처했던 궁궐 
+    조선의 궁궐 중 가장 오랜 기간 동안 임금들이 거처했던 궁궐 
     </p>
   </div><!-- sub-title-wrap -->
 

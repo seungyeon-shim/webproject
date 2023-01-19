@@ -15,7 +15,7 @@
     <h2 class="sub-title">덕수궁 오시는길</h2>
     <p class="sub-desc">
     1897년에 선포된 황제국, 대한제국의 황궁으로 <br> 
-    옛 이름은 <b style="color: var(--yellow-main);">경운궁慶運宮</b>입니다.
+    옛 이름은 경운궁慶運宮입니다.
     </p>
   </div><!-- sub-title-wrap -->
 
