@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./css/sub/sub-gallery.css">
 <script src="./js/sub-gallery/sub-gallery.js"></script>
-<section class="sub-content sub-gallery sub-gallery-kbg sub-content-center">
+<section class="sub-content sub-gallery sub-gallery-kbg sub-content-center sub-section sub-section4 sub-section-scr sub-section4-scr" data-n="4">
 
 <img class="gallery-bg" src="./img/sub/sub-deco/gallery-bg.png" alt="">
 

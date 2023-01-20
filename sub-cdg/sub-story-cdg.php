@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./css/sub/sub-story.css">
 <script src="./js/sub-story/sub-story.js"></script>
-<section class="sub-content sub-story sub-story-cdg sub-content-center">
+<section class="sub-content sub-story sub-story-cdg sub-content-center sub-section sub-section3 sub-section-scr sub-section3-scr" data-n="3">
 
     <img class="deco back-pattern" src="./img/sub/sub-deco/back-pattern.png" alt="">
     <img class="deco story-left" src="./img/sub/sub-deco/story-left.png" alt="">

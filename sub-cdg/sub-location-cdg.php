@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="./css/scrollbar.css">
 <script src="./js/sub-location/sub-location.js"></script>
 
-<section class="sub-content sub-location sub-location-kbg sub-content-center">
+<section class="sub-content sub-location sub-location-kbg sub-content-center sub-section sub-section5 sub-section-scr sub-section5-scr" data-n="5">
 
   <img class="location-bg" src="./img/sub/sub-location/location-bg.png" alt="">
   <img class="mount" src="./img/sub/sub-location/location-mount.png" alt="">

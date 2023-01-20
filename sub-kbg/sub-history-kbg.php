@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/sub/sub-history.css">
 <script src="./js/sub-history/store.js"></script>
 <script src="./js/sub-history/sub-history.js"></script>
-<section class="sub-content sub-history sub-history-kbg sub-content-center">
+<section class="sub-content sub-history sub-history-kbg sub-content-center sub-section sub-section2 sub-section-scr sub-section2-scr" data-n="2">
 
   <div class="sub-title-wrap sub-title-wrap-center">
     <h2 class="sub-title">경복궁 역사</h2>
