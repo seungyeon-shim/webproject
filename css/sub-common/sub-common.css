@@ -1,7 +1,6 @@
 @charset "UTF-8";
 main.sub {
   display: inline;
-  /* 스크롤 버튼----------------------------- */
 }
 main.sub section {
   position: relative;
@@ -56,28 +55,4 @@ main.sub section .sub-title-wrap .sub-desc {
   main.sub section .sub-title-wrap .sub-desc {
     font-size: 1.1em;
   }
-}
-main.sub .scroll-spy {
-  position: fixed;
-  top: 30%;
-}
-@media screen and (min-width: 1100px) {
-  main.sub .scroll-spy {
-    right: 0;
-  }
-}
-@media screen and (max-width: 1100px) {
-  main.sub .scroll-spy {
-    right: 5%;
-  }
-}
-main.sub .scroll-spy button {
-  position: relative;
-  display: block;
-  width: 150px;
-  height: 10px;
-  margin-bottom: 25px;
-}
-main.sub .scroll-spy button i {
-  color: #fff;
 }/*# sourceMappingURL=sub-common.css.map */

@@ -9,7 +9,7 @@ $(function () {
   function fnHeaderHeight() {
     if (matchMedia("(min-width:1100px)").matches) {
       //미디어쿼리 여부에따라 달라짐
-      headerH = 70;
+      headerH = 0;
     } else {
       headerH = 0;
     }

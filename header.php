@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/header/logo.css">
   <link rel="stylesheet" href="./css/header/gnb-map.css">
+  <link rel="stylesheet" href="./css/sub-snb/snb.css">
 
 
   <script src="http://code.jquery.com/jquery-latest.js"></script><!--제이쿼리-->
