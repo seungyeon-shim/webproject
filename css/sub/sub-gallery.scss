@@ -17,7 +17,7 @@ section.sub-gallery {
           height: 100%;
           object-fit: cover;
           object-position: center;
-        }//bg-left
+        } //bg-left
       } //page
 
       /* 왼쪽 페이지 --------------------------------- */
@@ -46,13 +46,13 @@ section.sub-gallery {
                 position: absolute;
                 top: 0;
                 color: var(--navy-main);
-              }//front
+              } //front
               .back {
                 position: absolute;
                 top: 2%;
                 left: 3%;
                 color: #999;
-              }//back
+              } //back
               img {
                 position: absolute;
                 bottom: 0;
@@ -60,12 +60,12 @@ section.sub-gallery {
                 height: 50%;
                 object-fit: cover;
                 object-position: center;
-              }//img
-            }//title
+              } //img
+            } //title
             p {
               width: 48%;
               font-size: 0.75em;
-            }//p
+            } //p
           } //textbox
           .sidetext {
             box-sizing: border-box;
@@ -76,34 +76,34 @@ section.sub-gallery {
               font-weight: 600;
               font-size: 0.9em;
               writing-mode: vertical-rl;
-            }//p
-          }//sidetext
+            } //p
+          } //sidetext
         } //inner
       } //page-even
 
       /* 오른쪽 페이지 ----------------------------------------------- */
-      .page-odd{
-        .inner{
+      .page-odd {
+        .inner {
           position: absolute;
           top: 0;
           width: 100%;
           height: 100%;
           box-sizing: border-box;
           padding: 30px;
-          .box{
+          .box {
             width: 100%;
             height: 100%;
-            figure{
+            figure {
               width: 100%;
               height: 40%;
-              img{
+              img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
               }
             }
-            .textbox{
+            .textbox {
               width: 100%;
               height: 60%;
               display: flex;
@@ -111,13 +111,13 @@ section.sub-gallery {
               justify-content: space-between;
               box-sizing: border-box;
               padding-top: 10px;
-              p.left{
+              p.left {
                 width: 8%;
                 font-weight: 600;
                 font-size: 0.9em;
                 writing-mode: vertical-rl;
               }
-              p.right{
+              p.right {
                 width: 50%;
                 font-size: 0.75em;
               }
@@ -127,120 +127,116 @@ section.sub-gallery {
       }
 
       /* 표지 */
-      .page1{
+      .page1 {
         height: 100%;
         background: url(../../img/sub/sub-deco/gallery-book-texture.png);
         background-size: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-          .star-box{
+        .page1-wrap {
+          position: relative;
+          height: 100%;
+          max-width: 95%;
+          max-height: 95%;
+          overflow: hidden;
+          img.star-bg {
             position: relative;
             width: 100%;
             height: 100%;
-            .star{
-              position: absolute;
-              left: 50%; top: 50%;
-              transform: translate(-50%,-50%);
-              max-width: 500px;
-              max-height: 500px;
-              margin: 0 auto;
-              overflow: hidden;
-              img.star-bg{
-                width: 100%;
-                height: 100%;
-                transform: scale(1.2);
-                animation: star 5s linear infinite;
-              }//star-bg
-            }
-            img.front-back{
-              position: absolute;
-              left: 50%; top: 50%;
-              transform: translate(-50%,-50%);
-              max-width: 95%;
-              max-height: 95%;
-            }//front-back
-          }//star
-        }//page1,7
-        .page7{
-          height: 100%;
-          background: url(../../img/sub/sub-deco/gallery-book-texture.png);
-          background-size: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img{
-            max-width: 95%;
-            max-height: 95%;
+            object-fit: cover;
+            object-position: center;
+            animation: star 8s linear infinite;
+            transform: scale(1.5);
           }
+          img.front-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        } //page1-wrap
+      } //page1,7
+      .page7 {
+        height: 100%;
+        background: url(../../img/sub/sub-deco/gallery-book-texture.png);
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 95%;
+          max-height: 95%;
         }
+      }
+    } //book
+  } //content
 
-      } //book
-    } //content
-
-    @keyframes star {
-      0%{
-        transform: translate(0,0);
-      }
-      50%{
-        transform: translate(-1%,-1%);
-      }
-      0%{
-        transform: translate(0,0);
-      }
+  @keyframes star {
+    0% {
+      transform: translate(0, 0);
     }
+    50% {
+      transform: translate(-1%, -1%);
+    }
+    0% {
+      transform: translate(0, 0);
+    }
+  }
 
-    /* 버튼 -------------------------------------------- */
-    .btns{
-      max-width: 400px;
-      margin: 20px auto;
+  /* 버튼 -------------------------------------------- */
+  .btns {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    button {
+      cursor: pointer;
+      border: none;
       text-align: center;
-      button {
-        cursor: pointer;
-        border: none;
-        text-align: center;
-        outline: none;
-        overflow: hidden;
-        position: relative;
-        color:  var(--yellow-sub);
-        font-weight: 400;
-        font-size: 13px;
-        background: var(--navy-main);
-        padding: 7px 15px;
-        margin: 0 auto;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.20);
-        transform: background 0.3s;
-      }
-      
-      button span {
-        position: relative; 
-        z-index: 1;
-      }
-      
-      button:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 250%;
-        width: 130%;
-        background: var(--navy-sub);
-        -webkit-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
-        -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-        transform: translateX(-98%) translateY(-25%) rotate(45deg);
-      }
-      
-      button:hover:after {
-        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-        transform: translateX(-9%) translateY(-25%) rotate(45deg);
-      }
-
-      button.active{
-        background: var(--navy-sub);
-      }
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      color: var(--yellow-sub);
+      font-weight: 400;
+      font-size: 13px;
+      background: var(--navy-main);
+      padding: 7px 15px;
+      margin: 0 auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transform: background 0.3s;
     }
 
+    button span {
+      position: relative;
+      z-index: 1;
+    }
+
+    button:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 250%;
+      width: 130%;
+      background: var(--navy-sub);
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+      transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    }
+
+    button:hover:after {
+      -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    }
+
+    button.active {
+      background: var(--navy-sub);
+    }
+  }
 
   /* 뚜껑 */
   .cover {
@@ -248,45 +244,45 @@ section.sub-gallery {
     width: 100%;
     height: 50%;
     transition: all 1s;
-    &.cover-top{
-      top:0%;
-      img{
-        top:0;
+    &.cover-top {
+      top: 0%;
+      img {
+        top: 0;
       }
-    }//cover-top
-    &.cover-bottom{
-      bottom:0%;
-      img{
-        bottom:0;
+    } //cover-top
+    &.cover-bottom {
+      bottom: 0%;
+      img {
+        bottom: 0;
       }
-    }//cover-bottom
-    img{
+    } //cover-bottom
+    img {
       position: absolute;
       width: 100%;
       height: 120%;
-    }//img
+    } //img
 
-    &.active{
-      &.cover-top{
-        top:-53%;
+    &.active {
+      &.cover-top {
+        top: -53%;
       }
-      &.cover-bottom{
-        bottom:-53%;
+      &.cover-bottom {
+        bottom: -53%;
       }
-    }//active
-  }//cover
+    } //active
+  } //cover
 
-  .gallery-bg{
+  .gallery-bg {
     position: absolute;
-    
-    left:50%;
-    transform: translate(-50%,0);
+
+    left: 50%;
+    transform: translate(-50%, 0);
     bottom: 0;
-    @media screen and (orientation:landscape) {
+    @media screen and (orientation: landscape) {
       width: 100%;
     }
-    @media screen and (orientation:portrait) {
+    @media screen and (orientation: portrait) {
       height: 80%;
     }
-  }//gallery-bg
+  } //gallery-bg
 }

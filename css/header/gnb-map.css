@@ -25,7 +25,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.2);
+  transform: scale(1.6);
 }
 .gnb-map .bg-star span.star {
   position: absolute; /*넓이랑 위치잡아줌*/
@@ -74,16 +74,17 @@
   opacity: 1;
 }
 .gnb-map ul {
+  height: 100%;
   position: absolute;
   max-width: 1100px;
   z-index: 11;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -96,6 +97,8 @@
   .gnb-map ul {
     margin-top: 60px;
     width: 100%;
+    max-height: 600px;
+    height: 100%;
   }
 }
 .gnb-map ul li {
@@ -113,12 +116,22 @@
     text-align: center;
   }
 }
-.gnb-map ul li a,
-.gnb-map ul li span {
-  color: #fff;
-}
 .gnb-map ul li a {
-  font-size: 2.3em;
+  transition: color 0.5s;
+  color: rgb(111, 123, 180);
+}
+@media screen and (min-width: 950px) {
+  .gnb-map ul li a {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 950px) {
+  .gnb-map ul li a {
+    font-size: 2em;
+  }
+}
+.gnb-map ul li a.on {
+  color: #fff;
 }
 .gnb-map ul li a span.point-serif {
   display: block;
@@ -134,6 +147,9 @@
   .gnb-map ul li a span.point-serif {
     transform: translateY(-80%);
   }
+}
+.gnb-map ul li a div.menu-title {
+  letter-spacing: -5px;
 }
 .gnb-map .bg-container {
   width: 100%;
@@ -162,37 +178,6 @@
   opacity: 2;
 }
 
-@keyframes lantern-motion {
-  0% {
-    transform: rotate(0);
-  }
-  30% {
-    transform: rotate(-3deg);
-  }
-  50% {
-    transform: rotate(0);
-  }
-  70% {
-    transform: rotate(-3deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-/**************/
-@keyframes star {
-  0% {
-    transform: rotate(315deg) translateX(0);
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.3;
-  }
-  100% {
-    transform: rotate(315deg) translateX(-1000px);
-    opacity: 0;
-  }
-}
 @keyframes rorate-bg {
   0% {
     transform: rotate(0deg);

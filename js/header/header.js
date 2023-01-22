@@ -44,6 +44,18 @@ function mouseMotion(mouseX, mouseY){
   //$('.lantern-left').css({'transform':`rotate(${metaScale2}deg)`})
   //$('.lantern-right').css({'transform':`rotate(-${metaScale2}deg)`})
 }
+
+ /** menu motion****************************************/
+ $('ul.category li a').mouseenter(function () {
+ 
+  $(this).parent().siblings('li').children('a').removeClass('on')
+})
+
+$('ul.category li a').mouseleave(function () {
+  $('ul.category li a').addClass('on')
+})
+
+
   /*gnb-btn***************************************** */
   $('.gnb-btn').click(function(){
     $(this).toggleClass('active')

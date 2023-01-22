@@ -57,7 +57,7 @@ header div.inner .right .gnb-btn .hamburger span.line {
   display: block;
   height: 2px;
   margin: 6px auto;
-  background-color: #FFF;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
 header div.inner .right .gnb-btn .hamburger span.line:nth-child(1), header div.inner .right .gnb-btn .hamburger span.line:nth-child(3) {
@@ -67,7 +67,7 @@ header div.inner .right .gnb-btn .hamburger.active {
   transform: rotate(45deg); /*기울이기*/
 }
 header div.inner .right .gnb-btn .hamburger.active::before {
-  border-color: #FFF;
+  border-color: #fff;
 }
 header div.inner .right .gnb-btn .hamburger.active .line {
   width: 35px;
@@ -90,9 +90,31 @@ header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
     align-items: center;
   }
   header div.inner .right .gnb-lg ul li {
-    padding: 0 30px;
+    padding: 0 20px;
   }
   header div.inner .right .gnb-lg ul li a {
+    transition: color 0.3s;
+    color: #AAA;
+    /*-----------------------------------*/
+  }
+  header div.inner .right .gnb-lg ul li a .menu-title {
+    letter-spacing: -1.8px;
+  }
+  header div.inner .right .gnb-lg ul li a .menu-title span {
+    transition: font-weight 0.5s;
+  }
+  header div.inner .right .gnb-lg ul li a:hover .menu-title {
+    position: relative;
+  }
+  header div.inner .right .gnb-lg ul li a:hover .menu-title span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    animation: flip 0.8s;
+    animation-delay: calc(0.2s * var(--i));
+  }
+  header div.inner .right .gnb-lg ul li a.on {
     color: #fff;
   }
   header div.inner .right .gnb-lg ul li span.point-serif {
@@ -102,5 +124,14 @@ header div.inner .right .gnb-btn .hamburger.active .line:nth-child(3) {
 @media screen and (max-width: 800px) {
   header div.inner .right .gnb-lg {
     display: none;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(360deg);
+  }
+  10% {
+    transform: rotateY(360deg);
   }
 }/*# sourceMappingURL=header.css.map */
