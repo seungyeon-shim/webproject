@@ -46,30 +46,40 @@ body {
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .ebs {
   font-family: "EBS";
 }
 
-.point-serif { /*한자-세리프*/
+.point-serif {
+  /*한자-세리프*/
   font-family: "Noto Serif SC", serif;
 }
 
-.point-sans { /*한자-고딕*/
+.point-sans {
+  /*한자-고딕*/
   font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
-  --navy-main:#000a16;
-  --navy-sub:#203e5f;
-  --yellow-main:#ffcc00;
-  --yellow-sub:#fee5b1;
-  --dark:#333333;
+  --navy-main: #000a16;
+  --navy-sub: #203e5f;
+  --yellow-main: #ffcc00;
+  --yellow-sub: #fee5b1;
+  --dark: #333333;
   --gray: #838383;
 }
 
 video {
   pointer-events: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+} /* 스크롤바 제거 */
+body {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+} /* 스크롤바 제거 *//*# sourceMappingURL=style.css.map */

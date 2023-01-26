@@ -1,39 +1,38 @@
 /*전체적인 홈페이지 스타일가이드, 무드를 설정*/
 
 @font-face {
-  font-family: 'EBS';
-  src: url('../font/EBSL.woff') format('woff');
+  font-family: "EBS";
+  src: url("../font/EBSL.woff") format("woff");
   font-weight: lighter;
 }
 @font-face {
-  font-family: 'EBS';
-  src: url('../font/EBSR.woff') format('woff');
+  font-family: "EBS";
+  src: url("../font/EBSR.woff") format("woff");
   font-weight: normal;
 }
 @font-face {
-  font-family: 'EBS';
-  src: url('../font/EBSB.woff') format('woff');
+  font-family: "EBS";
+  src: url("../font/EBSB.woff") format("woff");
   font-weight: bold;
 }
 @font-face {
-  font-family: 'namsan';
-  src: url('../font/SeoulNamsanL.woff') format('woff');
+  font-family: "namsan";
+  src: url("../font/SeoulNamsanL.woff") format("woff");
   font-weight: lighter;
 }
 @font-face {
-  font-family: 'namsan';
-  src: url('../font/SeoulNamsanM.woff') format('woff');
+  font-family: "namsan";
+  src: url("../font/SeoulNamsanM.woff") format("woff");
   font-weight: normal;
 }
 @font-face {
-  font-family: 'namsan';
-  src: url('../font/SeoulNamsanEB.woff') format('woff');
+  font-family: "namsan";
+  src: url("../font/SeoulNamsanEB.woff") format("woff");
   font-weight: bold;
 }
-
 
 * {
-  font-family: inherit; 
+  font-family: inherit;
   font-size: inherit;
   color: inherit;
   font-weight: inherit;
@@ -42,36 +41,46 @@
 }
 
 body {
-  font-family:'Montserrat',  'Noto Sans KR', sans-serif;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
   font-size: 16px;
   color: #444;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-
-.ebs{
-  font-family: 'EBS';
-} 
-
-.point-serif {/*한자-세리프*/
-  font-family: 'Noto Serif SC', serif;
-}
-.point-sans{/*한자-고딕*/
-  font-family: 'Noto Sans KR', sans-serif;
+.ebs {
+  font-family: "EBS";
 }
 
-:root{
-  --navy-main:#000a16;
-  --navy-sub:#203e5f;
-  --yellow-main:#ffcc00;
-  --yellow-sub:#fee5b1;
-  --dark:#333333;
+.point-serif {
+  /*한자-세리프*/
+  font-family: "Noto Serif SC", serif;
+}
+.point-sans {
+  /*한자-고딕*/
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+:root {
+  --navy-main: #000a16;
+  --navy-sub: #203e5f;
+  --yellow-main: #ffcc00;
+  --yellow-sub: #fee5b1;
+  --dark: #333333;
   --gray: #838383;
 }
- 
-video{
+
+video {
   pointer-events: none;
 }
+
+body::-webkit-scrollbar {
+  display: none;/* 크롬, 사파리, 오페라, 엣지 */
+} /* 스크롤바 제거 */
+
+body {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}/* 스크롤바 제거 */

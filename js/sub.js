@@ -25,7 +25,7 @@ $(function () {
     isWheel = false;
     setTimeout(function () {
       isWheel = true;
-    }, 300);
+    }, 800);
 
     window.smoothScroll = false;
     var delta = e.originalEvent.wheelDelta / -120;
@@ -69,11 +69,11 @@ $('.scroll-spy button').click(function () {
 /* 스크롤 스파이 */
 
 function fnScrollSpy() {
-  var offset1 = $(".sub-section1-scr").offset().top - headerH - 1;
-  var offset2 = $(".sub-section2-scr").offset().top - headerH - 1;
-  var offset3 = $(".sub-section3-scr").offset().top - headerH - 1;
-  var offset4 = $(".sub-section4-scr").offset().top - headerH - 1;
-  var offset5 = $(".sub-section5-scr").offset().top - headerH - 1;
+  var offset1 = $(".sub-section1-scr").offset().top - headerH - 2;
+  var offset2 = $(".sub-section2-scr").offset().top - headerH - 2;
+  var offset3 = $(".sub-section3-scr").offset().top - headerH - 2;
+  var offset4 = $(".sub-section4-scr").offset().top - headerH - 2;
+  var offset5 = $(".sub-section5-scr").offset().top - headerH - 2;
   var current;
   if (scrY < offset2) {
     //1
@@ -112,5 +112,11 @@ $(window).resize(function(){
 }).scroll(function () {
   fnScrollSpy()
 })//win event
+
+
+
+
+
+
   
 }); //read
