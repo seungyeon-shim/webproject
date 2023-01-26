@@ -185,9 +185,19 @@ section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .big-t
   font-size: 1.7em;
   font-weight: 600;
 }
+@media screen and (max-width: 500px) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .big-text h2 {
+    font-size: 1.4em;
+  }
+}
 section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .big-text h3 {
   font-size: 1.2em;
   font-weight: 600;
+}
+@media screen and (max-width: 500px) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .big-text h3 {
+    font-size: 0.9em;
+  }
 }
 section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-trans {
   width: 95%;
@@ -202,8 +212,23 @@ section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-t
   font-size: 1.1em;
   font-weight: 600;
 }
+@media screen and (max-width: 500px) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-trans h3 {
+    font-size: 0.9em;
+  }
+}
 section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-trans p {
   font-size: 0.95em;
+}
+@media screen and (max-width: 500px) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-trans p {
+    font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-trans em {
+    font-size: 0.85em;
+  }
 }
 section.sub-location .location-wrap .paper-wrap .map-wrap .transportation .kbg-trans .subway {
   padding-top: 10px;

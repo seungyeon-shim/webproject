@@ -174,32 +174,48 @@ section.sub-location {
               margin-bottom: 10px;
               font-size: 1.7em;
               font-weight: 600;
+              @media screen and (max-width:500px){
+                font-size: 1.4em;
+              }
             }
             h3{
               font-size: 1.2em;
               font-weight: 600;
+              @media screen and (max-width:500px){
+                font-size: 0.9em;
+              }
             }
 
           }
           
 
           .kbg-trans {
-          
-           
             width: 95%;
             height: 70%;
             margin: 0 auto;
             margin-top: 15px;
             line-height: 23px;
             font-weight: 600;
+           
             h3 {
               padding-bottom: 3px;
               font-size: 1.1em;
               font-weight: 600;
+              @media screen and (max-width:500px){
+                font-size: 0.9em;
+              }
             } //h3
             p {
               font-size: 0.95em;
+              @media screen and (max-width:500px){
+                font-size: 0.85em;
+              }
             } //p
+            em{
+              @media screen and (max-width:500px){
+                font-size: 0.85em;
+              }
+            }
             .subway {
                 padding-top: 10px;
                 h3{
