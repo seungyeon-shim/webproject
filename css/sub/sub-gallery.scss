@@ -3,6 +3,8 @@ section.sub-gallery {
   position: relative;
   height: 100%;
   .sub-title-wrap-center{
+    position: relative;
+    z-index: 10 !important;
     @media screen and (orientation: portrait) {
     margin-top: 20px !important;
     }

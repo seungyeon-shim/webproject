@@ -6,6 +6,10 @@ section.sub-gallery {
   /* 버튼 -------------------------------------------- */
   /* 뚜껑 */
 }
+section.sub-gallery .sub-title-wrap-center {
+  position: relative;
+  z-index: 10 !important;
+}
 @media screen and (orientation: portrait) {
   section.sub-gallery .sub-title-wrap-center {
     margin-top: 20px !important;
