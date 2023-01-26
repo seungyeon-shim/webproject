@@ -23,7 +23,7 @@
         <div class="page page-even page2">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-left.png" alt="">
           <div class="inner">
-            <div class="textbox">
+            <div class="textbox" id="style-4">
               <div class="title">
                 <h3 class="back">景福宮</h3>
                 <h3 class="front">景福宮</h3>
@@ -41,8 +41,8 @@
             </div><!-- textbox -->
             <div class="sidetext">
               <p>
-                궁성宮城 광화문光化門 <br>
-                건춘문建春門
+                궁성 宮城 광화문 光化門 <br>
+                건춘문 建春門
               </p>
             </div><!-- sidetext -->
           </div><!-- inner -->
@@ -57,10 +57,10 @@
               <figure>
                 <img src="./img/sub/sub-gallery/kbg/book-sm/2.png" alt="">
               </figure>
-              <div class="textbox">
+              <div class="textbox" id="style-4">
                 <p class="left">
-                  영추문迎秋門 <br>
-                  신무문神武門 동십자각東十字閣
+                  영추문 迎秋門 <br>
+                  신무문 神武門 동십자각 東十字閣
                 </p>
                 <p class="right">
                   조선의 법궁에 해당하는 궁궐의 정문으로서 다른 궁궐들의 정문과는 달리 돌로 높은 석축을 쌓고 그 위에 중층구조의 누각을 세워서 마치 성곽의 성문과 같은 격식으로 장대하게 지어졌다.
@@ -75,7 +75,7 @@
         <div class="page page-even page4">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-left.png" alt="">
           <div class="inner">
-            <div class="textbox">
+            <div class="textbox" id="style-4">
               <div class="title">
                 <h3 class="back">景福宮</h3>
                 <h3 class="front">景福宮</h3>
@@ -95,8 +95,8 @@
             </div><!-- textbox -->
             <div class="sidetext">
               <p>
-                궁성宮城 광화문光化門 <br>
-                건춘문建春門
+                궁성 宮城 광화문 光化門 <br>
+                건춘문 建春門
               </p>
             </div><!-- sidetext -->
           </div><!-- inner -->
@@ -111,10 +111,10 @@
               <figure>
                 <img src="./img/sub/sub-gallery/kbg/book-sm/4.png" alt="">
               </figure>
-              <div class="textbox">
+              <div class="textbox" id="style-4">
                 <p class="left">
-                  영추문迎秋門 <br>
-                  신무문神武門 동십자각東十字閣
+                  영추문 迎秋門 <br>
+                  신무문 神武門 동십자각 東十字閣
                 </p>
                 <p class="right">
                   신무문은 궁성의 북쪽 문으로 북쪽 궁성이 마련되고 나서 세워진 것이다.
@@ -132,7 +132,7 @@
         <div class="page page-even page5">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-left.png" alt="">
           <div class="inner">
-            <div class="textbox">
+            <div class="textbox" id="style-4">
               <div class="title">
                 <h3 class="back">景福宮</h3>
                 <h3 class="front">景福宮</h3>
@@ -159,8 +159,8 @@
             </div><!-- textbox -->
             <div class="sidetext">
               <p>
-                궁성宮城 광화문光化門 <br>
-                건춘문建春門
+                궁성 宮城 광화문 光化門 <br>
+                건춘문 建春門
               </p>
             </div><!-- sidetext -->
           </div><!-- inner -->
@@ -175,10 +175,10 @@
               <figure>
                 <img src="./img/sub/sub-gallery/kbg/book-sm/6.png" alt="">
               </figure>
-              <div class="textbox">
+              <div class="textbox" id="style-4">
                 <p class="left">
-                  영추문迎秋門 <br>
-                  신무문神武門 동십자각東十字閣
+                  영추문 迎秋門 <br>
+                  신무문 神武門 동십자각 東十字閣
                 </p>
                 <p class="right">
                   근정전(勤政殿-勤政 : 정치를 부지런히 함)은 경복궁의 정전이다.
@@ -196,7 +196,7 @@
         <div class="page page-even page6">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-left.png" alt="">
           <div class="inner">
-            <div class="textbox">
+            <div class="textbox" id="style-4">
               <div class="title">
                 <h3 class="back">景福宮</h3>
                 <h3 class="front">景福宮</h3>
@@ -215,8 +215,8 @@
             </div><!-- textbox -->
             <div class="sidetext">
               <p>
-                궁성宮城 광화문光化門 <br>
-                건춘문建春門
+                궁성 宮城 광화문 光化門 <br>
+                건춘문 建春門
               </p>
             </div><!-- sidetext -->
           </div><!-- inner -->
@@ -231,10 +231,10 @@
               <figure>
                 <img src="./img/sub/sub-gallery/kbg/book-sm/8.png" alt="">
               </figure>
-              <div class="textbox">
+              <div class="textbox" id="style-4">
                 <p class="left">
-                  영추문迎秋門 <br>
-                  신무문神武門 동십자각東十字閣
+                  영추문 迎秋門 <br>
+                  신무문 神武門 동십자각 東十字閣
                 </p>
                 <p class="right">
                   경회루는 침전영역 서쪽에 위치한 연못 안에 조성된 누각이다.
@@ -257,12 +257,12 @@
     </div><!-- book -->
 
     <div class="btns">
-      <button class="btn1 active" data-n="1"><span>앞장</span></button>
-      <button class="btn2" data-n="2"><span>1장</span></button>
-      <button class="btn3" data-n="3"><span>2장</span></button>
-      <button class="btn4" data-n="4"><span>3장</span></button>
-      <button class="btn5" data-n="5"><span>4장</span></button>
-      <button class="btn6" data-n="6"><span>뒷장</span></button>
+      <button class="btn1 active" data-n="1"><span>前</span></button>
+      <button class="btn2" data-n="2"><span>一</span></button>
+      <button class="btn3" data-n="3"><span>二</span></button>
+      <button class="btn4" data-n="4"><span>三</span></button>
+      <button class="btn5" data-n="5"><span>四</span></button>
+      <button class="btn6" data-n="6"><span>後</span></button>
     </div><!-- btns -->
 
   </div><!-- content -->
