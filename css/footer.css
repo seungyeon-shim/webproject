@@ -51,4 +51,9 @@ footer::after {
   position: absolute;
   top: -200px;
   left: 0;
+}
+@media screen and (max-height: 700px) {
+  footer::before, footer::after {
+    display: none;
+  }
 }/*# sourceMappingURL=footer.css.map */

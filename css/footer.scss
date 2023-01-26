@@ -2,7 +2,7 @@ footer {
   background-color: #0a0e11;
   padding-bottom: 50px;
   position: relative;
- // z-index: 1;
+  // z-index: 1;
   .layout {
     overflow: hidden;
     position: relative;
@@ -52,8 +52,16 @@ footer {
     background: url(../img/logo&icon/footer-bg.png) no-repeat center bottom;
     background-size: cover;
     display: block;
-   position: absolute;
+    position: absolute;
     top: -200px;
     left: 0;
   }
+
+  //제일 작은 모바일 화면에서는 하단 이미지 숨기기
+  @media screen and (max-height: 700px) {
+    &::before,
+    &::after {
+      display: none;
+    } //&::before,   &::after
+  } //@media end
 } //footer
