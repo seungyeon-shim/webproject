@@ -1,10 +1,11 @@
 $(function(){
-  $('video.moon')[0].playbackRate=3
-/*   $('video.moon')[1].playbackRate=3
-  $('video.moon')[2].playbackRate=3
-  $('video.moon')[3].playbackRate=3
-  $('video.moon')[4].playbackRate=3 */
-
+  if(window.isMobile){
+    $('figure.castle , .main-section title').css({'filter':'none'})
+    $('figure.castle img').css({'animation':'none'})
+    document.querySelectorAll('.main-visual video:not(.moon)').forEach(function(v){
+      v.remove()
+    })
+  }
   n = 1
   setInterval(function(){
     n ++ 

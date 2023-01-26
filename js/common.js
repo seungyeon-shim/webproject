@@ -18,17 +18,15 @@ $(window)
     fnWinInfo();
   }); //windowEvt
 
-/* Smooth Scroll ----------------------------------------------------------------------------- */
-/* window.isMobile = false;
 
+window.isMobile = false;
 window.filter = "win16|win32|win64|mac";
-
 if (navigator.platform) {
   isMobile = filter.indexOf(navigator.platform.toLowerCase()) < 0;
 }
 
+/* Smooth Scroll ----------------------------------------------------------------------------- 
 var scrSpeed = 0;
-
 window.addEventListener(
   "mousewheel",
   function (e) {
@@ -46,5 +44,5 @@ window.addEventListener(
   });
   scrSpeed *= 0.9;
 }, 2);
- */
-/* ----------------------------------------------------------------------------- */
+*/
+
