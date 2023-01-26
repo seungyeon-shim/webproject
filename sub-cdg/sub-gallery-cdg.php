@@ -108,7 +108,7 @@
       </div><!-- sheet2 -->
 
       <div class="sheet sheet3">
-        <div class="page page-odd page4">
+        <div class="page page-odd page5">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-right.png" alt="">
           <div class="inner">
             <div class="box">
@@ -135,7 +135,7 @@
             </div><!-- box -->
           </div><!-- inner -->
         </div> <!-- page4 -->
-        <div class="page page-even page5">
+        <div class="page page-even page6">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-left.png" alt="">
           <div class="inner">
             <div class="textbox" id="style-4">
@@ -166,7 +166,7 @@
       </div><!-- sheet3 -->
 
       <div class="sheet sheet4">
-        <div class="page page-odd page5">
+        <div class="page page-odd page7">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-right.png" alt="">
           <div class="inner">
             <div class="box">
@@ -192,7 +192,7 @@
             </div><!-- box -->
           </div><!-- inner -->
         </div> <!-- page4 -->
-        <div class="page page-even page6">
+        <div class="page page-even page8">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-left.png" alt="">
           <div class="inner">
             <div class="textbox" id="style-4">
@@ -228,7 +228,7 @@
       </div><!-- sheet4 -->
 
       <div class="sheet sheet5">
-        <div class="page page-odd page6">
+        <div class="page page-odd page9">
           <img class="bg-left" src="./img/sub/sub-deco/gallery-book-bg-right.png" alt="">
           <div class="inner">
             <div class="box">
@@ -254,7 +254,7 @@
             </div><!-- box -->
           </div><!-- inner -->
         </div> <!-- page6 -->
-        <div class="page page-even page7">
+        <div class="page page-even page10">
           <img src="./img/sub/sub-deco/gallery-book-back-cdg.png" alt="">
         </div> <!-- page7 -->
       </div><!-- sheet5 -->
