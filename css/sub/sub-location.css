@@ -65,6 +65,7 @@ section.sub-location .texture {
 }
 section.sub-location .location-wrap {
   position: relative;
+  z-index: 1;
 }
 @media screen and (orientation: landscape) {
   section.sub-location .location-wrap {

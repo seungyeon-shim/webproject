@@ -63,7 +63,7 @@ section.sub-location {
 
   .location-wrap {
     position: relative;
-   
+   z-index: 1;
     @media screen and (orientation: landscape) {
       width: 80%;
       max-width: 1000px;
@@ -99,6 +99,7 @@ section.sub-location {
         }
         &.grap-bottom {
           top: 50%; /*100*/
+          
         }
         &.grap-land {
           display: none;
@@ -274,6 +275,7 @@ section.sub-location {
   } //location-wrap
   /* active----------------------------------------- */
   .location-wrap.active {
+
     div.paper-wrap {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     } //paper-wrap
@@ -291,6 +293,7 @@ section.sub-location {
       }
       .grap-bottom {
         top: 100% !important; /* 100 */
+        
       }
     } //port
   } //location-wrap
