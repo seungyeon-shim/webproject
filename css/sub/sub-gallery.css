@@ -6,6 +6,11 @@ section.sub-gallery {
   /* 버튼 -------------------------------------------- */
   /* 뚜껑 */
 }
+@media screen and (orientation: portrait) {
+  section.sub-gallery .sub-title-wrap-center {
+    margin-top: 20px !important;
+  }
+}
 section.sub-gallery div.content {
   position: relative;
   width: 95%;
@@ -35,6 +40,15 @@ section.sub-gallery div.content .book .page-even .inner {
   height: 100%;
   box-sizing: border-box;
   padding: 30px;
+}
+@media screen and (orientation: portrait) {
+  section.sub-gallery div.content .book .page-even .inner {
+    padding: 15px;
+  }
+  section.sub-gallery div.content .book .page-even .inner .textbox {
+    height: 90% !important;
+    overflow-y: auto;
+  }
 }
 section.sub-gallery div.content .book .page-even .inner .textbox {
   width: 100%;
@@ -69,6 +83,12 @@ section.sub-gallery div.content .book .page-even .inner .textbox .title img {
   object-fit: cover;
   object-position: center;
 }
+@media screen and (orientation: portrait) {
+  section.sub-gallery div.content .book .page-even .inner .textbox .title img {
+    box-sizing: border-box;
+    padding-top: 15px;
+  }
+}
 section.sub-gallery div.content .book .page-even .inner .textbox p {
   width: 48%;
   font-size: 0.75em;
@@ -78,6 +98,11 @@ section.sub-gallery div.content .book .page-even .inner .sidetext {
   padding: 15px 0;
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (orientation: portrait) {
+  section.sub-gallery div.content .book .page-even .inner .sidetext {
+    display: none;
+  }
 }
 section.sub-gallery div.content .book .page-even .inner .sidetext p {
   font-weight: 600;
@@ -91,6 +116,14 @@ section.sub-gallery div.content .book .page-odd .inner {
   height: 100%;
   box-sizing: border-box;
   padding: 30px;
+}
+@media screen and (orientation: portrait) {
+  section.sub-gallery div.content .book .page-odd .inner {
+    padding: 15px;
+  }
+  section.sub-gallery div.content .book .page-odd .inner .box .textbox {
+    overflow-y: auto;
+  }
 }
 section.sub-gallery div.content .book .page-odd .inner .box {
   width: 100%;
@@ -120,6 +153,11 @@ section.sub-gallery div.content .book .page-odd .inner .box .textbox p.left {
   font-weight: 600;
   font-size: 0.9em;
   writing-mode: vertical-rl;
+}
+@media screen and (orientation: portrait) {
+  section.sub-gallery div.content .book .page-odd .inner .box .textbox p.left {
+    opacity: 0;
+  }
 }
 section.sub-gallery div.content .book .page-odd .inner .box .textbox p.right {
   width: 50%;

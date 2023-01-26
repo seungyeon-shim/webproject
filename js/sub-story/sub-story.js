@@ -7,11 +7,21 @@ $(function(){
       $('.sub-story .content').removeClass('active')
     }
   }
+  function activeMotion(){
+    var offsetTop1 = $('.sub-history').offset().top
+    var offsetTop3 = $('.sub-gallery').offset().top
+    if(scrY >= offsetTop1 && scrY < offsetTop3){
+      $('.sub-story .open').removeClass('active')
+    }
+  }
   motion()
+  activeMotion()
   $(window).scroll(function(){
     motion()
+    activeMotion()
   }).resize(function(){
     motion()
+    activeMotion()
   })//event
  
   var n = 1
@@ -28,7 +38,6 @@ $(function(){
 
   $('.sub-story .box').click(function(){
     var n = $(this).attr('data-n')
-    console.log(n);
     $('.sub-story .open'+n).addClass('active')
   })
 
