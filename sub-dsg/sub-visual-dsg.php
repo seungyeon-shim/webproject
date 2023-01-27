@@ -51,5 +51,5 @@
       }
     </script>
   </div>
-  <video class="season winter" src="./video/summer2.mp4" loop muted autoplay playsInline></video>
+  <video class="season winter" src="./video/summer.mp4" loop muted autoplay playsInline></video>
 </section>
