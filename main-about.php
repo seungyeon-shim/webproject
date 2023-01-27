@@ -21,19 +21,19 @@
   </div><!-- title-container -->
   <div class="sticky">
     <div class="img-container">
-      <figure class="imgbox imgbox1">
+      <figure class="imgbox imgbox1" data-n="1">
         <img class="img3" src="./img/main/main-about/1-3.jpg" alt="">
       </figure>
 
-      <figure class="imgbox imgbox2">
+      <figure class="imgbox imgbox2" data-n="2">
         <img class="img3" src="./img/main/main-about/2-3.jpg" alt="">
       </figure>
 
-      <figure class="imgbox imgbox3">
+      <figure class="imgbox imgbox3" data-n="3">
         <img class="img3" src="./img/main/main-about/3-3.jpg" alt="">
       </figure>
 
-      <figure class="imgbox imgbox4">
+      <figure class="imgbox imgbox4" data-n="4">
         
         <img class="img3" src="./img/main/main-about/4-3.jpg" alt="">
       </figure>

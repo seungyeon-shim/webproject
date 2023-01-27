@@ -12,8 +12,10 @@ $(function(){
     if(n > 4) n = 1
     $('.main-visual .slider').removeClass('active')
     $('.main-visual .slider'+n).addClass('active')
+    /* 
     $('.main-visual .video').removeClass('active')
     $('.main-visual .video'+n).addClass('active')
+     */
   },7000)
 
   function mask(){

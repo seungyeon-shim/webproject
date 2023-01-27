@@ -67,10 +67,17 @@
       <img class="sm" src="./img/main/main-visual/cdgs.png" alt="">
     </figure>
   </div><!-- 4 -->
- 
-  <video class="video video1 active" src="./video/spring.mp4" loop muted autoplay playsline></video>
+  
+  <video class="video video1 active" src="" loop muted autoplay playsline></video>
+  <script>
+    var videoArr = ['spring','summer','fall','winter']
+    var videoSrc = videoArr[Math.floor(Math.random()*4)]
+    $('.video').attr('src',`./video/${videoSrc}.mp4`)
+  </script>
+  <!-- 
   <video class="video video2" src="./video/summer.mp4" loop muted autoplay playsline></video>
   <video class="video video3" src="./video/fall.mp4" loop muted autoplay playsline></video>
   <video class="video video4" src="./video/winter.mp4" loop muted autoplay playsline></video>
+   -->
 </section>
 <div class="dummy-scroll scr-section1" style="height:100%"></div>

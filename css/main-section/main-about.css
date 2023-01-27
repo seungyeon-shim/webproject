@@ -4,6 +4,8 @@
 .main-about .scr-target {
   position: absolute;
   width: 100%;
+  border-bottom: 1px solid yellow;
+  z-index: 100;
 }
 .main-about .scr-target.scr-target1 {
   top: 0%;
@@ -47,6 +49,11 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.main-about .sticky .img-container .imgbox.active {
+  opacity: 1;
 }
 .main-about .sticky .img-container .imgbox img {
   width: 100%;
