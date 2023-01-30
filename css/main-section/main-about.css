@@ -1,10 +1,9 @@
 .main-about {
-  height: 400%;
+  height: 600%;
 }
 .main-about .scr-target {
   position: absolute;
   width: 100%;
-  border-bottom: 1px solid yellow;
   z-index: 100;
 }
 .main-about .scr-target.scr-target1 {
@@ -22,7 +21,7 @@
 .main-about .title-container {
   position: absolute;
   width: 100%;
-  height: 25%;
+  height: 16.666%;
 }
 .main-about .title-container .title {
   transform: translate(-50%, -30%);
@@ -31,35 +30,51 @@
   position: sticky;
   overflow: hidden;
   top: 0;
-  height: 25%;
+  height: 16.666%;
   box-sizing: border-box;
+}
+.main-about .sticky .roof-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 700px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .main-about .sticky .img-container {
   position: absolute;
   width: 90%;
   height: 60%;
-  max-width: 700px;
-  max-height: 500px;
+  max-width: 1000px;
+  max-height: 600px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
 }
-.main-about .sticky .img-container .imgbox {
+.main-about .sticky .img-container figure.imgbox {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
-.main-about .sticky .img-container .imgbox.active {
+.main-about .sticky .img-container figure.imgbox.active {
   opacity: 1;
 }
-.main-about .sticky .img-container .imgbox img {
+.main-about .sticky .img-container figure.imgbox img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  opacity: 0.4;
+}
+.main-about .sticky .img-container figure.imgbox img:first-child {
+  -webkit-mask-image: url(../../img/main/main-about/mask/6.png);
+  opacity: 0.8;
 }
 .main-about .sticky .text-container {
   position: absolute;

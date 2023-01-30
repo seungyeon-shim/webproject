@@ -1,7 +1,4 @@
 <link rel="stylesheet" href="./css/main-section/main-visual.css">
-
-<script src="js/particles.js"></script>
-<script src="js/app_particle_star1.js"></script>
 <script src="./js/index/main-visual.js"></script>
 <!-- 본문시작 -->
 <section class="main-section main-visual">
@@ -15,11 +12,6 @@
       어쩌구 저쩌구 디자인은 생각 "
     </p>
   </div><!-- title -->
-
-  <div class="slider-bg">
-    <div class="star" id="star1"></div>
-    <video class="moon" src="./video/moon.mp4" loop muted autoplay playsinline></video>
-  </div><!-- bg -->
 
   <div class="slider slider1 active">
     <div class="star" id="star1"></div>
@@ -67,17 +59,6 @@
       <img class="sm" src="./img/main/main-visual/cdgs.png" alt="">
     </figure>
   </div><!-- 4 -->
-  
-  <video class="video video1 active" src="" loop muted autoplay playsline></video>
-  <script>
-    var videoArr = ['spring','summer','fall','winter']
-    var videoSrc = videoArr[Math.floor(Math.random()*4)]
-    $('.video').attr('src',`./video/${videoSrc}.mp4`)
-  </script>
-  <!-- 
-  <video class="video video2" src="./video/summer.mp4" loop muted autoplay playsline></video>
-  <video class="video video3" src="./video/fall.mp4" loop muted autoplay playsline></video>
-  <video class="video video4" src="./video/winter.mp4" loop muted autoplay playsline></video>
-   -->
+
 </section>
 <div class="dummy-scroll scr-section1" style="height:100%"></div>

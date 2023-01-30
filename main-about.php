@@ -20,22 +20,30 @@
     </div><!-- title -->
   </div><!-- title-container -->
   <div class="sticky">
+    <img class="roof-top" src="./img/main/main-about/roof-top.png" alt="">
     <div class="img-container">
       <figure class="imgbox imgbox1" data-n="1">
-        <img class="img3" src="./img/main/main-about/1-3.jpg" alt="">
+        <img class="img1" src="./img/main/main-about/1-1.jpg" alt="" data-n="1"> 
+        <img class="img2" src="./img/main/main-about/1-2.jpg" alt="" data-n="2">
+        <img class="img3" src="./img/main/main-about/1-3.jpg" alt="" data-n="3">
       </figure>
 
       <figure class="imgbox imgbox2" data-n="2">
-        <img class="img3" src="./img/main/main-about/2-3.jpg" alt="">
+        <img class="img1" src="./img/main/main-about/2-1.jpg" alt="" data-n="4">
+        <img class="img2" src="./img/main/main-about/2-2.jpg" alt="" data-n="5">
+        <img class="img3" src="./img/main/main-about/2-3.jpg" alt="" data-n="6">
       </figure>
 
       <figure class="imgbox imgbox3" data-n="3">
-        <img class="img3" src="./img/main/main-about/3-3.jpg" alt="">
+        <img class="img1" src="./img/main/main-about/3-1.jpg" alt="" data-n="7">
+        <img class="img2" src="./img/main/main-about/3-2.jpg" alt="" data-n="8">
+        <img class="img3" src="./img/main/main-about/3-3.jpg" alt="" data-n="9">
       </figure>
 
       <figure class="imgbox imgbox4" data-n="4">
-        
-        <img class="img3" src="./img/main/main-about/4-3.jpg" alt="">
+        <img class="img1" src="./img/main/main-about/4-1.jpg" alt="" data-n="10">
+        <img class="img2" src="./img/main/main-about/4-2.jpg" alt="" data-n="11">
+        <img class="img3" src="./img/main/main-about/4-3.jpg" alt="" data-n="12">
       </figure>
 
     </div><!-- img-container -->
@@ -94,7 +102,7 @@
         </div><!-- text -->
       </div><!-- textbox1 -->
       <div class="textbox textbox4">
-      <div class="text">
+        <div class="text">
           <img class="roof" src="./img/main/main-about/roof.png" alt="">
           <h3>
             <small>"조선왕조 제일의 법국"</small>
@@ -112,4 +120,12 @@
       </div><!-- textbox1 -->
     </div><!--text-container-->
   </div><!--sticky-->
+  <div class="dummy" style="display: none;"></div>
+  <script>
+    for (var i = 1 ; i <= 70 ; i++) {
+      $('.main-about .dummy').append(`
+      <img src="./img/main/main-about/mask/${i}.png" alt>
+    `)
+    }
+  </script>
 </section>
