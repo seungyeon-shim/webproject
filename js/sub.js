@@ -114,9 +114,4 @@ $(window).resize(function(){
 })//win event
 
 
-
-
-
-
-  
 }); //read
