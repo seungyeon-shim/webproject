@@ -19,12 +19,14 @@
   <link rel="stylesheet" href="./css/reset.css">
   <!--reset-->
   <link rel="stylesheet" href="./css/style.css">
+
   <!--style-->
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/header/header.css">
+  <link rel="stylesheet" href="./css/footer/footer.css">
   <link rel="stylesheet" href="./css/header/logo.css">
   <link rel="stylesheet" href="./css/header/gnb-map.css">
   <link rel="stylesheet" href="./css/sub-snb/snb.css">
+  <link rel="stylesheet" href="./css/preloader.css">
 
 
   <script src="http://code.jquery.com/jquery-latest.js"></script><!--제이쿼리-->
@@ -58,6 +60,8 @@
 </head>
 
 <body>
+  <?php include "preloader.php" ?>
+
   <header>
     <script src="./js/header/header.js"></script>
     <div class="inner">
@@ -85,19 +89,12 @@
   <nav class="gnb-map">
 
     <?php include "menu.php" ?>
-    <!-- <div class="video-wrap2">
-        <video src="./img/logo&icon/star.mp4" autoplay muted loop></video>
-      </div> -->
+ 
     <figure class="bg-star">
-
       <span class="star"></span>
       <span class="star"></span>
       <span class="star"></span>
-
-
       <img src="./img/logo&icon/bg.jpg" alt="">
-
-
     </figure>
 
     <figure class="hover-bg">

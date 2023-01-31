@@ -1,0 +1,130 @@
+@charset "UTF-8";
+body {
+  overflow: hidden; /*스크롤바 사라짐*/
+}
+
+.preloader {
+  position: fixed;
+  z-index: 130; /*제일 위로*/
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--navy-main);
+  /***************************************************/
+}
+.preloader .loader-img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.preloader .loader-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.preloader .loader-img .loader-bg {
+  position: relative;
+}
+.preloader .loader-img .loader {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.preloader .loader-img .textbox {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px auto;
+  text-align: center;
+}
+.preloader .loader-img .textbox p span {
+  letter-spacing: -5px;
+  opacity: 0;
+}
+.preloader .loader-img .textbox p span:nth-of-type(1) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.1s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(2) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.2s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(3) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.3s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(4) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.4s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(5) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.5s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(6) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.6s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(7) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.7s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(8) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.8s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(9) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 0.9s;
+}
+.preloader .loader-img .textbox p span:nth-of-type(10) {
+  animation: loader-text 0.1s forwards;
+  animation-delay: 1s;
+}
+@keyframes loader-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.preloader .loader-img img {
+  transition: transform 0.6s;
+}
+.preloader .loader-img .loader1 {
+  animation: loader-move 0.3s;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+}
+.preloader .loader-img .loader2 {
+  animation: loader-move 0.6s;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+}
+.preloader .loader-img .loader3 {
+  animation: loader-move 0.9s;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-move {
+  0% {
+    opacity: 0;
+    transform: translateY(-230px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=preloader.css.map */
