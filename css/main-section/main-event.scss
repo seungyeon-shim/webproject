@@ -1,0 +1,109 @@
+.main-event {
+  height: 400%;
+  .sticky {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    height: 25%;
+    box-sizing: border-box;
+    .roof-top {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      min-width: 700px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .title-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .title {
+        transform: translate(-50%, -30%);
+      }
+    } //title-container
+
+    .container {
+      position: absolute;
+      height: 60%;
+      max-height: 500px;
+      top: 65%;
+      transform: translateY(-50%);
+
+      @media screen and (min-width: 1000px) {
+        width: 133.328%;
+        left: 42%;
+      }
+      @media screen and (min-width: 600px) and (max-width: 1000px) {
+        width: 200%;
+        left: 37.6%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 400%;
+        left: 26%;
+      }
+      ul {
+        display: flex;
+
+        height: 100%;
+        li {
+          flex: 1;
+          box-sizing: border-box;
+          padding: 15px;
+          opacity: 0;
+          a {
+            display: block;
+            height: 100%;
+            opacity: 0.5;
+            transition: opacity 0.5s;
+            overflow: hidden;
+            &:hover {
+              opacity: 1;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              padding: 3px;
+              box-sizing: border-box;
+              background: #fff;
+              /* active hide */
+              transform: scale(0.5);
+              transition: all 1s;
+            }
+          }//a 
+          transition: opacity 1s;
+          &.active {
+            a {
+              img {
+                transform: scale(1);
+                &:hover{
+                  transform: scale(1.2);
+                }
+              }
+            }
+            opacity: 1;
+          }//li.active
+        } //li
+      } //ul
+
+      svg {
+        position: absolute;
+        width: 101.5%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) translateX(-1%);
+        pointer-events: none;
+        mix-blend-mode: overlay;
+        path {
+          fill: none;
+          stroke: #fff;
+          stroke-width: 3px;
+          stroke-dasharray: 1;
+          stroke-dashoffset: 1;
+        }
+      }
+    } //container
+  } //sticky
+}

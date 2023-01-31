@@ -2,8 +2,8 @@ $(function(){
   if(window.isMobile){
     $('figure.castle , .main-section title').css({'filter':'none'})
     $('figure.castle img').css({'animation':'none'})
-    document.querySelectorAll('.main-visual video:not(.moon)').forEach(function(v){
-      v.remove()
+    document.querySelectorAll('.home-main video:not(.moon)').forEach(function(v){
+      v.remove() 
     })
   }
   n = 1

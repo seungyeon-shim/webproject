@@ -12,6 +12,7 @@
   <?php include "main-bg.php" ?>
   <?php include "main-visual.php" ?>
   <?php include "main-about.php" ?>
+  <?php include "main-event.php" ?>
 </main><!-- main -->
 
 

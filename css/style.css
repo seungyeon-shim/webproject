@@ -73,5 +73,5 @@ body {
 }
 
 video {
-  pointer-events: none;
+  pointer-events: none !important;
 }/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,9 @@
   <div class="scr-target scr-target3"></div>
   <div class="scr-target scr-target4"></div>
 
-  <div class="title-container">
+  <div class="sticky">
+    <img class="roof-top" src="./img/main/main-about/roof-top.png" alt="">
+    <div class="title-container">
     <div class="title">
       <em>별이 반짝이는 서울의 궁</em>
       <h2 class="ebs">
@@ -19,8 +21,7 @@
       </p>
     </div><!-- title -->
   </div><!-- title-container -->
-  <div class="sticky">
-    <img class="roof-top" src="./img/main/main-about/roof-top.png" alt="">
+  
     <div class="img-container">
       <figure class="imgbox imgbox1" data-n="1">
         <img class="img1" src="./img/main/main-about/1-1.jpg" alt="" data-n="1"> 
@@ -45,7 +46,6 @@
         <img class="img2" src="./img/main/main-about/4-2.jpg" alt="" data-n="11">
         <img class="img3" src="./img/main/main-about/4-3.jpg" alt="" data-n="12">
       </figure>
-
     </div><!-- img-container -->
 
     <div class="text-container">
@@ -118,14 +118,8 @@
           </p>
         </div><!-- text -->
       </div><!-- textbox1 -->
+      
     </div><!--text-container-->
   </div><!--sticky-->
-  <div class="dummy" style="display: none;"></div>
-  <script>
-    for (var i = 1 ; i <= 70 ; i++) {
-      $('.main-about .dummy').append(`
-      <img src="./img/main/main-about/mask/${i}.png" alt>
-    `)
-    }
-  </script>
+
 </section>

@@ -40,10 +40,8 @@ $(function () {
       let range = end - start
       let ratio = (scrY - start) / range
       let num = 1 + parseInt(ratio * 5)
-      
       if(num < 1) {num = 1}
       if(num > 6) {num = 6}
-      console.log(num);
       $(this).css({'-webkit-mask-image':`url(./img/main/main-about/mask/${num}.png)`})
     })//each 
     
