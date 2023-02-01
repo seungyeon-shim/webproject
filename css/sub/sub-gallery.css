@@ -167,7 +167,7 @@ section.sub-gallery div.content .book .page-odd .inner .box .textbox p.right {
   width: 50%;
   font-size: 0.75em;
 }
-section.sub-gallery div.content .book .page1 {
+section.sub-gallery div.content .book .page1 .page1-inner {
   height: 100%;
   background: url(../../img/sub/sub-deco/gallery-book-texture.png);
   background-size: 100%;
@@ -175,20 +175,20 @@ section.sub-gallery div.content .book .page1 {
   align-items: center;
   justify-content: center;
 }
-section.sub-gallery div.content .book .page1 .page1-wrap {
+section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap {
   position: relative;
   max-width: 95%;
   max-height: 95%;
   overflow: hidden;
 }
-section.sub-gallery div.content .book .page1 .page1-wrap img.star-bg {
+section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img.star-bg {
   position: relative;
   width: 100%;
   object-fit: cover;
   object-position: center;
   animation: star 8s linear infinite;
 }
-section.sub-gallery div.content .book .page1 .page1-wrap img.front-back {
+section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img.front-back {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,29 +197,29 @@ section.sub-gallery div.content .book .page1 .page1-wrap img.front-back {
   object-position: center;
 }
 @media screen and (min-width: 1000px) {
-  section.sub-gallery div.content .book .page1 .page1-wrap {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap {
     height: 100%;
   }
-  section.sub-gallery div.content .book .page1 .page1-wrap img {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img {
     height: 100%;
   }
-  section.sub-gallery div.content .book .page1 .page1-wrap img.star-bg {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img.star-bg {
     transform: scale(1.5);
   }
 }
 @media screen and (min-width: 939px) and (max-width: 1000px) {
-  section.sub-gallery div.content .book .page1 .page1-wrap img {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img {
     width: 95%;
   }
 }
 @media screen and (max-width: 939px) {
-  section.sub-gallery div.content .book .page1 .page1-wrap {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap {
     height: 100%;
   }
-  section.sub-gallery div.content .book .page1 .page1-wrap img {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img {
     height: 100%;
   }
-  section.sub-gallery div.content .book .page1 .page1-wrap img.star-bg {
+  section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img.star-bg {
     transform: scale(1.5);
   }
 }

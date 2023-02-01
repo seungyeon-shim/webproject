@@ -14,10 +14,12 @@
 
       <div class="sheet sheet1">
         <div class="page page-odd page1">
-          <figure class="page1-wrap">
-            <img class="star-bg" src="./img/sub/sub-deco/star-bg.png" alt="">
-            <img class="front-back" src="./img/sub/sub-deco/gallery-book-cover-front-cdg.png" alt="">
-          </figure><!-- page1-wrap -->
+          <div class="page1-inner">
+            <figure class="page1-wrap">
+              <img class="star-bg" src="./img/sub/sub-deco/star-bg.png" alt="">
+              <img class="front-back" src="./img/sub/sub-deco/gallery-book-cover-front-cdg.png" alt="">
+            </figure><!-- page1-wrap -->
+          </div>
         </div> <!-- page1 -->
         
         <div class="page page-even page2">

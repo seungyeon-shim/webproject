@@ -161,57 +161,60 @@ section.sub-gallery {
 
       /* 표지 */
       .page1 {
-        height: 100%;
-        background: url(../../img/sub/sub-deco/gallery-book-texture.png);
-        background-size: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .page1-wrap {
-          position: relative;
-          max-width: 95%;
-          max-height: 95%;
-          overflow: hidden;
-          img.star-bg {
+        .page1-inner{
+          height: 100%;
+          background: url(../../img/sub/sub-deco/gallery-book-texture.png);
+          background-size: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .page1-wrap {
             position: relative;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-            animation: star 8s linear infinite;
-          }
-          img.front-back {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-          @media screen and (min-width:1000px) {
-            height: 100%;
-            img{
+            max-width: 95%;
+            max-height: 95%;
+            overflow: hidden;
+            img.star-bg {
+              position: relative;
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+              animation: star 8s linear infinite;
+            }
+            img.front-back {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+            @media screen and (min-width:1000px) {
               height: 100%;
-              &.star-bg{
-                transform: scale(1.5);
+              img{
+                height: 100%;
+                &.star-bg{
+                  transform: scale(1.5);
+                }
               }
             }
-          }
-          @media screen and (min-width:939px) and (max-width:1000px) {
-            img{
-              width: 95%;
-            }
-          }
-          @media screen and (max-width:939px) {
-            height: 100%;
-            img{
-              height: 100%;
-              &.star-bg{
-                transform: scale(1.5);
+            @media screen and (min-width:939px) and (max-width:1000px) {
+              img{
+                width: 95%;
               }
             }
-          }
-        } //page1-wrap
-      } //page1,10
+            @media screen and (max-width:939px) {
+              height: 100%;
+              img{
+                height: 100%;
+                &.star-bg{
+                  transform: scale(1.5);
+                }
+              }
+            }
+          } //page1-wrap
+        }//page1-inner
+      } //page1
+
       .page10 {
         height: 100%;
         background: url(../../img/sub/sub-deco/gallery-book-texture.png);
@@ -223,7 +226,7 @@ section.sub-gallery {
           max-width: 95%;
           max-height: 95%;
         }
-      }
+      }//page10
     } //book
   } //content
 
