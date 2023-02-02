@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="./css/sub/sub-story.css">
   <link rel="stylesheet" href="./css/sub/sub-location.css">
   <link rel="stylesheet" href="./css/sub/sub-history.css">
+  <link rel="stylesheet" href="./css/sub/sub-gallery.css">
  
 
 
