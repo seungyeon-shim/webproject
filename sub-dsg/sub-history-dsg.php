@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./css/sub/sub-history.css">
 <script src="./js/sub-history/store.js"></script>
 <script src="./js/sub-history/sub-history.js"></script>
 <section class="sub-content sub-history sub-history-dsg sub-content-center sub-section sub-section2 sub-section-scr sub-section2-scr" data-n="2">

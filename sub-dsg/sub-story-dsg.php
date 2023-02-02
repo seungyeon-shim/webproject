@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./css/sub/sub-story.css">
 <script src="./js/sub-story/sub-story.js"></script>
 <section class="sub-content sub-story sub-story-kbg sub-content-center sub-section sub-section3 sub-section-scr sub-section3-scr" data-n="3">
 

@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./css/sub/sub-visual.css">
-
 <section class="sub-visual sub-visual-kbg sub-section sub-section1 sub-section-scr sub-section1-scr" data-n="1">
 <figure class="sub-bg">
     <img src="./img/sub/sub-deco/visual-background.png" alt="">

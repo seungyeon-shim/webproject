@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="./css/sub/sub-location.css"> 
-<link rel="stylesheet" href="./css/scrollbar.css">
+
 <script src="./js/sub-location/sub-location.js"></script>
 
 <section class="sub-content sub-location sub-location-kbg sub-content-center sub-section sub-section5 sub-section-scr sub-section5-scr"data-n="5">
