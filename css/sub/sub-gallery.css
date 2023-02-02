@@ -195,6 +195,7 @@ section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap img.front-
   width: 100%;
   object-fit: cover;
   object-position: center;
+  transition: opacity 0.1s;
 }
 @media screen and (min-width: 1000px) {
   section.sub-gallery div.content .book .page1 .page1-inner .page1-wrap {

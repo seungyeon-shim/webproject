@@ -22,6 +22,11 @@ $(function(){
     book.flip(n)
     $('.sub-gallery .btns button').removeClass('active')
     $(this).addClass('active')
+    if(n>1){
+      $('.sub-gallery .content .book .sheet1 .page1 img').css({opacity:'0'})
+    }else if(n=1){
+      $('.sub-gallery .content .book .sheet1 .page1 img').css({opacity:'1'})
+    }
   })
 
 
