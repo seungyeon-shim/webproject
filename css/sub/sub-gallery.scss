@@ -153,6 +153,10 @@ section.sub-gallery {
               p.right {
                 width: 50%;
                 font-size: 0.75em;
+                opacity: 0;
+                &.actived{ 
+                  opacity: 1;
+                }
               }
             }
           }

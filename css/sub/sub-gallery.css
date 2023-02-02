@@ -166,6 +166,10 @@ section.sub-gallery div.content .book .page-odd .inner .box .textbox p.left {
 section.sub-gallery div.content .book .page-odd .inner .box .textbox p.right {
   width: 50%;
   font-size: 0.75em;
+  opacity: 0;
+}
+section.sub-gallery div.content .book .page-odd .inner .box .textbox p.right.actived {
+  opacity: 1;
 }
 section.sub-gallery div.content .book .page1 .page1-inner {
   height: 100%;
