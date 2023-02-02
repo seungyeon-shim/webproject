@@ -1,0 +1,115 @@
+.main-section .title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.video-section .video-container {
+  position: sticky;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .video-section .video-container {
+    top: 75px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .video-section .video-container {
+    top: 85px;
+  }
+}
+.video-section .video-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-section .video-container iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-section ul li {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.video-section ul li button {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border: 5px solid var(--dark-color);
+  background: #000;
+  border-radius: 0px;
+}
+
+.video-section ul li button img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .video-section ul li {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  .video-section ul li {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .video-section ul li {
+    width: 50%;
+  }
+}
+/* hover motion */
+.video-section ul li button img {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.video-section ul li button:hover img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* motion */
+.video-container {
+  position: relative;
+}
+.video-container svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+.video-container svg path {
+  fill: none;
+  stroke: #c88d0d;
+  stroke-width: 5px;
+  stroke-dasharray: 3313.4321289063;
+  stroke-dashoffset: 3313.4321289063;
+  animation: dash 20s infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=main-video.css.map */

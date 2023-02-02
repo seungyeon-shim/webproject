@@ -12,6 +12,7 @@
   <?php include "main-visual.php" ?>
   <?php include "main-about.php" ?>
   <?php include "main-event.php" ?>
+  <?php include "main-video.php" ?>
 </main><!-- main -->
 
 
