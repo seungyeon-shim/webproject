@@ -26,6 +26,14 @@
   <link rel="stylesheet" href="./css/footer/footer.css">
   <link rel="stylesheet" href="./css/header/logo.css">
   <link rel="stylesheet" href="./css/header/gnb-map.css">
+  <link rel="stylesheet" href="./css/sub-common/sub-common.css">
+  
+  <link rel="stylesheet" href="./css/main-section/index.css">
+  <link rel="stylesheet" href="./css/main-section/main-visual.css">
+  <link rel="stylesheet" href="./css/main-section/main-event.css">
+  <link rel="stylesheet" href="./css/main-section/main-bg.css">
+  <link rel="stylesheet" href="./css/main-section/main-about.css">
+  
   <link rel="stylesheet" href="./css/sub-snb/snb.css">
   <link rel="stylesheet" href="./css/preloader.css">
   <link rel="stylesheet" href="./css/sub/sub-visual.css">

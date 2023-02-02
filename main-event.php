@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./css/main-section/main-event.css">
 <script src="./js/index/main-event.js"></script>
 <!-- 본문시작 -->
 <section class="main-section main-event">

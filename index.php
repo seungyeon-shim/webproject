@@ -1,5 +1,4 @@
 <?php include "header.php" ?>
-<link rel="stylesheet" href="./css/main-section/index.css">
 
 <main class="home-main">
   <svg style="display: none;">

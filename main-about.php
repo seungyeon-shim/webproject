@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./css/main-section/main-about.css">
 <script src="./js/index/main-about.js"></script>
 <!-- 본문시작 -->
 <section class="main-section main-about">

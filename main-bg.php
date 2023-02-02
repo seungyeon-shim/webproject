@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./css/main-section/main-bg.css">
 <script src="js/particles.js"></script>
 <script src="js/app_particle_star0.js"></script>
 
